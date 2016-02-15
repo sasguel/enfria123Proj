@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 4</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Disposición para mejorar la lactancia materna.</p>
+				<p class="bblue" id="definicion">La diada madre-hijo presenta un patrón de competencia y satisfacción que es suficiente para mantener el proceso de lactancia materna y puede ser reforzado.</p>
+				<p class="bgray" id="dominio">Rol/Relaciones</p>
+				<p class="borange" id="clase">Roles de cuidador</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Patrones de eliminación del lactante adecuados para su edad.">
+						<label for="carDef1" name="lCarDef">Patrones de eliminación del lactante adecuados para su edad.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Patrón de peso del lactante adecuado para su edad.">
+						<label for="carDef2" name="lCarDef">Patrón de peso del lactante adecuado para su edad.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Afán del lactante por mamar.">
+						<label for="carDef3" name="lCarDef">Afán del lactante por mamar.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Patrones de comunicación madre/lactante adecuados.">
+						<label for="carDef4" name="lCarDef">Patrones de comunicación madre/lactante adecuados.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="El lactante parece satisfecho después de las tomas.">
+						<label for="carDef5" name="lCarDef">El lactante parece satisfecho después de las tomas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="La madre es capaz de poner al lactante al pecho para estimular un agarre exitoso.">
+						<label for="carDef6" name="lCarDef">La madre es capaz de poner al lactante al pecho para estimular un agarre exitoso.</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="La madre expresa satisfacción con el proceso de amamantamiento.">
+						<label for="carDef7" name="lCarDef">La madre expresa satisfacción con el proceso de amamantamiento.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef8" value ="Succión regular de la mama.">
+						<label for="carDef8" name="lCarDef">Succión regular de la mama.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef9" value ="Deglución regular mientras mama.">
+						<label for="carDef9" name="lCarDef">Deglución regular mientras mama.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef10" value ="Presencia de signos de liberación de oxitocina.">
+						<label for="carDef10" name="lCarDef">Presencia de signos de liberación de oxitocina.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef11" value ="Succión sostenida de la mama.">
+						<label for="carDef11" name="lCarDef">Succión sostenida de la mama.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef12" value ="Deglución sostenida mientras mama.">
+						<label for="carDef12" name="lCarDef">Deglución sostenida mientras mama.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef13" value ="Presencia de síntomas de liberación de oxitocina.">
+						<label for="carDef13" name="lCarDef">Presencia de síntomas de liberación de oxitocina.</label>
+						
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Ninguno hasta el momento" checked="cheked">
+						<label for="facRel1" name="lFacRel" >Ninguno hasta el momento</label>
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 1</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Cansancio del rol de cuidador.</p>
+				<p class="bblue" id="definicion">Dificultad para desempeñar el rol de cuidador de la familia o de otras personas significativas.</p>
+				<p class="bgray" id="dominio">Rol/Relaciones</p>
+				<p class="borange" id="clase">Roles de cuidador</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<h4>Actividades del cuidador</h4>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Inquietud por los cuidados que recibirá la persoria si el cuidador es incapaz de proporcionárselos.">
+						<label for="carDef1" name="lCarDef">Inquietud por los cuidados que recibirá la persoria si el cuidador es incapaz de proporcionárselos.
+						</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Inquietud por la habilidad futura del cuidador para proporcionar cuidados.">
+						<label for="carDef2" name="lCarDef">Inquietud por la habilidad futura del cuidador para proporcionar cuidados.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Inquietud por la salud futura del receptor de los cuidados.">
+						<label for="carDef3" name="lCarDef">Inquietud por la salud futura del receptor de los cuidados.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Inquietud por la posible institucionalización del receptor de los cuidados.">
+						<label for="carDef4" name="lCarDef">Inquietud por la posible institucionalización del receptor de los cuidados.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Dificultad para completar las tareas requeridas.">
+						<label for="carDef5" name="lCarDef">Dificultad para completar las tareas requeridas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Dificultad para llevar a cabo las tareas requeridas.">
+						<label for="carDef6" name="lCarDef">Dificultad para llevar a cabo las tareas requeridas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Cambio disfuncional en las actividades del cuidador.">
+						<label for="carDef7" name="lCarDef">Cambio disfuncional en las actividades del cuidador.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Preocupación por los cuidados habituales.">
+						<label for="carDef8" name="lCarDef">Preocupación por los cuidados habituales.</label>
+
+						<h4>Estado de salud del cuidador</h4>
+						<h4>Físico</h4>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Enfermedad cardiovascular.">
+						<label for="carDef9" name="lCarDef">Enfermedad cardiovascular.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Diabetes.">
+						<label for="carDef10" name="lCarDef">Diabetes.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Fatiga.">
+						<label for="carDef11" name="lCarDef">Fatiga.</label>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Trastornos gastrointestinales.">
+						<label for="carDef12" name="lCarDef">Trastornos gastrointestinales.</label>
+
+						<input type="checkbox" name="carDef" id="carDef13" value ="Cefaleas.">
+						<label for="carDef13" name="lCarDef">Cefaleas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef14" value ="Hipertensión.">
+						<label for="carDef14" name="lCarDef">Hipertensión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef15" value ="Erupciones.">
+						<label for="carDef15" name="lCarDef">Erupciones.</label>
+
+						<input type="checkbox" name="carDef" id="carDef16" value ="Cambios ponderales.">
+						<label for="carDef16" name="lCarDef">Cambios ponderales.</label>
+						
+						<h4>Emocional</h4>
+
+						<input type="checkbox" name="carDef" id="carDef17" value ="Ira.">
+						<label for="carDef17" name="lCarDef">Ira.</label>
+
+						<input type="checkbox" name="carDef" id="carDef18" value ="Alteración del patrón del sueño.">
+						<label for="carDef18" name="lCarDef">Alteración del patrón del sueño.</label>
+
+						<input type="checkbox" name="carDef" id="carDef19" value ="Frustración.">
+						<label for="carDef19" name="lCarDef">Frustración.</label>
+
+						<input type="checkbox" name="carDef" id="carDef20" value ="Impaciencia.">
+						<label for="carDef20" name="lCarDef">Impaciencia.</label>
+
+						<input type="checkbox" name="carDef" id="carDef21" value ="Labilidad emocional creciente.">
+						<label for="carDef21" name="lCarDef">Labilidad emocional creciente.</label>
+
+						<input type="checkbox" name="carDef" id="carDef22" value ="Nerviosismo creciente.">
+						<label for="carDef22" name="lCarDef">Nerviosismo creciente.</label>
+
+						<input type="checkbox" name="carDef" id="carDef23" value ="Afrontamiento ineficaz.">
+						<label for="carDef23" name="lCarDef">Afrontamiento ineficaz.</label>
+
+						<input type="checkbox" name="carDef" id="carDef24" value ="Falta de tiempo para satisfacer las necesidades personales.">
+						<label for="carDef24" name="lCarDef">Falta de tiempo para satisfacer las necesidades personales.</label>
+
+						<input type="checkbox" name="carDef" id="carDef25" value ="Expresa sentirse deprimido.">
+						<label for="carDef25" name="lCarDef">Expresa sentirse deprimido.</label>
+
+						<input type="checkbox" name="carDef" id="carDef26" value ="Privación de sueño.">
+						<label for="carDef26" name="lCarDef">Privación de sueño.</label>
+
+						<input type="checkbox" name="carDef" id="carDef27" value ="Somatización.">
+						<label for="carDef27" name="lCarDef">Somatización.</label>
+
+						<input type="checkbox" name="carDef" id="carDef28" value ="Estrés.">
+						<label for="carDef28" name="lCarDef">Estrés.</label>
+
+						<h4>Socioecónmico</h4>
+
+						<input type="checkbox" name="carDef" id="carDef29" value ="Cambios en las actividades de tiempo libre.">
+						<label for="carDef29" name="lCarDef">Cambios en las actividades de tiempo libre.</label>
+
+						<input type="checkbox" name="carDef" id="carDef30" value ="Baja productividad laboral.">
+						<label for="carDef30" name="lCarDef">Baja productividad laboral.</label>
+
+						<input type="checkbox" name="carDef" id="carDef31" value ="Expresa dificultad para ver cómo afecta la enfermedad al receptor de los cuidados.">
+						<label for="carDef31" name="lCarDef">Expresa dificultad para ver cómo afecta la enfermedad al receptor de los cuidados.</label>
+
+						<input type="checkbox" name="carDef" id="carDef32" value ="Expresa pena por el cambio de relación con el receptor de los cuidados.">
+						<label for="carDef32" name="lCarDef">Expresa pena por el cambio de relación con el receptor de los cuidados.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef33" value ="Rechaza promociones profesionales.">
+						<label for="carDef33" name="lCarDef">Rechaza promociones profesionales.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef34" value ="Se retira de la vida social.">
+						<label for="carDef34" name="lCarDef">Se retira de la vida social.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef35" value ="Expresa incertidumbre por el cambio de relación con el receptor de los cuidados.">
+						<label for="carDef35" name="lCarDef">Expresa incertidumbre por el cambio de relación con el receptor de los cuidados.</label>
+						
+						<h4>Procesos Familiares</h4>
+
+						<input type="checkbox" name="carDef" id="carDef36" value ="Expresa preocupación por los miembros de la familia.">
+						<label for="carDef36" name="lCarDef">Expresa preocupación por los miembros de la familia.</label>
+						
+						<input type="checkbox" name="carDef" id="carDef37" value ="Conflicto familiar.">
+						<label for="carDef37" name="lCarDef">Conflicto familiar.</label>
+						
+
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+
+						<h4>Estado de salud del receptor de los cuidados</h4>
+
+						<input type="radio" name="facRel" id="facRel1" value ="Adicción." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Adicción.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Codependencia.">
+						<label for="facRel2" name="lFacRel" >Codependencia.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Problemas cognitivos.">
+						<label for="facRel3" name="lFacRel" >Problemas cognitivos.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Dependencia.">
+						<label for="facRel4" name="lFacRel" >Dependencia.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Cronicidad de la enfermedad.">
+						<label for="facRel5" name="lFacRel" >Cronicidad de la enfermedad.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Gravedad de la enfermedad.">
+						<label for="facRel6" name="lFacRel" >Gravedad de la enfermedad.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Necesidades de cuidados crecientes.">
+						<label for="facRel7" name="lFacRel" >Necesidades de cuidados crecientes.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Salud inestable del receptor de los cuidados.">
+						<label for="facRel8" name="lFacRel" >Salud inestable del receptor de los cuidados.</label>
+						
+						<input type="radio" name="facRel" id="facRel9" value ="Problemas de comportamiento.">
+						<label for="facRel9" name="lFacRel" >Problemas de comportamiento.</label>
+						
+						<input type="radio" name="facRel" id="facRel10" value ="Problemas psicológicos.">
+						<label for="facRel10" name="lFacRel" >Problemas psicológicos.</label>
+						
+						<input type="radio" name="facRel" id="facRel11" value ="Abuso de sustancias.">
+						<label for="facRel11" name="lFacRel" >Abuso de sustancias.</label>
+						
+						<input type="radio" name="facRel" id="facRel12" value ="Imposibilidad para predecir el curso de la enfermedad.">
+						<label for="facRel12" name="lFacRel" >Imposibilidad para predecir el curso de la enfermedad.</label>
+
+						<h4>Estado de salud del cuidador</h4>
+
+						<input type="radio" name="facRel" id="facRel13" value ="Codependencia.">
+						<label for="facRel13" name="lFacRel" >Codependencia.</label>
+
+						<input type="radio" name="facRel" id="facRel14" value ="Problemas cognitivos.">
+						<label for="facRel14" name="lFacRel" >Problemas cognitivos.</label>
+
+						<input type="radio" name="facRel" id="facRel15" value ="Incapacidad para satisfacer las expectativas propias.">
+						<label for="facRel15" name="lFacRel" >Incapacidad para satisfacer las expectativas propias.</label>
+
+						<input type="radio" name="facRel" id="facRel16" value ="Incapacidad para satisfacer las expectativas ajenas.">
+						<label for="facRel16" name="lFacRel" >Incapacidad para satisfacer las expectativas ajenas.</label>
+
+						<input type="radio" name="facRel" id="facRel17" value ="Patrones de afrontamiento marginales.">
+						<label for="facRel17" name="lFacRel" >Patrones de afrontamiento marginales.</label>
+
+						<input type="radio" name="facRel" id="facRel18" value ="Problemas físicos.">
+						<label for="facRel18" name="lFacRel" >Problemas físicos.</label>
+
+						<input type="radio" name="facRel" id="facRel19" value ="Problemas psicológicos.">
+						<label for="facRel19" name="lFacRel" >Problemas psicológicos.</label>
+
+						<input type="radio" name="facRel" id="facRel20" value ="Abuso de sustancias.">
+						<label for="facRel20" name="lFacRel" >Abuso de sustancias.</label>
+
+						<input type="radio" name="facRel" id="facRel21" value ="Expectativas poco realistas sobre sí mismo.">
+						<label for="facRel21" name="lFacRel" >Expectativas poco realistas sobre sí mismo.</label>
+
+						<h4>Relaciones cuidador-receptor de los cuidados</h4>
+
+						<input type="radio" name="facRel" id="facRel22" value ="Antecedentes de malas relaciones.">
+						<label for="facRel22" name="lFacRel" >Antecedentes de malas relaciones.</label>
+
+						<input type="radio" name="facRel" id="facRel23" value ="El estado mental del anciano inhibe la conversación.">
+						<label for="facRel23" name="lFacRel" >El estado mental del anciano inhibe la conversación.</label>
+
+						<input type="radio" name="facRel" id="facRel24" value ="Presencia de abusos.">
+						<label for="facRel24" name="lFacRel" >Presencia de abusos.</label>
+
+						<input type="radio" name="facRel" id="facRel25" value ="Presencia de violencia.">
+						<label for="facRel25" name="lFacRel" >Presencia de violencia.</label>
+
+						<input type="radio" name="facRel" id="facRel26" value ="El receptor de los cuidados tiene expectativas poco realistas sobre el cuidador.">
+						<label for="facRel26" name="lFacRel" >El receptor de los cuidados tiene expectativas poco realistas sobre el cuidador.</label>
+
+						<h4>Actividades del cuidador</h4>
+
+						<input type="radio" name="facRel" id="facRel27" value ="Responsabilidad de los cuidados durante las 24 horas.">
+						<label for="facRel27" name="lFacRel" >Responsabilidad de los cuidados durante las 24 horas.</label>
+
+						<input type="radio" name="facRel" id="facRel28" value ="Cantidad de actividades.">
+						<label for="facRel28" name="lFacRel" >Cantidad de actividades.</label>
+
+						<input type="radio" name="facRel" id="facRel29" value ="Complejidad de las actividades.">
+						<label for="facRel29" name="lFacRel" >Complejidad de las actividades.</label>
+
+						<input type="radio" name="facRel" id="facRel30" value ="Alta domiciliaria de algún miembro de la familia con importantes necesidades de cuidados.">
+						<label for="facRel30" name="lFacRel" >Alta domiciliaria de algún miembro de la familia con importantes necesidades de cuidados.</label>
+
+						<input type="radio" name="facRel" id="facRel31" value ="Antecedentes de disfunción familiar.">
+						<label for="facRel31" name="lFacRel" >Antecedentes de disfunción familiar.</label>
+
+						<input type="radio" name="facRel" id="facRel32" value ="Cambio continuo de actividades.">
+						<label for="facRel32" name="lFacRel" >Cambio continuo de actividades.</label>
+
+						<input type="radio" name="facRel" id="facRel33" value ="Imposibilidad de predecir la situación de cuidados.">
+						<label for="facRel33" name="lFacRel" >Imposibilidad de predecir la situación de cuidados.</label>
+
+						<input type="radio" name="facRel" id="facRel34" value ="Brindar los cuidados durante años.">
+						<label for="facRel34" name="lFacRel" >Brindar los cuidados durante años.</label>
+
+						<input type="radio" name="facRel" id="facRel35" value ="Antecedentes de afrontamiento familiar marginal.">
+						<label for="facRel35" name="lFacRel" >Antecedentes de afrontamiento familiar marginal.</label>
+
+						<h4>Recursos</h4>
+
+						<input type="radio" name="facRel" id="facRel36" value ="El desarrollo del cuidador no es suficiente para desempeñar su rol.">
+						<label for="facRel36" name="lFacRel" >El desarrollo del cuidador no es suficiente para desempeñar su rol.</label>
+
+						<input type="radio" name="facRel" id="facRe37" value ="Conocimientos deficientes sobre los recursos comunitarios.">
+						<label for="facRe37" name="lFacRel" >Conocimientos deficientes sobre los recursos comunitarios.</label>
+
+						<input type="radio" name="facRel" id="facRel38" value ="Dificultad para acceder a los recursos comunitarios.">
+						<label for="facRel38" name="lFacRel" >Dificultad para acceder a los recursos comunitarios.</label>
+
+						<input type="radio" name="facRel" id="facRel39" value ="Dificultad para acceder a la asistencia formal.">
+						<label for="facRel39" name="lFacRel" >Dificultad para acceder a la asistencia formal.</label>
+
+						<input type="radio" name="facRel" id="facRel40" value ="Dificultad para acceder al apoyo formal.">
+						<label for="facRel40" name="lFacRel" >Dificultad para acceder al apoyo formal.</label>
+
+						<input type="radio" name="facRel" id="facRel41" value ="Fortaleza emocional.">
+						<label for="facRel41" name="lFacRel" >Fortaleza emocional.</label>
+
+						<input type="radio" name="facRel" id="facRel42" value ="Recursos comunitarios inadecuados (p. ej., períodos de respiro, recursos recreativos).">
+						<label for="facRel42" name="lFacRel" >Recursos comunitarios inadecuados (p. ej., períodos de respiro, recursos recreativos).</label>
+
+						<input type="radio" name="facRel" id="facRel43" value ="Equipo inadecuado para proporcionar cuidados.">
+						<label for="facRel43" name="lFacRel" >Equipo inadecuado para proporcionar cuidados.</label>
+
+						<input type="radio" name="facRel" id="facRel44" value ="Asistencia informal inadecuada.">
+						<label for="facRel44" name="lFacRel" >Asistencia informal inadecuada.</label>
+
+						<input type="radio" name="facRel" id="facRel45" value ="Apoyo informal inadecuado.">
+						<label for="facRel45" name="lFacRel" >Apoyo informal inadecuado.</label>
+
+						<input type="radio" name="facRel" id="facRel46" value ="Entorno físico inadecuado para proporcionar cuidados (p. ej., acondicionamiento del domicilio, temperatura, seguridad).">
+						<label for="facRel46" name="lFacRel" >Entorno físico inadecuado para proporcionar cuidados (p. ej., acondicionamiento del domicilio, temperatura, seguridad).</label>
+
+						<input type="radio" name="facRel" id="facRel47" value ="Medios de transporte inadecuados.">
+						<label for="facRel47" name="lFacRel" >Medios de transporte inadecuados.</label>
+
+						<input type="radio" name="facRel" id="facRel48" value ="Inexperiencia en la provisión de cuidados.">
+						<label for="facRel48" name="lFacRel" >Inexperiencia en la provisión de cuidados.</label>
+
+						<input type="radio" name="facRel" id="facRel49" value ="Recursos económicos insuficientes.">
+						<label for="facRel49" name="lFacRel" >Recursos económicos insuficientes.</label>
+
+						<input type="radio" name="facRel" id="facRel50" value ="Falta de tiempo.">
+						<label for="facRel50" name="lFacRel" >Falta de tiempo.</label>
+
+						<input type="radio" name="facRel" id="facRel51" value ="Falta de intimidad del cuidador.">
+						<label for="facRel51" name="lFacRel" >Falta de intimidad del cuidador.</label>
+
+						<input type="radio" name="facRel" id="facRel52" value ="Falta de soporte.">
+						<label for="facRel52" name="lFacRel" >Falta de soporte.</label>
+
+						<input type="radio" name="facRel" id="facRel53" value ="Energía física.">
+						<label for="facRel53" name="lFacRel" >Energía física.</label>
+
+						<h4>Socioeconómicos</h4>
+
+						<input type="radio" name="facRel" id="facRel54" value ="Alienación de los demás.">
+						<label for="facRel54" name="lFacRel" >Alienación de los demás.</label>
+
+						<input type="radio" name="facRel" id="facRel55" value =".Conflicto en el desempeño de roles.">
+						<label for="facRel55" name="lFacRel" >Conflicto en el desempeño de roles.</label>
+
+						<input type="radio" name="facRel" id="facRel56" value ="Actividades recreativas insuficientes.">
+						<label for="facRel56" name="lFacRel" >Actividades recreativas insuficientes.</label>
+
+						<input type="radio" name="facRel" id="facRel57" value ="Aislamiento de otros.">
+						<label for="facRel57" name="lFacRel" >Aislamiento de otros.</label>
+						 
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

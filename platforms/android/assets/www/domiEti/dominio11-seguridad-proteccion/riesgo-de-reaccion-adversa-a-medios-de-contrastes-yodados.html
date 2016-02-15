@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+		<title>NANOCNIC</title>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+		<link rel="stylesheet" href="../../thema.css"/>
+		<script type="text/javascript" src="../js/resul.js"></script>
+</head>
+
+<body>
+	<section id="index" data-role="page" data-title="NANOCNIC">
+		<header data-role="header"  data-theme="e">	
+			<h1>VersionBeta NANOCNIC</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:history.go(-2)">Libros</a></li>
+					<li><a href="javascript:history.go(-1)">NANDA</a></li>
+					<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 30</a></li>
+				</ul>
+			</div>
+		</header>
+		<article data-role="content">
+			<p class="bgreen" id="etiqueta">Etiqueta 30: Riesgo de reacción adversa a medios de contraste yodados</p>
+			<p class="bblue" id="definicion">Definición: Riesgo de una reacción nociva o no intencionada asociada con el uso de medios de contraste yodados que puede ocurrir dentro de los siete (7) días posteriores a la inyección del contraste agente.</p>
+			<p class="bgray" id="dominio">Dominio 11: Seguridad/Protección</p>
+			<p class="borange" id="clase">Clase 5: Procesos defensivos</p>
+
+			<form  id="form1" name="form1" method="post" action="#">
+				<fieldset data-role="controlgroup">
+					<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+					<input type="checkbox" name="carDef" id="carDef1" value ="no hay">
+					<label for="carDef1" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef2" value ="no hay">
+					<label for="carDef2" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef3" value ="no hay">
+					<label for="carDef3" name="lCarDef">no hay</label>
+				</fieldset>
+			
+				<fieldset data-role="controlgroup">
+					<h3 class="bred">Factores de riesgo</h3>
+
+					<input type="radio" name="facRel" id="facRel1" value ="Ansiedad." checked="cheked">
+					<label for="facRel1" name="lFacRel" >Ansiedad.</label>
+
+					<input type="radio" name="facRel" id="facRel2" value ="Uso concomitante de medicamentos (p. ej., betabloqueantes, interleucina-2, metformina, medicamentos nefrotóxicos).">
+					<label for="facRel2" name="lFacRel" >Uso concomitante de medicamentos (p. ej., betabloqueantes, interleucina-2, metformina, medicamentos nefro tóxicos).</label>
+
+					<input type="radio" name="facRel" id="facRel3" value ="Deshidratación.">
+					<label for="facRel3" name="lFacRel" >Deshidratación.</label>
+
+					<input type="radio" name="facRel" id="facRel4" value ="Extremos de edad.">
+					<label for="facRel4" name="lFacRel" >Extremos de edad.</label>
+
+					<input type="radio" name="facRel" id="facRel5" value ="Venas frágiles (p. ej., tratamiento de quimioterapia o radioterapia anterior o actual en la extremidad en la que debe inyectarse, intentos múltiples de canalización de vía intravenosa, canalización de vía intravenosa durante más de 24 horas, disección previa de nódulo linfático axilar en la extremidad en la que debe inyectarse, vía intravenosa distal: mano, muñeca, pie, tobillo).">
+					<label for="facRel5" name="lFacRel" >Venas frágiles (p. ej., tratamiento de quimioterapia o radioterapia anterior o actual en la extremidad en la que debe inyectarse, intentos múltiples de canalización de vía intravenosa, canalización de vía intravenosa durante más de 24 horas, disección previa de nódulo linfático axilar en la extremidad en la que debe inyectarse, vía intravenosa distal: mano, muñeca, pie, tobillo).</label>
+
+					<input type="radio" name="facRel" id="facRel6" value ="Debilidad generalizada.">
+					<label for="facRel6" name="lFacRel" >Debilidad generalizada.</label>
+				
+					<input type="radio" name="facRel" id="facRel7" value ="Antecedentes de alergias.">
+					<label for="facRel7" name="lFacRel" >Antecedentes de alergias.</label>
+
+					<input type="radio" name="facRel" id="facRel8" value ="Antecedentes de efecto adverso previo a medios de contraste yodados.">
+					<label for="facRel8" name="lFacRel" >Antecedentes de efecto adverso previo a medios de contraste yodados.</label>
+
+					<input type="radio" name="facRel" id="facRel9" value ="Propiedades fisicoquímicas de los medios de contraste (p. ej., concentración de yodo, viscosidad, alta osmolalidad, toxicidad iónica).">
+					<label for="facRel9" name="lFacRel" >Propiedades fisicoquímicas de los medios de contraste (p. ej., concentración de yodo, viscosidad, alta osmolalidad, toxicidad iónica).</label>
+
+					<input type="radio" name="facRel" id="facRel10" value ="Inconsciencia.">
+					<label for="facRel10" name="lFacRel" >Inconsciencia.</label>
+
+					<input type="radio" name="facRel" id="facRel11" value ="Enfermedad de base (p. ej., enfermedad cardíaca, enfermedad pulmonar, alteraciones sanguíneas, enfermedad endocrina, enfermedad renal, feocromocitoma, enfermedad autoinmune).">
+					<label for="facRel11" name="lFacRel" >Enfermedad de base (p. ej., enfermedad cardíaca, enfermedad pulmonar, alteraciones sanguíneas, enfermedad endocrina, enfermedad renal, feocromocitoma, enfermedad autoinmune).</label>
+
+	</fieldset>
+
+				<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+			</form>
+
+		</article>
+		<footer data-role="footer" data-mini="true" data-theme="b">
+			<h1>HYDRA-PDM/ENFERMERIA</h1>
+		</footer>
+	</section>
+
+	<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+        <header data-role="header"  data-theme="e">
+            <h1>VersionBeta NANOCNIC</h1>
+        </header>
+        <article data-role="content">
+            <div id="resultados" name="resultados" >
+
+            </div>
+        </article>
+        <footer data-role="footer" data-mini="true" data-theme="b">
+            <h1>HYDRA-PDM/ENFERMERIA</h1>
+        </footer>
+    </section>
+</body>
+</html>

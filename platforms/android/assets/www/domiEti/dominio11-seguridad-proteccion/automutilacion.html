@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+		<title>NANOCNIC</title>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+		<link rel="stylesheet" href="../../thema.css"/>
+		<script type="text/javascript" src="../js/resul.js"></script>
+</head>
+
+<body>
+	<section id="index" data-role="page" data-title="NANOCNIC">
+		<header data-role="header"  data-theme="e">	
+			<h1>VersionBeta NANOCNIC</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:history.go(-2)">Libros</a></li>
+					<li><a href="javascript:history.go(-1)">NANDA</a></li>
+					<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 22</a></li>
+				</ul>
+			</div>
+		</header>
+		<article data-role="content">
+			<p class="bgreen" id="etiqueta">Etiqueta 22: Automutilación</p>
+			<p class="bblue" id="definicion">Definición: conducta deliberadamente autolesiva que causa un daño tisular con la intención de provocar una lesión no letal que alivie la tensión.</p>
+			<p class="bgray" id="dominio">Dominio 11: Seguridad/Protección</p>
+			<p class="borange" id="clase">Clase 3: Violencia</p>
+
+			<form  id="form1" name="form1" method="post" action="#">
+				<fieldset data-role="controlgroup">
+					<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+					<input type="checkbox" name="carDef" id="carDef1" value ="Abrasiones.">
+					<label for="carDef1" name="lCarDef">Abrasiones.</label>
+
+					<input type="checkbox" name="carDef" id="carDef2" value ="Morderse.">
+					<label for="carDef2" name="lCarDef">Morderse.</label>
+
+					<input type="checkbox" name="carDef" id="carDef3" value ="Constreñir una parte del cuerpo.">
+					<label for="carDef3" name="lCarDef">Constreñir una parte del cuerpo.</label>
+
+					<input type="checkbox" name="carDef" id="carDef4" value ="Hacerse cortes en el cuerpo.">
+					<label for="carDef4" name="lCarDef">Hacerse cortes en el cuerpo.</label>
+
+					<input type="checkbox" name="carDef" id="carDef5" value ="Golpearse.">
+					<label for="carDef5" name="lCarDef">Golpearse.</label>
+
+					<input type="checkbox" name="carDef" id="carDef6" value ="Ingestión de sustancias nocivas.">
+					<label for="carDef6" name="lCarDef">Ingestión de sustancias nocivas.</label>
+
+					<input type="checkbox" name="carDef" id="carDef7" value ="Inhalación de sustancias nocivas.">
+					<label for="carDef7" name="lCarDef">Inhalación de sustancias nocivas.</label>
+
+					<input type="checkbox" name="carDef" id="carDef8" value ="Inserción de objetos en los orificios corporales.">
+					<label for="carDef8" name="lCarDef">Inserción de objetos en los orificios corporales.</label>
+
+					<input type="checkbox" name="carDef" id="carDef9" value ="Hurgarse las heridas.">
+					<label for="carDef9" name="lCarDef">Hurgarse las heridas.</label>
+					
+					<input type="checkbox" name="carDef" id="carDef10" value ="Arañarse el cuerpo.">
+					<label for="carDef10" name="lCarDef">Arañarse el cuerpo.</label>
+
+					<input type="checkbox" name="carDef" id="carDef11" value ="Quemaduras autoinfligidas.">
+					<label for="carDef11" name="lCarDef">Quemaduras autoinfligidas.</label>
+
+					<input type="checkbox" name="carDef" id="carDef12" value ="Autoamputación.">
+					<label for="carDef12" name="lCarDef">Autoamputación.</label>
+
+				</fieldset>
+			
+				<fieldset data-role="controlgroup">
+					<h3 class="bred">Factores relacionados</h3>
+
+					<input type="radio" name="facRel" id="facRel1" value ="Adolescencia." checked="cheked">
+					<label for="facRel1" name="lFacRel" >Adolescencia.</label>
+
+					<input type="radio" name="facRel" id="facRel2" value ="Autismo.">
+					<label for="facRel2" name="lFacRel" >Autismo.</label>
+
+					<input type="radio" name="facRel" id="facRel3" value ="Niño maltratado.">
+					<label for="facRel3" name="lFacRel" >Niño maltratado.</label>
+
+					<input type="radio" name="facRel" id="facRel4" value ="Trastornos límite de la personalidad.">
+					<label for="facRel4" name="lFacRel" >Trastornos límite de la personalidad.</label>
+
+					<input type="radio" name="facRel" id="facRel5" value ="Trastornos del carácter.">
+					<label for="facRel5" name="lFacRel" >Trastornos del carácter.</label>
+
+					<input type="radio" name="facRel" id="facRel6" value ="Enfermedad en la infancia.">
+					<label for="facRel6" name="lFacRel" >Enfermedad en la infancia.</label>
+				
+					<input type="radio" name="facRel" id="facRel7" value ="Abusos sexuales en la infancia.">
+					<label for="facRel7" name="lFacRel" >Abusos sexuales en la infancia.</label>
+
+					<input type="radio" name="facRel" id="facRel8" value ="Cirugía en la infancia.">
+					<label for="facRel8" name="lFacRel" >Cirugía en la infancia.</label>
+
+					<input type="radio" name="facRel" id="facRel9" value ="Despersonalización.">
+					<label for="facRel9" name="lFacRel" >Despersonalización.</label>
+
+					<input type="radio" name="facRel" id="facRel10" value ="Persona con retraso en el desarrollo.">
+					<label for="facRel10" name="lFacRel" >Persona con retraso en el desarrollo.</label>
+
+					<input type="radio" name="facRel" id="facRel11" value ="Disociación.">
+					<label for="facRel11" name="lFacRel" >Disociación.</label>
+
+					<input type="radio" name="facRel" id="facRel12" value ="Trastorno de la imagen corporal.">
+					<label for="facRel12" name="lFacRel" >Trastorno de la imagen corporal.</label>
+
+					<input type="radio" name="facRel" id="facRel13" value ="Trastorno de las relaciones interpersonales.">
+					<label for="facRel13" name="lFacRel" >Trastorno de las relaciones interpersonales.</label>
+
+					<input type="radio" name="facRel" id="facRel14" value ="Trastornos alimentarios.">
+					<label for="facRel14" name="lFacRel" >Trastornos alimentarios.</label>
+
+					<input type="radio" name="facRel" id="facRel15" value ="Trastornos emocionales.">
+					<label for="facRel15" name="lFacRel" >Trastornos emocionales.</label>
+
+					<input type="radio" name="facRel" id="facRel16" value ="Divorcio de los padres.">
+					<label for="facRel16" name="lFacRel" >Divorcio de los padres.</label>
+
+					<input type="radio" name="facRel" id="facRel17" value ="Historia familiar de conductas autodestructivas.">
+					<label for="facRel17" name="lFacRel" >Historia familiar de conductas autodestructivas.</label>
+
+					<input type="radio" name="facRel" id="facRel18" value ="Abuso familiar de sustancias.">
+					<label for="facRel18" name="lFacRel" >Abuso familiar de sustancias.</label>
+
+					<input type="radio" name="facRel" id="facRel19" value ="Se siente amenazado por la pérdida de una relación significativa.">
+					<label for="facRel19" name="lFacRel" >Se siente amenazado por la pérdida de una relación significativa.</label>
+
+					<input type="radio" name="facRel" id="facRel20" value ="Historia de incapacidad para planificar soluciones.">
+					<label for="facRel20" name="lFacRel" >Historia de incapacidad para planificar soluciones.</label>
+
+					<input type="radio" name="facRel" id="facRel21" value ="Historia de incapacidad para ver las consecuencias a largo plazo.">
+					<label for="facRel21" name="lFacRel" >Historia de incapacidad para ver las consecuencias a largo plazo.</label>
+
+					<input type="radio" name="facRel" id="facRel22" value ="Historia de conductas autolesivas.">
+					<label for="facRel22" name="lFacRel" >Historia de conductas autolesivas.</label>
+
+					<input type="radio" name="facRel" id="facRel23" value ="Impulsividad.">
+					<label for="facRel23" name="lFacRel" >Impulsividad.</label>
+
+					<input type="radio" name="facRel" id="facRel24" value ="Incapacidad para expresar verbalmente la tensión.">
+					<label for="facRel24" name="lFacRel" >Incapacidad para expresar verbalmente la tensión.</label>
+
+					<input type="radio" name="facRel" id="facRel25" value ="Encarcelamiento.">
+					<label for="facRel25" name="lFacRel" >Encarcelamiento.</label>
+
+					<input type="radio" name="facRel" id="facRel26" value ="Afrontamiento ineficaz.">
+					<label for="facRel26" name="lFacRel" >Afrontamiento ineficaz.</label>
+				
+					<input type="radio" name="facRel" id="facRel27" value ="Impulso irresistible de cortarse.">
+					<label for="facRel27" name="lFacRel" >Impulso irresistible de cortarse.</label>
+
+					<input type="radio" name="facRel" id="facRel28" value ="Impulso irresistible de autolesionarse.">
+					<label for="facRel28" name="lFacRel" >Impulso irresistible de autolesionarse.</label>
+
+					<input type="radio" name="facRel" id="facRel29" value ="Aislamiento de sus iguales.">
+					<label for="facRel29" name="lFacRel" >Aislamiento de sus iguales.</label>
+
+					<input type="radio" name="facRel" id="facRel30" value ="Conducta lábil.">
+					<label for="facRel30" name="lFacRel" >Conducta lábil.</label>
+
+					<input type="radio" name="facRel" id="facRel31" value ="Falta de confidente familiar.">
+					<label for="facRel31" name="lFacRel" >Falta de confidente familiar.</label>
+
+					<input type="radio" name="facRel" id="facRel32" value ="Vivir en un entorno no tradicional (p. ej., casa de acogida, grupo o cuidado institucional).">
+					<label for="facRel32" name="lFacRel" >Vivir en un entorno no tradicional (p. ej., casa de acogida, grupo o cuidado institucional).</label>
+
+					<input type="radio" name="facRel" id="facRel33" value ="Autoestima baja.">
+					<label for="facRel33" name="lFacRel" >Autoestima baja.</label>
+
+					<input type="radio" name="facRel" id="facRel34" value ="Acumulación de tensión que resulta intolerable.">
+					<label for="facRel34" name="lFacRel" >Acumulación de tensión que resulta intolerable.</label>
+
+					<input type="radio" name="facRel" id="facRel35" value ="Necesidad de vma rápida reducción del estrés.">
+					<label for="facRel35" name="lFacRel" >Necesidad de vma rápida reducción del estrés.</label>
+
+					<input type="radio" name="facRel" id="facRel36" value ="Iguales que se automutilan.">
+					<label for="facRel36" name="lFacRel" >Iguales que se automutilan.</label>
+				
+					<input type="radio" name="facRel" id="facRel37" value ="Perfeccionismo.">
+					<label for="facRel37" name="lFacRel" >Perfeccionismo.</label>
+
+					<input type="radio" name="facRel" id="facRel38" value ="Mala comunicación entre los padres y el adolescente.">
+					<label for="facRel38" name="lFacRel" >Mala comunicación entre los padres y el adolescente.</label>
+
+					<input type="radio" name="facRel" id="facRel39" value ="Estado psicótico (p. ej., alucinaciones en las que se reciben órdenes).">
+					<label for="facRel39" name="lFacRel" >Estado psicótico (p. ej., alucinaciones en las que se reciben órdenes).</label>
+
+					<input type="radio" name="facRel" id="facRel40" value ="Expresa sentimientos negativos (p. ej., depresión, rechazo, odio hacia sí mismo, ansiedad por separación, culpa, despersonalización).">
+					<label for="facRel40" name="lFacRel" >Expresa sentimientos negativos (p. ej., depresión, rechazo, odio hacia sí mismo, ansiedad por separación, culpa, despersonalización).</label>
+
+					<input type="radio" name="facRel" id="facRel41" value ="Crisis de identidad sexual.">
+					<label for="facRel41" name="lFacRel" >Crisis de identidad sexual.</label>
+
+					<input type="radio" name="facRel" id="facRel42" value ="Abuso de sustancias.">
+					<label for="facRel42" name="lFacRel" >Abuso de sustancias.</label>
+
+					<input type="radio" name="facRel" id="facRel43" value ="Imagen corporal inestable.">
+					<label for="facRel43" name="lFacRel" >Imagen corporal inestable.</label>
+
+					<input type="radio" name="facRel" id="facRel44" value ="Autoestima inestable.">
+					<label for="facRel44" name="lFacRel" >Autoestima inestable.</label>
+
+					<input type="radio" name="facRel" id="facRel45" value ="Uso de la manipulación para establecer relaciones significativas con otros.">
+					<label for="facRel45" name="lFacRel" >Uso de la manipulación para establecer relaciones significativas con otros.</label>
+
+					<input type="radio" name="facRel" id="facRel46" value ="Violencia entre las figuras parentales.">
+					<label for="facRel46" name="lFacRel" >Violencia entre las figuras parentales.</label>
+	</fieldset>
+
+				<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+			</form>
+
+		</article>
+		<footer data-role="footer" data-mini="true" data-theme="b">
+			<h1>HYDRA-PDM/ENFERMERIA</h1>
+		</footer>
+	</section>
+
+	<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+        <header data-role="header"  data-theme="e">
+            <h1>VersionBeta NANOCNIC</h1>
+        </header>
+        <article data-role="content">
+            <div id="resultados" name="resultados" >
+
+            </div>
+        </article>
+        <footer data-role="footer" data-mini="true" data-theme="b">
+            <h1>HYDRA-PDM/ENFERMERIA</h1>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+		<title>NANOCNIC</title>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+		<link rel="stylesheet" href="../../thema.css"/>
+		<script type="text/javascript" src="../js/resul.js"></script>
+</head>
+
+<body>
+	<section id="index" data-role="page" data-title="NANOCNIC">
+		<header data-role="header"  data-theme="e">	
+			<h1>VersionBeta NANOCNIC</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:history.go(-2)">Libros</a></li>
+					<li><a href="javascript:history.go(-1)">NANDA</a></li>
+					<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 24</a></li>
+				</ul>
+			</div>
+		</header>
+		<article data-role="content">
+			<p class="bgreen" id="etiqueta">Etiqueta 24: Riesgo de suicidio</p>
+			<p class="bblue" id="definicion">Definición: Riesgo de lesión autoinfligida que pone en peligro la vida.</p>
+			<p class="bgray" id="dominio">Dominio 11: Seguridad/Protección</p>
+			<p class="borange" id="clase">Clase 3: Violencia</p>
+
+			<form  id="form1" name="form1" method="post" action="#">
+				<fieldset data-role="controlgroup">
+					<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+					<input type="checkbox" name="carDef" id="carDef1" value ="no hay">
+					<label for="carDef1" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef2" value ="no hay">
+					<label for="carDef2" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef3" value ="no hay">
+					<label for="carDef3" name="lCarDef">no hay</label>
+				</fieldset>
+			
+				<fieldset data-role="controlgroup">
+					<h3 class="bred">Factores de riesgo: Conductuales</h3>
+
+					<input type="radio" name="facRel" id="facRel1" value ="Compra de un arma de fuego." checked="cheked">
+					<label for="facRel1" name="lFacRel" >Compra de un arma de fuego.</label>
+
+					<input type="radio" name="facRel" id="facRel2" value ="Cambiar el testamerito.">
+					<label for="facRel2" name="lFacRel" >Cambiar el testamerito.</label>
+
+					<input type="radio" name="facRel" id="facRel3" value ="Donar las posesiones.">
+					<label for="facRel3" name="lFacRel" >Donar las posesiones.</label>
+
+					<input type="radio" name="facRel" id="facRel4" value ="Historia de intentos previos de suicidio.">
+					<label for="facRel4" name="lFacRel" >Historia de intentos previos de suicidio.</label>
+
+					<input type="radio" name="facRel" id="facRel5" value ="Impulsividad.">
+					<label for="facRel5" name="lFacRel" >Impulsividad.</label>
+
+					<input type="radio" name="facRel" id="facRel6" value ="Hacer testamento.">
+					<label for="facRel6" name="lFacRel" >Hacer testamento.</label>
+				
+					<input type="radio" name="facRel" id="facRel7" value ="Cambios notables de actitud.">
+					<label for="facRel7" name="lFacRel" >Cambios notables de actitud.</label>
+
+					<input type="radio" name="facRel" id="facRel8" value ="Cambios notables de conducta.">
+					<label for="facRel8" name="lFacRel" >Cambios notables de conducta.</label>
+
+					<input type="radio" name="facRel" id="facRel9" value ="Cambios notables en el desempeño escolar.">
+					<label for="facRel9" name="lFacRel" >Cambios notables en el desempeño escolar.</label>
+
+					<input type="radio" name="facRel" id="facRel10" value ="Acumulación de medicinas.">
+					<label for="facRel10" name="lFacRel" >Acumulación de medicinas.</label>
+
+					<input type="radio" name="facRel" id="facRel11" value ="Súbita recuperación eufórica de una depresión grave.">
+					<label for="facRel11" name="lFacRel" >Súbita recuperación eufórica de una depresión grave.</label>
+
+					<h3 class="bred">Factores de riesgo: Demográficos</h3>
+
+					<input type="radio" name="facRel" id="facRel12" value ="Edad (ancianidad, varones adultos jóvenes, adolescentes).">
+					<label for="facRel12" name="lFacRel" >Edad (ancianidad, varones adultos jóvenes, adolescentes).</label>
+
+					<input type="radio" name="facRel" id="facRel13" value ="Divorcio.">
+					<label for="facRel13" name="lFacRel" >Divorcio.</label>
+
+					<input type="radio" name="facRel" id="facRel14" value ="Sexo varón.">
+					<label for="facRel14" name="lFacRel" >Sexo varón.</label>
+
+					<input type="radio" name="facRel" id="facRel15" value ="Raza (p. ej., blanco, nativo americano).">
+					<label for="facRel15" name="lFacRel" >Raza (p. ej., blanco, nativo americano).</label>
+
+					<input type="radio" name="facRel" id="facRel16" value ="Viudedad.">
+					<label for="facRel16" name="lFacRel" >Viudedad.</label>
+
+					<h3 class="bred">Factores de riesgo: Físicos</h3>
+
+					<input type="radio" name="facRel" id="facRel17" value ="Dolor crónico.">
+					<label for="facRel17" name="lFacRel" >Dolor crónico.</label>
+
+					<input type="radio" name="facRel" id="facRel18" value ="Enfermedad física.">
+					<label for="facRel18" name="lFacRel" >Enfermedad física.</label>
+
+					<input type="radio" name="facRel" id="facRel19" value ="Enfermedad terminal.">
+					<label for="facRel19" name="lFacRel" >Enfermedad terminal.</label>
+
+					<h3 class="bred">Factores de riesgo: Psicológicos</h3>
+
+					<input type="radio" name="facRel" id="facRel20" value ="Maltrato en la infancia.">
+					<label for="facRel20" name="lFacRel" >Maltrato en la infancia.</label>
+
+					<input type="radio" name="facRel" id="facRel21" value ="Historia familiar de suicidio.">
+					<label for="facRel21" name="lFacRel" >Historia familiar de suicidio.</label>
+
+					<input type="radio" name="facRel" id="facRel22" value ="Culpa.">
+					<label for="facRel22" name="lFacRel" >Culpa.</label>
+
+					<input type="radio" name="facRel" id="facRel23" value ="Persona joven homosexual.">
+					<label for="facRel23" name="lFacRel" >Persona joven homosexual.</label>
+
+					<input type="radio" name="facRel" id="facRel24" value ="Trastorno psiquiátrico.">
+					<label for="facRel24" name="lFacRel" >Trastorno psiquiátrico.</label>
+
+					<input type="radio" name="facRel" id="facRel25" value ="Enfermedad psiquiátrica.">
+					<label for="facRel25" name="lFacRel" >Enfermedad psiquiátrica.</label>
+
+					<input type="radio" name="facRel" id="facRel26" value ="Abuso de sustancias.">
+					<label for="facRel26" name="lFacRel" >Abuso de sustancias.</label>
+				
+					<h3 class="bred">Factores de riesgo: Situacionales</h3>				
+
+					<input type="radio" name="facRel" id="facRel27" value ="Adolescentes que viven en entornos no tradicionales (p. ej., centros de intemamiento juvenil, prisión, centro de reinserción social, casa comunitaria).">
+					<label for="facRel27" name="lFacRel" >Adolescentes que viven en entornos no tradicionales (p. ej., centros de intemamiento juvenil, prisión, centro de reinserción social, casa comunitaria).</label>
+
+					<input type="radio" name="facRel" id="facRel28" value ="Nivel socioeconómico bajo.">
+					<label for="facRel28" name="lFacRel" >Nivel socioeconómico bajo.</label>
+
+					<input type="radio" name="facRel" id="facRel29" value ="Institucionalización.">
+					<label for="facRel29" name="lFacRel" >Institucionalización.</label>
+
+					<input type="radio" name="facRel" id="facRel30" value ="Vivir solo.">
+					<label for="facRel30" name="lFacRel" >Vivir solo.</label>
+
+					<input type="radio" name="facRel" id="facRel31" value ="Pérdida de autonomía.">
+					<label for="facRel31" name="lFacRel" >Pérdida de autonomía.</label>
+
+					<input type="radio" name="facRel" id="facRel32" value ="Pérdida de independencia.">
+					<label for="facRel32" name="lFacRel" >Pérdida de independencia.</label>
+
+					<input type="radio" name="facRel" id="facRel33" value ="Disponibilidad de armas de fuego en el domicilio.">
+					<label for="facRel33" name="lFacRel" >Disponibilidad de armas de fuego en el domicilio.</label>
+
+					<input type="radio" name="facRel" id="facRel34" value ="Traslado.">
+					<label for="facRel34" name="lFacRel" >Traslado.</label>
+
+					<input type="radio" name="facRel" id="facRel35" value ="Jubilación.">
+					<label for="facRel35" name="lFacRel" >Jubilación.</label>
+
+					<h3 class="bred">Factores de riesgo: Sociales</h3>									
+
+					<input type="radio" name="facRel" id="facRel36" value ="Suicidios en grupo.">
+					<label for="facRel36" name="lFacRel" >Suicidios en grupo.</label>
+				
+					<input type="radio" name="facRel" id="facRel37" value ="Problemas disciplinarios.">
+					<label for="facRel37" name="lFacRel" >Problemas disciplinarios.</label>
+
+					<input type="radio" name="facRel" id="facRel38" value ="Alteración de la vida familiar.">
+					<label for="facRel38" name="lFacRel" >Alteración de la vida familiar.</label>
+
+					<input type="radio" name="facRel" id="facRel39" value ="Duelo.">
+					<label for="facRel39" name="lFacRel" >Duelo.</label>
+
+					<input type="radio" name="facRel" id="facRel40" value ="Impotencia.">
+					<label for="facRel40" name="lFacRel" >Impotencia.</label>
+
+					<input type="radio" name="facRel" id="facRel41" value ="Desesperanza.">
+					<label for="facRel41" name="lFacRel" >Desesperanza.</label>
+
+					<input type="radio" name="facRel" id="facRel42" value ="Problemas legales.">
+					<label for="facRel42" name="lFacRel" >Problemas legales.</label>
+
+					<input type="radio" name="facRel" id="facRel43" value ="Soledad.">
+					<label for="facRel43" name="lFacRel" >Soledad.</label>
+
+					<input type="radio" name="facRel" id="facRel44" value ="Pérdida de relaciones importantes.">
+					<label for="facRel44" name="lFacRel" >Pérdida de relaciones importantes.</label>
+
+					<input type="radio" name="facRel" id="facRel45" value ="Sistemas de apoyo insuficientes.">
+					<label for="facRel45" name="lFacRel" >Sistemas de apoyo insuficientes.</label>
+
+					<input type="radio" name="facRel" id="facRel46" value ="Aislamiento social.">
+					<label for="facRel46" name="lFacRel" >Aislamiento social.</label>
+
+					<h3 class="bred">Factores de riesgo: Verbales</h3>		
+				
+					<input type="radio" name="facRel" id="facRel47" value ="Expresa deseos de morir.">
+					<label for="facRel47" name="lFacRel" >Expresa deseos de morir.</label>
+
+					<input type="radio" name="facRel" id="facRel48" value ="Amenazas de matarse.">
+					<label for="facRel48" name="lFacRel" >Amenazas de matarse.</label>
+	</fieldset>
+
+				<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+			</form>
+
+		</article>
+		<footer data-role="footer" data-mini="true" data-theme="b">
+			<h1>HYDRA-PDM/ENFERMERIA</h1>
+		</footer>
+	</section>
+
+	<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+        <header data-role="header"  data-theme="e">
+            <h1>VersionBeta NANOCNIC</h1>
+        </header>
+        <article data-role="content">
+            <div id="resultados" name="resultados" >
+
+            </div>
+        </article>
+        <footer data-role="footer" data-mini="true" data-theme="b">
+            <h1>HYDRA-PDM/ENFERMERIA</h1>
+        </footer>
+    </section>
+</body>
+</html>
