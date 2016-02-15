@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 5</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta 5: Náuseas    </p>
+				<p class="bblue" id="definicion">Definición: sensación subjetiva desagradable en la parte posterior de la garganta y el estómago que puede o no dar lugar a vómitos.  </p>
+				<p class="bgray" id="dominio">Dominio 12:  Confort  </p>
+				<p class="borange" id="clase">Clase 1: Confort físico  </p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Aversión a los alimentos.">
+						<label for="carDef1" name="lCarDef">Aversión a los alimentos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Sensación nauseosa.">
+						<label for="carDef2" name="lCarDef">Sensación nauseosa.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Aumento de la salivación.">
+						<label for="carDef3" name="lCarDef">Aumento de la salivación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Aumento de la deglución.">
+						<label for="carDef4" name="lCarDef">Aumento de la deglución.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Expresa tener náuseas.">
+						<label for="carDef5" name="lCarDef">Expresa tener náuseas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Expresa tener sabor agrio en la boca.">
+						<label for="carDef6" name="lCarDef">Expresa tener sabor agrio en la boca.</label>
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+
+						<h4>Biofísicos</h4>
+						<input type="radio" name="facRel" id="facRel1" value ="Trastornos bioquímicos (p. ej., uremia, cetoacidosis diabética)." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Trastornos bioquímicos (p. ej., uremia, cetoacidosis diabética).</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Enfermedad esofágica.">
+						<label for="facRel2" name="lFacRel" >Enfermedad esofágica.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Distensión gástrica.">
+						<label for="facRel3" name="lFacRel" >Distensión gástrica.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Irritación gástrica.">
+						<label for="facRel4" name="lFacRel" >Irritación gástrica.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Aumento de la presión intracraneal.">
+						<label for="facRel5" name="lFacRel" >Aumento de la presión intracraneal.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Tumores intraabdominales.">
+						<label for="facRel6" name="lFacRel" >Tumores intraabdominales.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Laberintitis.">
+						<label for="facRel7" name="lFacRel" >Laberintitis.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Tensión en la cápsula hepática.">
+						<label for="facRel8" name="lFacRel" >Tensión en la cápsula hepática.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Tumores localizados (p. ej., neuroma acústico, tumores cerebrales primarios o secimdarios, metástasis óseas en la base del cráneo).">
+						<label for="facRel9" name="lFacRel" >Tumores localizados (p. ej., neuroma acústico, tumores cerebrales primarios o secimdarios, metástasis óseas en la base del cráneo).</label>
+
+						<input type="radio" name="facRel" id="facRel10" value ="Enfermedad de Méniére.">
+						<label for="facRel10" name="lFacRel" >Enfermedad de Méniére.</label>
+
+						<input type="radio" name="facRel" id="facRel11" value ="Meningitis.">
+						<label for="facRel11" name="lFacRel" >Meningitis.</label>
+
+						<input type="radio" name="facRel" id="facRel12" value ="Mareo causado por el movimiento.">
+						<label for="facRel12" name="lFacRel" >Mareo causado por el movimiento.</label>
+
+						<input type="radio" name="facRel" id="facRel13" value ="Dolor.">
+						<label for="facRel13" name="lFacRel" >Dolor.</label>
+
+						<input type="radio" name="facRel" id="facRel14" value ="Enfermedad pancreática.">
+						<label for="facRel14" name="lFacRel" >Enfermedad pancreática.</label>
+
+						<input type="radio" name="facRel" id="facRel15" value ="Embarazo.">
+						<label for="facRel15" name="lFacRel" >Embarazo.</label>
+
+						<input type="radio" name="facRel" id="facRel16" value ="Tensión en la cápsula esplénica.">
+						<label for="facRel16" name="lFacRel" >Tensión en la cápsula esplénica.</label>
+
+						<input type="radio" name="facRel" id="facRel17" value ="Toxinas (p. ej., péptidos producidos por un tumor, metabolitos anormales asociados a cáncer).">
+						<label for="facRel17" name="lFacRel" >Toxinas (p. ej., péptidos producidos por un tumor, metabolitos anormales asociados a cáncer).</label>
+
+						<h4>Situacionales</h4>
+
+						<input type="radio" name="facRel" id="facRel18" value ="Ansiedad.">
+						<label for="facRel18" name="lFacRel" >Ansiedad.</label>
+
+						<input type="radio" name="facRel" id="facRel19" value ="Temor.">
+						<label for="facRel19" name="lFacRel" >Temor.</label>
+
+						<input type="radio" name="facRel" id="facRel20" value ="Malos olores.">
+						<label for="facRel20" name="lFacRel" >Malos olores.</label>
+
+						<input type="radio" name="facRel" id="facRel21" value ="Sabores desagradables.">
+						<label for="facRel21" name="lFacRel" >Sabores desagradables.</label>
+
+						<input type="radio" name="facRel" id="facRel22" value ="Dolor.">
+						<label for="facRel22" name="lFacRel" >Dolor.</label>
+
+						<input type="radio" name="facRel" id="facRel23" value ="Factores psicológicos.">
+						<label for="facRel23" name="lFacRel" >Factores psicológicos.</label>
+
+						<input type="radio" name="facRel" id="facRel24" value ="Estimulación visual desagradable.">
+						<label for="facRel24" name="lFacRel" >Estimulación visual desagradable.</label>
+
+						<h4>Del tratamiento</h4>
+
+						<input type="radio" name="facRel" id="facRel25" value ="Distensión gástrica.">
+						<label for="facRel25" name="lFacRel" >Distensión gástrica.</label>
+
+						<input type="radio" name="facRel" id="facRel26" value ="Irritación gástrica.">
+						<label for="facRel26" name="lFacRel" >Irritación gástrica.</label>
+
+						<input type="radio" name="facRel" id="facRel27" value ="Fármacos.">
+						<label for="facRel27" name="lFacRel" >Fármacos.</label>
+
+
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

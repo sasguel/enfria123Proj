@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+		<title>NANOCNIC</title>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+		<link rel="stylesheet" href="../../thema.css"/>
+		<script type="text/javascript" src="../js/resul.js"></script>
+</head>
+
+<body>
+	<section id="index" data-role="page" data-title="NANOCNIC">
+		<header data-role="header"  data-theme="e">	
+			<h1>VersionBeta NANOCNIC</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:history.go(-2)">Libros</a></li>
+					<li><a href="javascript:history.go(-1)">NANDA</a></li>
+					<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 20</a></li>
+				</ul>
+			</div>
+		</header>
+		<article data-role="content">
+			<p class="bgreen" id="etiqueta">Etiqueta 20: Riesgo de traumatismo</p>
+			<p class="bblue" id="definicion">Definición: Riesgo de lesión tisular accidental (p. ej., herida, quemadura, fractura).</p>
+			<p class="bgray" id="dominio">Dominio 11: Seguridad/Protección</p>
+			<p class="borange" id="clase">Clase 2: lesión física</p>
+
+			<form  id="form1" name="form1" method="post" action="#">
+				<fieldset data-role="controlgroup">
+					<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+					<input type="checkbox" name="carDef" id="carDef1" value ="no hay">
+					<label for="carDef1" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef2" value ="no hay">
+					<label for="carDef2" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef3" value ="no hay">
+					<label for="carDef3" name="lCarDef">no hay</label>
+
+				</fieldset>
+			
+				<fieldset data-role="controlgroup">
+					<h3 class="bred">Factores de riesgo: Externos</h3>
+					
+					<input type="radio" name="facRel" id="facRel1" value ="Accesibilidad a armas de fuego." checked="cheked">
+					<label for="facRel1" name="lFacRel" >Accesibilidad a armas de fuego.</label>
+
+					<input type="radio" name="facRel" id="facRel2" value ="Baño en agua muy caliente (p. ej., baño no supervisado de niños pequeños).">
+					<label for="facRel2" name="lFacRel" >Baño en agua muy caliente (p. ej., baño no supervisado de niños pequeños).</label>
+
+					<input type="radio" name="facRel" id="facRel3" value ="Niños jugando con objetos peligrosos.">
+					<label for="facRel3" name="lFacRel" >Niños jugando con objetos peligrosos.</label>
+
+					<input type="radio" name="facRel" id="facRel4" value ="Niños que viajan en el asiento delantero del coche.">
+					<label for="facRel4" name="lFacRel" >Niños que viajan en el asiento delantero del coche.</label>
+
+					<input type="radio" name="facRel" id="facRel5" value ="Contacto con corrosivos.">
+					<label for="facRel5" name="lFacRel" >Contacto con corrosivos.</label>
+
+					<input type="radio" name="facRel" id="facRel6" value ="Contacto con frío intenso.">
+					<label for="facRel6" name="lFacRel" >Contacto con frío intenso.</label>
+				
+					<input type="radio" name="facRel" id="facRel7" value ="Contacto con maquinaria que se mueve con gran rapidez.">
+					<label for="facRel7" name="lFacRel" >Contacto con maquinaria que se mueve con gran rapidez.</label>
+
+					<input type="radio" name="facRel" id="facRel8" value ="Aparatos defectuosos.">
+					<label for="facRel8" name="lFacRel" >Aparatos defectuosos.</label>
+
+					<input type="radio" name="facRel" id="facRel9" value ="Retraso en el encendido de dispositivos de gas.">
+					<label for="facRel9" name="lFacRel" >Retraso en el encendido de dispositivos de gas.</label>
+
+					<input type="radio" name="facRel" id="facRel10" value ="Conducir vehículos mecánicos inseguros.">
+					<label for="facRel10" name="lFacRel" >Conducir vehículos mecánicos inseguros.</label>
+
+					<input type="radio" name="facRel" id="facRel11" value ="Conducir a velocidad excesiva.">
+					<label for="facRel11" name="lFacRel" >Conducir a velocidad excesiva.</label>
+
+					<input type="radio" name="facRel" id="facRel12" value ="Conducir en estado de intoxicación.">
+					<label for="facRel12" name="lFacRel" >Conducir en estado de intoxicación.</label>
+
+					<input type="radio" name="facRel" id="facRel13" value ="Conducir sin las ayudas visuales necesarias.">
+					<label for="facRel13" name="lFacRel" >Conducir sin las ayudas visuales necesarias.</label>
+
+					<input type="radio" name="facRel" id="facRel14" value ="Entrar en habitaciones no iluminadas.">
+					<label for="facRel14" name="lFacRel" >Entrar en habitaciones no iluminadas.</label>
+
+					<input type="radio" name="facRel" id="facRel15" value ="Experimentar con productos químicos.">
+					<label for="facRel15" name="lFacRel" >Experimentar con productos químicos.</label>
+
+					<input type="radio" name="facRel" id="facRel16" value ="Exposición a maquinaria peligrosa.">
+					<label for="facRel16" name="lFacRel" >Exposición a maquinaria peligrosa.</label>
+
+					<input type="radio" name="facRel" id="facRel17" value ="Enchufes eléctricos defectuosos.">
+					<label for="facRel17" name="lFacRel" >Enchufes eléctricos defectuosos.</label>
+
+					<input type="radio" name="facRel" id="facRel18" value ="Ropa de niños inflamable.">
+					<label for="facRel18" name="lFacRel" >Ropa de niños inflamable.</label>
+
+					<input type="radio" name="facRel" id="facRel19" value ="Juguetes de niños inflamables.">
+					<label for="facRel19" name="lFacRel" >Juguetes de niños inflamables.</label>
+
+					<input type="radio" name="facRel" id="facRel20" value ="Cables pelados.">
+					<label for="facRel20" name="lFacRel" >Cables pelados.</label>
+
+					<input type="radio" name="facRel" id="facRel21" value ="Acumulación de residuos grasos en la cocina.">
+					<label for="facRel21" name="lFacRel" >Acumulación de residuos grasos en la cocina.</label>
+
+					<input type="radio" name="facRel" id="facRel22" value ="Camas altas.">
+					<label for="facRel22" name="lFacRel" >Camas altas.</label>
+
+					<input type="radio" name="facRel" id="facRel23" value ="Barrio con alta tasa de delincuencia.">
+					<label for="facRel23" name="lFacRel" >Barrio con alta tasa de delincuencia.</label>
+
+					<input type="radio" name="facRel" id="facRel24" value ="Escaleras con barandillas inadecuadas.">
+					<label for="facRel24" name="lFacRel" >Escaleras con barandillas inadecuadas.</label>
+
+					<input type="radio" name="facRel" id="facRel25" value ="Combustible almacenado de manera inadecuada (p. ej., cerillas, trapos manchados de aceite).">
+					<label for="facRel25" name="lFacRel" >Combustible almacenado de manera inadecuada (p. ej., cerillas, trapos manchados de aceite).</label>
+
+					<input type="radio" name="facRel" id="facRel26" value ="Productos cáusticos almacenados inadecuadamente (p. ej., lejía).">
+					<label for="facRel26" name="lFacRel" >Productos cáusticos almacenados inadecuadamente (p. ej., lejía).</label>
+				
+					<input type="radio" name="facRel" id="facRel27" value ="Mecanismos de solicitud de ayuda inadecuados para las personas encamadas.">
+					<label for="facRel27" name="lFacRel" >Mecanismos de solicitud de ayuda inadecuados para las personas encamadas.</label>
+
+					<input type="radio" name="facRel" id="facRel28" value ="Cuchillos almacenados sin protección.">
+					<label for="facRel28" name="lFacRel" >Cuchillos almacenados sin protección.</label>
+
+					<input type="radio" name="facRel" id="facRel29" value ="Falta de puerta en la parte superior de las escaleras.">
+					<label for="facRel29" name="lFacRel" >Falta de puerta en la parte superior de las escaleras.</label>
+
+					<input type="radio" name="facRel" id="facRel30" value ="Falta de protección de las fuentes de calor.">
+					<label for="facRel30" name="lFacRel" >Falta de protección de las fuentes de calor.</label>
+
+					<input type="radio" name="facRel" id="facRel31" value ="Falta de material antideslizante en el baño.">
+					<label for="facRel31" name="lFacRel" >Falta de material antideslizante en el baño.</label>
+
+					<input type="radio" name="facRel" id="facRel32" value ="Falta de material antideslizante en la ducha.">
+					<label for="facRel32" name="lFacRel" >Falta de material antideslizante en la ducha.</label>
+
+					<input type="radio" name="facRel" id="facRel33" value ="Grandes carámbanos de hielo colgando del tejado.">
+					<label for="facRel33" name="lFacRel" >Grandes carámbanos de hielo colgando del tejado.</label>
+
+					<input type="radio" name="facRel" id="facRel34" value ="Uso incorrecto del casco necesario.">
+					<label for="facRel34" name="lFacRel" >Uso incorrecto del casco necesario.</label>
+
+					<input type="radio" name="facRel" id="facRel35" value ="Uso incorrecto de las sujeciones en los asientos.">
+					<label for="facRel35" name="lFacRel" >Uso incorrecto de las sujeciones en los asientos.</label>
+
+					<input type="radio" name="facRel" id="facRel36" value ="No utilización de las sujeciones en los asientos.">
+					<label for="facRel36" name="lFacRel" >No utilización de las sujeciones en los asientos.</label>
+				
+					<input type="radio" name="facRel" id="facRel37" value ="Obstrucción de los pasillos.">
+					<label for="facRel37" name="lFacRel" >Obstrucción de los pasillos.</label>
+
+					<input type="radio" name="facRel" id="facRel38" value ="Sobreexposición a radiaciones.">
+					<label for="facRel38" name="lFacRel" >Sobreexposición a radiaciones.</label>
+
+					<input type="radio" name="facRel" id="facRel39" value ="Sobrecarga de los enchufes eléctricos.">
+					<label for="facRel39" name="lFacRel" >Sobrecarga de los enchufes eléctricos.</label>
+
+					<input type="radio" name="facRel" id="facRel40" value ="Sobrecarga de las cajas de fusibles.">
+					<label for="facRel40" name="lFacRel" >Sobrecarga de las cajas de fusibles.</label>
+
+					<input type="radio" name="facRel" id="facRel41" value ="Proximidad física a ima zona de paso de vehículos (p. ej., avenidas, callejones, vías de tren).">
+					<label for="facRel41" name="lFacRel" >Proximidad física a ima zona de paso de vehículos (p. ej., avenidas, callejones, vías de tren).</label>
+
+					<input type="radio" name="facRel" id="facRel42" value ="Jugar con explosivos.">
+					<label for="facRel42" name="lFacRel" >Jugar con explosivos.</label>
+
+					<input type="radio" name="facRel" id="facRel43" value ="Asas o mangos de recipientes que sobresalen del borde de la cocina.">
+					<label for="facRel43" name="lFacRel" >Asas o mangos de recipientes que sobresalen del borde de la cocina.</label>
+
+					<input type="radio" name="facRel" id="facRel44" value ="Potencial ignición de fugas de gas.">
+					<label for="facRel44" name="lFacRel" >Potencial ignición de fugas de gas.</label>
+
+					<input type="radio" name="facRel" id="facRel45" value ="Suelos resbaladizos (p. ej., húmedos o muy encerados).">
+					<label for="facRel45" name="lFacRel" >Suelos resbaladizos (p. ej., húmedos o muy encerados).</label>
+
+					<input type="radio" name="facRel" id="facRel46" value ="Fumar en la cama.">
+					<label for="facRel46" name="lFacRel" >Fumar en la cama.</label>
+				
+					<input type="radio" name="facRel" id="facRel47" value ="Fumar cerca de una fuente de oxígeno.">
+					<label for="facRel47" name="lFacRel" >Fumar cerca de una fuente de oxígeno.</label>
+
+					<input type="radio" name="facRel" id="facRel48" value ="Forcejear contra las sujeciones físicas.">
+					<label for="facRel48" name="lFacRel" >Forcejear contra las sujeciones físicas.</label>
+
+					<input type="radio" name="facRel" id="facRel49" value ="Alfombras sin fijar al suelo.">
+					<label for="facRel49" name="lFacRel" >Alfombras sin fijar al suelo.</label>
+
+					<input type="radio" name="facRel" id="facRel50" value ="Cables eléctricos sueltos.">
+					<label for="facRel50" name="lFacRel" >Cables eléctricos sueltos.</label>
+
+					<input type="radio" name="facRel" id="facRel51" value ="Carretera poco segura.">
+					<label for="facRel51" name="lFacRel" >Carretera poco segura.</label>
+
+					<input type="radio" name="facRel" id="facRel52" value ="Caminos poco seguros.">
+					<label for="facRel52" name="lFacRel" >Caminos poco seguros.</label>
+
+					<input type="radio" name="facRel" id="facRel53" value ="Falta de protección de las ventarías en casas con niños pequeños.">
+					<label for="facRel53" name="lFacRel" >Falta de protección de las ventarías en casas con niños pequeños.</label>
+
+					<input type="radio" name="facRel" id="facRel54" value ="Uso de vajilla resquebrajada.">
+					<label for="facRel54" name="lFacRel" >Uso de vajilla resquebrajada.</label>
+
+					<input type="radio" name="facRel" id="facRel55" value ="Uso de sillas inestables.">
+					<label for="facRel55" name="lFacRel" >Uso de sillas inestables.</label>
+
+					<input type="radio" name="facRel" id="facRel56" value ="Uso de escaleras inestables.">
+					<label for="facRel56" name="lFacRel" >Uso de escaleras inestables.</label>
+				
+					<input type="radio" name="facRel" id="facRel57" value ="Llevar ropas sueltas cerca de las llamas.">
+					<label for="facRel57" name="lFacRel" >Llevar ropas sueltas cerca de las llamas.</label>
+
+					<h3 class="bred">Factores de riesgo: Internos</h3>
+
+					<input type="radio" name="facRel" id="facRel58" value ="Problemas de equilibrio.">
+					<label for="facRel58" name="lFacRel" >Problemas de equilibrio.</label>
+
+					<input type="radio" name="facRel" id="facRel59" value ="Dificultades cognitivas.">
+					<label for="facRel59" name="lFacRel" >Dificultades cognitivas.</label>
+
+					<input type="radio" name="facRel" id="facRel60" value ="Conocimientos deficientes sobre procedimientos de seguridad.">
+					<label for="facRel60" name="lFacRel" >Conocimientos deficientes sobre procedimientos de seguridad.</label>
+
+					<input type="radio" name="facRel" id="facRel61" value ="Conocimientos deficientes sobre precauciones de seguridad.">
+					<label for="facRel61" name="lFacRel" >Conocimientos deficientes sobre precauciones de seguridad.</label>
+
+					<input type="radio" name="facRel" id="facRel62" value ="Nivel socioeconómico bajo.">
+					<label for="facRel62" name="lFacRel" >Nivel socioeconómico bajo.</label>
+
+					<input type="radio" name="facRel" id="facRel63" value ="Dificultades emocionales.">
+					<label for="facRel63" name="lFacRel" >Dificultades emocionales.</label>
+
+					<input type="radio" name="facRel" id="facRel64" value ="Historia de traumatismos previos.">
+					<label for="facRel64" name="lFacRel" >Historia de traumatismos previos.</label>
+
+					<input type="radio" name="facRel" id="facRel65" value ="Mala visión.">
+					<label for="facRel65" name="lFacRel" >Mala visión.</label>
+
+					<input type="radio" name="facRel" id="facRel66" value ="Disminución de la coordinación ojo-mano.">
+					<label for="facRel66" name="lFacRel" >Disminución de la coordinación ojo-mano.</label>
+				
+					<input type="radio" name="facRel" id="facRel67" value ="Disminución de la coordinación muscular.">
+					<label for="facRel67" name="lFacRel" >Disminución de la coordinación muscular.</label>
+
+					<input type="radio" name="facRel" id="facRel68" value ="Disminución de la sensibilidad.">
+					<label for="facRel68" name="lFacRel" >Disminución de la sensibilidad.</label>
+
+					<input type="radio" name="facRel" id="facRel69" value ="Debilidad.">
+					<label for="facRel69" name="lFacRel" >Debilidad.</label>	
+	</fieldset>
+
+				<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+			</form>
+
+		</article>
+		<footer data-role="footer" data-mini="true" data-theme="b">
+			<h1>HYDRA-PDM/ENFERMERIA</h1>
+		</footer>
+	</section>
+
+	<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+        <header data-role="header"  data-theme="e">
+            <h1>VersionBeta NANOCNIC</h1>
+        </header>
+        <article data-role="content">
+            <div id="resultados" name="resultados" >
+
+            </div>
+        </article>
+        <footer data-role="footer" data-mini="true" data-theme="b">
+            <h1>HYDRA-PDM/ENFERMERIA</h1>
+        </footer>
+    </section>
+</body>
+</html>

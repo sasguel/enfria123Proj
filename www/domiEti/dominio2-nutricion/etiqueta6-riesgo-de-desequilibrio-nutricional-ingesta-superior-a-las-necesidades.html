@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta #6</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta 6: Riesgo de desequilibrio nutricional ingesta superior a las necesidades </p>
+				<p class="bblue" id="definicion">Definición: Riesgo de aporte de nutrientes que excede las necesidades metabólicas  </p>
+				<p class="bgray" id="dominio">Dominio 2: Nutrición </p>
+				<p class="borange" id="clase">Clase 1: Ingestión </p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 id="caractRiesgo" class="bred">Factores de riesgo </h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Concentración de la toma de alimentos al final del día.">
+						<label for="carDef1" name="lCarDef">Concentración de la toma de alimentos al final del día.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Patrones alimentarios disfuncionales.">
+						<label for="carDef2" name="lCarDef">Patrones alimentarios disfuncionales.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Comer en respuesta a claves externas (p. ej., hora del día, situación social).">
+						<label for="carDef3" name="lCarDef">Comer en respuesta a claves externas (p. ej., hora del día, situación social).</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Comer en respuesta a claves internas distintas al hambre (p. ej., ansiedad).">
+						<label for="carDef4" name="lCarDef">Comer en respuesta a claves internas distintas al hambre (p. ej., ansiedad).</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Peso basal cada vez más alto al inicio de cada embarazo.">
+						<label for="carDef5" name="lCarDef">Peso basal cada vez más alto al inicio de cada embarazo.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Percepción de la alimentación como medida de bienestar. ">
+						<label for="carDef6" name="lCarDef">Percepción de la alimentación como medida de bienestar. </label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Percepción de la alimentación como medida de recompensa. ">
+						<label for="carDef7" name="lCarDef">Percepción de la alimentación como medida de recompensa. </label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Compartir la comida con otras actividades.">
+						<label for="carDef8" name="lCarDef">Compartir la comida con otras actividades.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Obesidad parental.">
+						<label for="carDef9" name="lCarDef">Obesidad parental.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Rápida transición en los percentiles de crecimiento en los niños.">
+						<label for="carDef10" name="lCarDef">Rápida transición en los percentiles de crecimiento en los niños.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Expresa realizar consumo de alimentos sólidos como principal fuente de alimentación antes de los 5 meses de edad.">
+						<label for="carDef11" name="lCarDef">Expresa realizar consumo de alimentos sólidos como principal fuente de alimentación antes de los 5 meses de edad.</label>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Estilo de vida sedentario.">
+						<label for="carDef12" name="lCarDef">Estilo de vida sedentario.</label>
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Ninguno Por El Momento" checked="cheked">
+						<label for="facRel1" name="lFacRel" >Ninguno Por El Momento</label>
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 3</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Conflicto de decisiones</p>
+				<p class="bblue" id="definicion">Definición: Incertidumbre sobre el curso de la acción a tomar cuando la elección entre acciones diversas implica riesgo, pérdida o supone un reto para los valores y creencias personales.  </p>
+				<p class="bgray" id="dominio">Dominio 10: Principios vitales</p>
+				<p class="borange" id="clase">Clase 3:  Congruencia entre Valores/Creencias/Acciones </p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Retraso en la toma de decisiones.">
+						<label for="carDef1" name="lCarDef">Retraso en la toma de decisiones.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Signos físicos de distrés (p. ej., aumento de la frecuencia cardíaca, inquietud).">
+						<label for="carDef2" name="lCarDef">Signos físicos de distrés (p. ej., aumento de la frecuencia cardíaca, inquietud).</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Signos físicos de tensión.">
+						<label for="carDef3" name="lCarDef">Signos físicos de tensión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Cuestionamiento de los principios morales mientras se intenta tomar una decisión.">
+						<label for="carDef4" name="lCarDef">Cuestionamiento de los principios morales mientras se intenta tomar una decisión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Cuestionamiento de las reglas morales mientras se intenta tomar una decisión.">
+						<label for="carDef5" name="lCarDef">Cuestionamiento de las reglas morales mientras se intenta tomar una decisión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Cuestionamiento de los valores morales mientras se intenta tomar unas decisión.">
+						<label for="carDef6" name="lCarDef">Cuestionamiento de los valores morales mientras se intenta tomar unas decisión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Cuestionamiento de las creencias personales mientras se intenta tomar una decisión.">
+						<label for="carDef7" name="lCarDef">Cuestionamiento de las creencias personales mientras se intenta tomar una decisión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Cuestionamiento de los valores personales mientras se intenta tomar una decisión.">
+						<label for="carDef8" name="lCarDef">Cuestionamiento de los valores personales mientras se intenta tomar una decisión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Egocentrismo.">
+						<label for="carDef9" name="lCarDef">Egocentrismo.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Vacilación entre elecciones alternativas.">
+						<label for="carDef10" name="lCarDef">Vacilación entre elecciones alternativas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Verbaliza sentimientos de angustia mientras se intenta tomar una decisión.">
+						<label for="carDef11" name="lCarDef">Verbaliza sentimientos de angustia mientras se intenta tomar una decisión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Verbaliza incertidumbre sobre las elecciones.">
+						<label for="carDef12" name="lCarDef">Verbaliza incertidumbre sobre las elecciones.</label>
+
+						<input type="checkbox" name="carDef" id="carDef13" value ="Verbaliza las consecuencias no deseadas de las acciones alternativas a considerar.">
+						<label for="carDef13" name="lCarDef">Verbaliza las consecuencias no deseadas de las acciones alternativas a considerar.</label>
+
+                    </fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Fuentes de información divergentes." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Fuentes de información divergentes.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Interferencia con la toma de decisiones.">
+						<label for="facRel2" name="lFacRel" >Interferencia con la toma de decisiones.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Falta de experiencia en la toma de decisiones.">
+						<label for="facRel3" name="lFacRel" >Falta de experiencia en la toma de decisiones.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Falta de información relevante.">
+						<label for="facRel4" name="lFacRel" >Falta de información relevante.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Obligaciones morales que exigen no realizar una acción.">
+						<label for="facRel5" name="lFacRel" >Obligaciones morales que exigen no realizar una acción.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Obligaciones morales que exigen realizar una acción.">
+						<label for="facRel6" name="lFacRel" >Obligaciones morales que exigen realizar una acción.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Principios morales que apoyan las distintas opciones mutuamente contradictorias.">
+						<label for="facRel7" name="lFacRel" >Principios morales que apoyan las distintas opciones mutuamente contradictorias.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Reglas morales que apoyan las distintas opciones mutuamente contradictorias.">
+						<label for="facRel8" name="lFacRel" >Reglas morales que apoyan las distintas opciones mutuamente contradictorias.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Valores morales que apoyan las distintas opciones mutuamente contradictorias.">
+						<label for="facRel9" name="lFacRel" >Valores morales que apoyan las distintas opciones mutuamente contradictorias.</label>
+
+						<input type="radio" name="facRel" id="facRe20" value ="Múltiples fuentes de información.">
+						<label for="facRe20" name="lFacRel" >Múltiples fuentes de información.</label>
+
+						<input type="radio" name="facRel" id="facRe21" value ="Percepción de amenaza al sistema de valores.">
+						<label for="facRe21" name="lFacRel" >Percepción de amenaza al sistema de valores.</label>
+
+						<input type="radio" name="facRel" id="facRe22" value ="Déficit del sistema de apoyo.">
+						<label for="facRe22" name="lFacRel" >Déficit del sistema de apoyo.</label>
+
+						<input type="radio" name="facRel" id="facRe23" value ="Creencias personales poco claras.">
+						<label for="facRe23" name="lFacRel" >Creencias personales poco claras.</label>
+
+						<input type="radio" name="facRel" id="facRe24" value ="Valores personales poco claros.">
+						<label for="facRe24" name="lFacRel" >Valores personales poco claros.</label>
+
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

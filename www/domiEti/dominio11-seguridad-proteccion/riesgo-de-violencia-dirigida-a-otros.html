@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+		<title>NANOCNIC</title>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+		<link rel="stylesheet" href="../../thema.css"/>
+		<script type="text/javascript" src="../js/resul.js"></script>
+</head>
+
+<body>
+	<section id="index" data-role="page" data-title="NANOCNIC">
+		<header data-role="header"  data-theme="e">	
+			<h1>VersionBeta NANOCNIC</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:history.go(-2)">Libros</a></li>
+					<li><a href="javascript:history.go(-1)">NANDA</a></li>
+					<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 26</a></li>
+				</ul>
+			</div>
+		</header>
+		<article data-role="content">
+			<p class="bgreen" id="etiqueta">Etiqueta 26: Riesgo de violencia dirigida a otros</p>
+			<p class="bblue" id="definicion">Definición: Riesgo de conductas en que la persona demuestre que puede ser física, emocional y/o sexualmente lesiva para otros.</p>
+			<p class="bgray" id="dominio">Dominio 11: Seguridad/Protección</p>
+			<p class="borange" id="clase">Clase 3: Violencia</p>
+
+			<form  id="form1" name="form1" method="post" action="#">
+				<fieldset data-role="controlgroup">
+					<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+					<input type="checkbox" name="carDef" id="carDef1" value ="no hay">
+					<label for="carDef1" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef2" value ="no hay">
+					<label for="carDef2" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef3" value ="no hay">
+					<label for="carDef3" name="lCarDef">no hay</label>
+				</fieldset>
+			
+				<fieldset data-role="controlgroup">
+					<h3 class="bred">Factores de riesgo</h3>
+
+					<input type="radio" name="facRel" id="facRel1" value ="Disponibilidad de arma(s) de fuego." checked="cheked">
+					<label for="facRel1" name="lFacRel" >Disponibilidad de arma(s) de fuego.</label>
+
+					<input type="radio" name="facRel" id="facRel2" value ="Lenguaje corporal (p. ej., postura rígida, pviños y mandíbulas contraídos, hiperactividad, deambular, falta de aliento, posturas amenazadoras).">
+					<label for="facRel2" name="lFacRel" >Lenguaje corporal (p. ej., postura rígida, pviños y mandíbulas contraídos, hiperactividad, deambular, falta de aliento, posturas amenazadoras).</label>
+
+					<input type="radio" name="facRel" id="facRel3" value ="Deterioro cognitivo (p. ej., trastornos del aprendizaje, déficit de atención, disminución del funcionamiento intelectual).">
+					<label for="facRel3" name="lFacRel" >Deterioro cognitivo (p. ej., trastornos del aprendizaje, déficit de atención, disminución del funcionamiento intelectual).</label>
+
+					<input type="radio" name="facRel" id="facRel4" value ="Crueldad con los animales.">
+					<label for="facRel4" name="lFacRel" >Crueldad con los animales.</label>
+
+					<input type="radio" name="facRel" id="facRel5" value ="Pirómano.">
+					<label for="facRel5" name="lFacRel" >Pirómano.</label>
+
+					<input type="radio" name="facRel" id="facRel6" value ="Historia de maltrato infantil.">
+					<label for="facRel6" name="lFacRel" >Historia de maltrato infantil.</label>
+				
+					<input type="radio" name="facRel" id="facRel7" value ="Historia de violencia indirecta (p. ej., romper las ropas, arrancar los objetos que hay en las paredes, pintar las paredes, orinar en el suelo, defecar en el suelo, dar patadas, coger rabietas, correr por los pasillos, gritar, lanzar objetos, romper ventanas, golpear las puertas, insinuaciones sexuales).">
+					<label for="facRel7" name="lFacRel" >Historia de violencia indirecta (p. ej., romper las ropas, arrancar los objetos que hay en las paredes, pintar las paredes, orinar en el suelo, defecar en el suelo, dar patadas, coger rabietas, correr por los pasillos, gritar, lanzar objetos, romper ventanas, golpear las puertas, insinuaciones sexuales).</label>
+
+					<input type="radio" name="facRel" id="facRel8" value ="Historia de violencia contra otros (p. ej., pegar, dar patadas, escupir, arañar, lanzar objetos, morder, intentar violar, violar, molestar sexualmente, orinar/defecar sobre una persona).">
+					<label for="facRel8" name="lFacRel" >Historia de violencia contra otros (p. ej., pegar, dar patadas, escupir, arañar, lanzar objetos, morder, intentar violar, violar, molestar sexualmente, orinar/defecar sobre una persona).</label>
+
+					<input type="radio" name="facRel" id="facRel9" value ="Historia de abuso de sustancias.">
+					<label for="facRel9" name="lFacRel" >Historia de abuso de sustancias.</label>
+
+					<input type="radio" name="facRel" id="facRel10" value ="Historia de amenazas de violencia (p. ej., amenazas verbales contra la propiedad o las personas, amenazas sociales, maldiciones, notas/cartas o gestos amenazadores, amenazas sexuales).">
+					<label for="facRel10" name="lFacRel" >Historia de amenazas de violencia (p. ej., amenazas verbales contra la propiedad o las personas, amenazas sociales, maldiciones, notas/cartas o gestos amenazadores, amenazas sexuales).</label>
+
+					<input type="radio" name="facRel" id="facRel11" value ="Historia de conducta antisocial violenta (p. ej., robar, tomar prestadas cosas de forma persistente, demandas continuas de privilegios, interrupción constante en las reuniones, negativa a comer, negativa a tomar la medicación, desatender las instrucciones).">
+					<label for="facRel11" name="lFacRel" >Historia de conducta antisocial violenta (p. ej., robar, tomar prestadas cosas de forma persistente, demandas continuas de privilegios, interrupción constante en las reuniones, negativa a comer, negativa a tomar la medicación, desatender las instrucciones).</label>
+
+					<input type="radio" name="facRel" id="facRel12" value ="Historia de presenciar violencia familiar.">
+					<label for="facRel12" name="lFacRel" >Historia de presenciar violencia familiar.</label>
+
+					<input type="radio" name="facRel" id="facRel13" value ="Impulsividad.">
+					<label for="facRel13" name="lFacRel" >Impulsividad.</label>
+
+					<input type="radio" name="facRel" id="facRel14" value ="Delitos con vehículos motorizados (p. ej., frecuentes infracciones de tráfico, uso del vehículo motorizado para liberar la ira).">
+					<label for="facRel14" name="lFacRel" >Delitos con vehículos motorizados (p. ej., frecuentes infracciones de tráfico, uso del vehículo motorizado para liberar la ira).</label>
+
+					<input type="radio" name="facRel" id="facRel15" value ="Deterioro neurológico (p. ej., EEG, tomografía computarizada o resonancia positivos, hallazgos neurológicos, traumatismo craneal, trastornos convulsivos).">
+					<label for="facRel15" name="lFacRel" >Deterioro neurológico (p. ej., EEG, tomografía computarizada o resonancia positivos, hallazgos neurológicos, traumatismo craneal, trastornos convulsivos).</label>
+
+					<input type="radio" name="facRel" id="facRel16" value ="Intoxicación patológica.">
+					<label for="facRel16" name="lFacRel" >Intoxicación patológica.</label>
+
+					<input type="radio" name="facRel" id="facRel17" value ="Complicaciones perinatales.">
+					<label for="facRel17" name="lFacRel" >Complicaciones perinatales.</label>
+
+					<input type="radio" name="facRel" id="facRel18" value ="Complicaciones prenatales.">
+					<label for="facRel18" name="lFacRel" >Complicaciones prenatales.</label>
+
+					<input type="radio" name="facRel" id="facRel19" value ="Sintomatología psicótica (p. ej., auditiva, visual, alucinaciones en forma de órdenes; delirios paranoides; procesos de pensamiento vagos, erráticos, ilógicos).">
+					<label for="facRel19" name="lFacRel" >Sintomatología psicótica (p. ej., auditiva, visual, alucinaciones en forma de órdenes; delirios paranoides; procesos de pensamiento vagos, erráticos, ilógicos).</label>
+
+					<input type="radio" name="facRel" id="facRel20" value ="Conducta suicida.">
+					<label for="facRel20" name="lFacRel" >Conducta suicida.</label>
+
+	</fieldset>
+
+				<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+			</form>
+
+		</article>
+		<footer data-role="footer" data-mini="true" data-theme="b">
+			<h1>HYDRA-PDM/ENFERMERIA</h1>
+		</footer>
+	</section>
+
+	<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+        <header data-role="header"  data-theme="e">
+            <h1>VersionBeta NANOCNIC</h1>
+        </header>
+        <article data-role="content">
+            <div id="resultados" name="resultados" >
+
+            </div>
+        </article>
+        <footer data-role="footer" data-mini="true" data-theme="b">
+            <h1>HYDRA-PDM/ENFERMERIA</h1>
+        </footer>
+    </section>
+</body>
+</html>

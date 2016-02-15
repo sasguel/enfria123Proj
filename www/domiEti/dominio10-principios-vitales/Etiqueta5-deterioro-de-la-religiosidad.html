@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 5</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Deterioro de la religiosidad</p>
+				<p class="bblue" id="definicion">Definición: Deterioro de la capacidad para confiar en las creencias y/o participar en los rituales de una tradición religiosa en particular.</p>
+				<p class="bgray" id="dominio">Dominio 10:  Principios vitales  </p>
+				<p class="borange" id="clase">Clase 3:  Congruencia entre Valores/Creencias/Acciones</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Dificultad para adherirse a las ideas religiosas prescritas.">
+						<label for="carDef1" name="lCarDef">Dificultad para adherirse a las ideas religiosas prescritas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Dificultad para adherirse a los rituales religiosos prescritos (p. ej., ceremoriias religiosas, regulaciones dietéticas, vestido, rezos, culto/servicios religiosos, conductas religiosas privadas/lectura de material religioso/medios de comunicación, prácticas para los días festivos, encuentro con los líderes religiosos).">
+						<label for="carDef2" name="lCarDef">Dificultad para adherirse a los rituales religiosos prescritos (p. ej., ceremoriias religiosas, regulaciones dietéticas, vestido, rezos, culto/servicios religiosos, conductas religiosas privadas/lectura de material religioso/medios de comunicación, prácticas para los días festivos, encuentro con los líderes religiosos).</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Cuestiona los patrones de creencias religiosas.">
+						<label for="carDef3" name="lCarDef">Cuestiona los patrones de creencias religiosas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Cuestiona las costumbres religiosas.">
+						<label for="carDef4" name="lCarDef">Cuestiona las costumbres religiosas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Expresa necesidad de volver a entrar en contacto con patrones anteriores de creencias.">
+						<label for="carDef5" name="lCarDef">Expresa necesidad de volver a entrar en contacto con patrones anteriores de creencias.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Expresa necesidad de volver a entrar en contacto con costumbres anteriores.">
+						<label for="carDef6" name="lCarDef">Expresa necesidad de volver a entrar en contacto con costumbres anteriores.</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Expresa sufrimiento emocional por la separación de su comimidad religiosa.">
+						<label for="carDef7" name="lCarDef">Expresa sufrimiento emocional por la separación de su comimidad religiosa.</label>
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+
+						
+						<h4>Situacionales y de desarrollo</h4>
+
+						<input type="radio" name="facRel" id="facRel1" value ="Envejecimiento." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Envejecimiento.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Crisis de la etapa final de la vida.">
+						<label for="facRel2" name="lFacRel" >Crisis de la etapa final de la vida.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Transiciones vitales.">
+						<label for="facRel3" name="lFacRel" >Transiciones vitales.</label>
+
+						
+						<h4>Físicos</h4>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Enfermedad.">
+						<label for="facRel4" name="lFacRel" >Enfermedad.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Dolor.">
+						<label for="facRel5" name="lFacRel" >Dolor.</label>
+
+						
+						<h4>Psicológicos</h4>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Ansiedad.">
+						<label for="facRel6" name="lFacRel" >Ansiedad.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Miedo a la muerte.">
+						<label for="facRel7" name="lFacRel" >Miedo a la muerte.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Afrontamiento ineficaz.">
+						<label for="facRel8" name="lFacRel" >Afrontamiento ineficaz.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Apoyo ineficaz.">
+						<label for="facRel9" name="lFacRel" >Apoyo ineficaz.</label>
+
+						<input type="radio" name="facRel" id="facRe20" value ="Falta de seguridad.">
+						<label for="facRe20" name="lFacRel" >Falta de seguridad.</label>
+
+						<input type="radio" name="facRel" id="facRe21" value ="Crisis personal.">
+						<label for="facRe21" name="lFacRel" >Crisis personal.</label>
+
+						<input type="radio" name="facRel" id="facRe22" value ="Uso de la religión para manipular.">
+						<label for="facRe22" name="lFacRel" >Uso de la religión para manipular.</label>
+
+						<h4>Socio culturales</h4>
+
+						<input type="radio" name="facRel" id="facRe23" value ="Barreras culturales para las prácticas religiosas.">
+						<label for="facRe23" name="lFacRel" >Barreras culturales para las prácticas religiosas.</label>
+
+						<input type="radio" name="facRel" id="facRe24" value ="Barreras ambientales para las prácticas religiosas.">
+						<label for="facRe24" name="lFacRel" >Barreras ambientales para las prácticas religiosas.</label>
+
+						<input type="radio" name="facRel" id="facRe25" value ="Crisis espiritua.les">
+						<label for="facRe25" name="lFacRel" >Crisis espiritua.les</label>
+
+						<input type="radio" name="facRel" id="facRe26" value ="Falta de integración social.">
+						<label for="facRe26" name="lFacRel" >Falta de integración social.</label>
+
+						<input type="radio" name="facRel" id="facRe27" value ="Falta de interacción sociocultural.">
+						<label for="facRe27" name="lFacRel" >Falta de interacción sociocultural.</label>
+
+						<input type="radio" name="facRel" id="facRe28" value ="Sufrimiento.">
+						<label for="facRe28" name="lFacRel" >Sufrimiento.</label>
+						
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 3</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta 3: Confusión aguda</p>
+				<p class="bblue" id="definicion">Definicion: inicio brusco de trastornos reversibles de la conciencia, atención,
+				conocimiento y percepción que se desarrollan en un corto período de tiempo.</p>
+				<p class="bgray" id="dominio">Dominio 5: Percepción/Cognición</p>
+				<p class="borange" id="clase">Clase 4: Cognición</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Fluctuación en el conocimiento.">
+						<label for="carDef1" name="lCarDef">Fluctuación en el conocimiento.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Fluctuación en el nivel de conciencia.">
+						<label for="carDef2" name="lCarDef">Fluctuación en el nivel de conciencia.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Fluctuación en la actividad
+						psicomotora.">
+						<label for="carDef3" name="lCarDef">Fluctuación en la actividad
+						psicomotora.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Alucinaciones.">
+						<label for="carDef4" name="lCarDef">Alucinaciones.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Agitación creciente.">
+						<label for="carDef5" name="lCarDef">Agitación creciente.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Intranquilidad creciente">
+						<label for="carDef6" name="lCarDef">Intranquilidad creciente</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Falta de motivación para mantener
+						una conducta dirigida al logro de un objetivo.">
+						<label for="carDef7" name="lCarDef">Falta de motivación para mantener
+						una conducta dirigida al logro de un objetivo.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Falta de motivación para mantener
+						una conducta intencionada.">
+						<label for="carDef8" name="lCarDef">Falta de motivación para mantener una conducta intencionada.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Falta de motivación para iniciar ima
+						conducta dirigida al logro de un objetivo.">
+						<label for="carDef9" name="lCarDef">Falta de motivación para iniciar ima
+						conducta dirigida al logro de un objetivo.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Falta de motivación para iniciar ima
+						conducta intencionada.">
+						<label for="carDef10" name="lCarDef">Falta de motivación para iniciar ima
+						conducta intencionada.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Percepciones erróneas.">
+						<label for="carDef11" name="lCarDef">Percepciones erróneas.</label>
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Delirio." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Delirio.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Demencia.">
+						<label for="facRel2" name="lFacRel" >Demencia.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Fluctuaciones en el ciclo vigilia-sueño.">
+						<label for="facRel3" name="lFacRel" >Fluctuaciones en el ciclo vigilia-sueño.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Edad superior a 60 años.">
+						<label for="facRel4" name="lFacRel" >Edad superior a 60 años.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Abuso de sustancias.">
+						<label for="facRel5" name="lFacRel" >Abuso de sustancias.</label>
+
+						
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

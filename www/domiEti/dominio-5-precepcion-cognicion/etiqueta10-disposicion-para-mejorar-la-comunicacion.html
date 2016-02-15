@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 10</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta 10: Disposición para mejorar la Comunicación </p>
+				<p class="bblue" id="definicion">Definicion: Patrón de intercambio de información e ideas con otros que es
+				Capacidad para hablar un idioma.suficiente para satisfacer las necesidades y objetivos vitales de la persona
+				Capacidad para hablar un idioma.y que puede ser reforzado.</p>
+				<p class="bgray" id="dominio">Dominio 5: Percepción/Cognición</p>
+				<p class="borange" id="clase">Clase 4: Cognición</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Capacidad para hablar un idioma.">
+						<label for="carDef1" name="lCarDef">Capacidad para hablar un idioma.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Capacidad para escribir un idioma.">
+						<label for="carDef2" name="lCarDef">Capacidad para escribir un idioma.Expresa sentimientos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Expresa sentimientos.">
+						<label for="carDef3" name="lCarDef">Expresa sentimientos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Expresa satisfacción con la capacidad
+						para compartir ideas con los demás.">
+						<label for="carDef4" name="lCarDef">Expresa satisfacción con la capacidad
+						para compartir ideas con los demás.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Expresa satisfacción con la capacidad
+						para compartir información con los demás.">
+						<label for="carDef5" name="lCarDef">Expresa satisfacción con la capacidad
+						Spara compartir información con los demás.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Expresa pensamientos.">
+						<label for="carDef6" name="lCarDef">Expresa pensamientos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Expresa deseos de mejorar
+						la comunicación.">
+						<label for="carDef7" name="lCarDef">Expresa deseos de mejorar
+						la comunicación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Forma frases.">
+						<label for="carDef8" name="lCarDef">Forma frases.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Forma oraciones.">
+						<label for="carDef9" name="lCarDef">Forma oraciones.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Forma palabras.">
+						<label for="carDef10" name="lCarDef">Forma palabras.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Interpreta adecuadamente las claves
+						no verbales.">
+						<label for="carDef11" name="lCarDef">Interpreta adecuadamente las claves
+						no verbales.</label>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Usa adecuadamente las claves
+						no verbales.">
+						<label for="carDef12" name="lCarDef">Usa adecuadamente las claves
+						no verbales.</label>
+
+							
+						
+					</fieldset>
+
+
+					
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

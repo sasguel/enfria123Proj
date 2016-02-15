@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+		<title>NANOCNIC</title>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+		<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+		<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+		<link rel="stylesheet" href="../../thema.css"/>
+		<script type="text/javascript" src="../js/resul.js"></script>
+</head>
+ 
+<body>
+	<section id="index" data-role="page" data-title="NANOCNIC">
+		<header data-role="header"  data-theme="e">	
+			<h1>VersionBeta NANOCNIC</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:history.go(-2)">Libros</a></li>
+					<li><a href="javascript:history.go(-1)">NANDA</a></li>
+					<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 2</a></li>
+				</ul>
+			</div>
+		</header>
+		<article data-role="content">
+			<p class="bgreen" id="etiqueta">Etiqueta 2: Riesgo de asfixia</p>
+			<p class="bblue" id="definicion">Definición: Riesgo de asfixia accidental (aire disponible insuficiente para la inhalación).</p>
+			<p class="bgray" id="dominio">Dominio 11: Seguridad/Protección</p>
+			<p class="borange" id="clase">Clase 2: lesión física</p>
+
+			<form  id="form1" name="form1" method="post" action="#">
+				<fieldset data-role="controlgroup">
+					<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+					<input type="checkbox" name="carDef" id="carDef1" value ="no hay">
+					<label for="carDef1" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef2" value ="no hay">
+					<label for="carDef2" name="lCarDef">no hay</label>
+
+					<input type="checkbox" name="carDef" id="carDef3" value ="no hay">
+					<label for="carDef3" name="lCarDef">no hay</label>
+
+				</fieldset>
+			
+				<fieldset data-role="controlgroup">
+					<h3 class="bred">Factores relacionales: Externos</h3>
+					
+					<input type="radio" name="facRel" id="facRel1" value ="Dejar a los niños en el agua sin supervisión." checked="cheked">
+					<label for="facRel1" name="lFacRel" >Dejar a los niños en el agua sin supervisión.</label>
+
+					<input type="radio" name="facRel" id="facRel2" value ="Desechar neveras sin quitar las puertas.">
+					<label for="facRel2" name="lFacRel" >Desechar neveras sin quitar las puertas.</label>
+
+					<input type="radio" name="facRel" id="facRel3" value ="Ingerir grandes bocados de comida.">
+					<label for="facRel3" name="lFacRel" >Ingerir grandes bocados de comida.</label>
+
+					<input type="radio" name="facRel" id="facRel4" value ="Colgar el chupete alrededor del cuello del niño.">
+					<label for="facRel4" name="lFacRel" >Colgar el chupete alrededor del cuello del niño.</label>
+
+					<input type="radio" name="facRel" id="facRel5" value ="Fugas de gas doméstico.">
+					<label for="facRel5" name="lFacRel" >Fugas de gas doméstico.</label>
+
+					<input type="radio" name="facRel" id="facRel6" value ="Insertar pequeños objetos en las vías aéreas.">
+					<label for="facRel6" name="lFacRel" >Insertar pequeños objetos en las vías aéreas.</label>
+				
+					<input type="radio" name="facRel" id="facRel7" value ="Insertar pequeños objetos en las vías aéreas.">
+					<label for="facRel7" name="lFacRel" >Insertar pequeños objetos en las vías aéreas.</label>
+
+					<input type="radio" name="facRel" id="facRel8" value ="Almohada en la cuna de un niño.">
+					<label for="facRel8" name="lFacRel" >Almohada en la cuna de un niño.</label>
+
+					<input type="radio" name="facRel" id="facRel9" value ="Jugar con bolsas de plástico.">
+					<label for="facRel9" name="lFacRel" >Jugar con bolsas de plástico.</label>
+
+					<input type="radio" name="facRel" id="facRel10" value ="Dejar un biberón en la cuna del niño.">
+					<label for="facRel10" name="lFacRel" >Dejar un biberón en la cuna del niño.</label>
+
+					<input type="radio" name="facRel" id="facRel11" value ="Fumar en la cama.">
+					<label for="facRel11" name="lFacRel" >Fumar en la cama.</label>
+
+					<input type="radio" name="facRel" id="facRel12" value ="Calefacción de gas sin ventilación al exterior.">
+					<label for="facRel12" name="lFacRel" >Calefacción de gas sin ventilación al exterior.</label>
+
+					<input type="radio" name="facRel" id="facRel13" value ="Calentar el motor de un vehículo en un garaje cerrado.">
+					<label for="facRel13" name="lFacRel" >Calentar el motor de un vehículo en un garaje cerrado.</label>
+
+					<h3 class="bred">Factores relacionales: Internos</h3>
+
+					<input type="radio" name="facRel" id="facRel14" value ="Dificultades cognitivas.">
+					<label for="facRel14" name="lFacRel" >Dificultades cognitivas.</label>
+
+					<input type="radio" name="facRel" id="facRel15" value ="Conocimientos deficientes sobre situaciones de seguridad.">
+					<label for="facRel15" name="lFacRel" >Conocimientos deficientes sobre situaciones de seguridad.</label>
+
+					<input type="radio" name="facRel" id="facRel16" value ="Conocimientos deficientes sobre precauciones de seguridad.">
+					<label for="facRel16" name="lFacRel" >Conocimientos deficientes sobre precauciones de seguridad.</label>
+
+					<input type="radio" name="facRel" id="facRel17" value ="Procesos patológicos.">
+					<label for="facRel17" name="lFacRel" >Procesos patológicos.</label>
+
+					<input type="radio" name="facRel" id="facRel18" value ="Dificultades emocionales.">
+					<label for="facRel18" name="lFacRel" >Dificultades emocionales.</label>
+
+					<input type="radio" name="facRel" id="facRel19" value ="Proceso lesivo.">
+					<label for="facRel19" name="lFacRel" >Proceso lesivo.</label>
+
+					<input type="radio" name="facRel" id="facRel20" value ="Disminución de las habilidades motoras.">
+					<label for="facRel20" name="lFacRel" >Disminución de las habilidades motoras.</label>
+	
+					<input type="radio" name="facRel" id="facRel21" value ="Disminución del sentido del olfato.">
+					<label for="facRel21" name="lFacRel" >Disminución del sentido del olfato.</label>
+	</fieldset>
+
+				<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+			</form>
+
+		</article>
+		<footer data-role="footer" data-mini="true" data-theme="b">
+			<h1>HYDRA-PDM/ENFERMERIA</h1>
+		</footer>
+	</section>
+
+	<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+        <header data-role="header"  data-theme="e">
+            <h1>VersionBeta NANOCNIC</h1>
+        </header>
+        <article data-role="content">
+            <div id="resultados" name="resultados" >
+
+            </div>
+        </article>
+        <footer data-role="footer" data-mini="true" data-theme="b">
+            <h1>HYDRA-PDM/ENFERMERIA</h1>
+        </footer>
+    </section>
+</body>
+</html>

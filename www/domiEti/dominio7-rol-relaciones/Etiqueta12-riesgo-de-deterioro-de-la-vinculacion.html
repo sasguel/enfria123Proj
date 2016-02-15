@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 12</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Riesgo de deterioro de la vinculación.</p>
+				<p class="bblue" id="definicion">Riesgo de alteración del proceso interactivo entre los padres o persona significativa y el niño que fomenta el desarrollo de una relación recíproca protectora y educativa.</p>
+				<p class="bgray" id="dominio">Rol/Relaciones</p>
+				<p class="borange" id="clase">Relaciones familiares</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Ninguna hasta el momento.">
+						<label for="carDef1" name="lCarDef">Ninguna hasta el momento.</label>
+
+						
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores de riesgo</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Ansiedad asociada al rol parental." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Ansiedad asociada al rol parental.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Conducta desorganizada del niño.">
+						<label for="facRel2" name="lFacRel" >Conducta desorganizada del niño.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Niño enfermo que no puede iniciar de manera efectiva el contacto parental.">
+						<label for="facRel3" name="lFacRel" >Niño enfermo que no puede iniciar de manera efectiva el contacto parental.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Incapacidad de los padres para satisfacer sus necesidades personales.">
+						<label for="facRel4" name="lFacRel" >Incapacidad de los padres para satisfacer sus necesidades personales.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Falta de intimidad.">
+						<label for="facRel5" name="lFacRel" >Falta de intimidad.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Conflicto parental debido a la conducta desorganizada del niño.">
+						<label for="facRel6" name="lFacRel" >Conflicto parental debido a la conducta desorganizada del niño.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Separación entre los padres y el niño.">
+						<label for="facRel7" name="lFacRel" >Separación entre los padres y el niño.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Barreras físicas.">
+						<label for="facRel8" name="lFacRel" >Barreras físicas.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Niño prematuro.">
+						<label for="facRel9" name="lFacRel" >Niño prematuro.</label>
+
+						<input type="radio" name="facRel" id="facRel10" value ="Abuso de sustancias.">
+						<label for="facRel10" name="lFacRel" >Abuso de sustancias.</label>
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

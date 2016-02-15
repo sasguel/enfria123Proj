@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 8</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Sufrimiento espiritual</p>
+				<p class="bblue" id="definicion">definicion: Deterioro de la capacidad para experimentar e integrar el significado y propósito de la vida mediante la conexión con el yo, los otros, el arte, la música, la literatura, la naturaleza y/o un poder superior al propio yo.</p>
+				<p class="bgray" id="dominio">Dominio 10:  Principios vitales </p>
+				<p class="borange" id="clase">Clase 3:  Congruencia entre Valores/Creencias/Acciones</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<h4>Conexión con el yo</h4>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Ira.">
+						<label for="carDef1" name="lCarDef">Ira.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Expresa falta de aceptación.">
+						<label for="carDef2" name="lCarDef">Expresa falta de aceptación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Expresa falta de coraje.">
+						<label for="carDef3" name="lCarDef">Expresa falta de coraje.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Expresa falta de esperanza.">
+						<label for="carDef4" name="lCarDef">Expresa falta de esperanza.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Expresa falta de amor.">
+						<label for="carDef5" name="lCarDef">Expresa falta de amor.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Expresa falta de significado en la vida.">
+						<label for="carDef6" name="lCarDef">Expresa falta de significado en la vida.</label>
+
+							<input type="checkbox" name="carDef" id="carDef7" value ="Expresa falta de propósito en la vida.">
+						<label for="carDef7" name="lCarDef">Expresa falta de propósito en la vida.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Expresa falta de perdón para sí mismo.">
+						<label for="carDef8" name="lCarDef">Expresa falta de perdón para sí mismo.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Expresa falta de serenidad (p. ej., paz)">
+						<label for="carDef9" name="lCarDef">Expresa falta de serenidad (p. ej., paz)</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Culpa.">
+						<label for="carDef10" name="lCarDef">Culpa.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Afrontamiento ineficaz.">
+						<label for="carDef11" name="lCarDef">Afrontamiento ineficaz.</label>
+
+						<h4>Conexión con los otros</h4>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Expresa alienación.">
+						<label for="carDef12" name="lCarDef">Expresa alienación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef13" value ="Rechaza las interacciones con personas significativas.">
+						<label for="carDef13" name="lCarDef">Rechaza las interacciones con personas significativas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef14" value ="Rechaza las interacciones con los líderes espirituales.">
+						<label for="carDef14" name="lCarDef">Rechaza las interacciones con los líderes espirituales.</label>
+
+						<input type="checkbox" name="carDef" id="carDef15" value ="Verbaliza estar alejado de los sistemas de apoyo.">
+						<label for="carDef15" name="lCarDef">Verbaliza estar alejado de los sistemas de apoyo.</label>
+
+						<h4>Conexión con el arte, la música, la literatura y la naturaleza</h4>
+
+						<input type="checkbox" name="carDef" id="carDef16" value ="Falta de interés por la naturaleza.">
+						<label for="carDef16" name="lCarDef">Falta de interés por la naturaleza.</label>
+
+						<input type="checkbox" name="carDef" id="carDef17" value ="Falta de interés en la lectura de literatura espiritual.">
+						<label for="carDef17" name="lCarDef">Falta de interés en la lectura de literatura espiritual.</label>
+
+						<input type="checkbox" name="carDef" id="carDef18" value ="Incapacidad para expresar un estado previo de creatividad (p. ej., cantando, escuchando música, escribiendo).">
+						<label for="carDef18" name="lCarDef">Incapacidad para expresar un estado previo de creatividad (p. ej., cantando, escuchando música, escribiendo).</label>
+
+						<h4>Conexión con un poder superior al yo</h4>
+
+						<input type="checkbox" name="carDef" id="carDef19" value ="Expresa ira hacia un poder superior.">
+						<label for="carDef19" name="lCarDef">Expresa ira hacia un poder superior.</label>
+
+						<input type="checkbox" name="carDef" id="carDef20" value ="Expresa sentirse abandonado.">
+						<label for="carDef20" name="lCarDef">Expresa sentirse abandonado.</label>
+
+						<input type="checkbox" name="carDef" id="carDef21" value ="Expresa desesperanza">
+						<label for="carDef21" name="lCarDef">Expresa desesperanza</label>
+
+						<input type="checkbox" name="carDef" id="carDef22" value ="Expresa sufrimiento">
+						<label for="carDef22" name="lCarDef">Expresa sufrimiento</label>
+
+						<input type="checkbox" name="carDef" id="carDef23" value ="Incapacidad para la intiospección.">
+						<label for="carDef23" name="lCarDef">Incapacidad para la intiospección.</label>
+
+						<input type="checkbox" name="carDef" id="carDef24" value ="Incapacidad para experimentar la trascendencia.">
+						<label for="carDef24" name="lCarDef">Incapacidad para experimentar la trascendencia.</label>
+
+							<input type="checkbox" name="carDef" id="carDef25" value ="Incapacidad para participar en actividades religiosas.">
+						<label for="carDef25" name="lCarDef">Incapacidad para participar en actividades religiosas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef26" value ="Incapacidad para orar.">
+						<label for="carDef26" name="lCarDef">Incapacidad para orar.</label>
+
+						<input type="checkbox" name="carDef" id="carDef27" value ="Solicita ver a un líder religioso.">
+						<label for="carDef27" name="lCarDef">Solicita ver a un líder religioso.</label>
+
+						<input type="checkbox" name="carDef" id="carDef28" value ="Cambios súbitos en las prácticas espirituales.">
+						<label for="carDef28" name="lCarDef">Cambios súbitos en las prácticas espirituales.</label>
+
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Proceso de agonía." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Proceso de agonía.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Ansiedad.">
+						<label for="facRel2" name="lFacRel" >Ansiedad.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Enfermedad crónica.">
+						<label for="facRel3" name="lFacRel" >Enfermedad crónica.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Muerte.">
+						<label for="facRel4" name="lFacRel" >Muerte.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Cambios vitales.">
+						<label for="facRel5" name="lFacRel" >Cambios vitales.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Soledad.">
+						<label for="facRel6" name="lFacRel" >Soledad.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Dolor.">
+						<label for="facRel7" name="lFacRel" >Dolor.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Autoalienación.">
+						<label for="facRel8" name="lFacRel" >Autoalienación.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Alienación social.">
+						<label for="facRel9" name="lFacRel" >Alienación social.</label>
+
+						<input type="radio" name="facRel" id="facRe110" value ="Deprivación sociocultural.">
+						<label for="facRe110" name="lFacRel" >Deprivación sociocultural.</label>
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>
