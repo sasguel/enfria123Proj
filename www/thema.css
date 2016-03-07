@@ -1,19 +1,35 @@
 .bblue{
-					color:blue;
-				}
+	color:blue;
+}
 
-				.bgray{
-					color:gray;
-				}
+.bgray{
+	color:gray;
+}
 
-				.borange{
-					color:orange;
-				}
+.borange{
+	color:orange;
+}
 
-				.bgreen{
-					color: green;
-				}
+.bgreen{
+	color: green;
+}
 
-				.bred{
-					color: red;
-				}
+.bred{
+	color: red;
+}
+
+.principal {
+
+	width: 80%;
+	max-width: 800px;
+	min-width: 240px;
+	margin: 0px auto;
+	background-color: rgba(115,155,155,0.3);
+	padding: 15px;
+	
+
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius: 15px;
+	margin-top: 30px;
+}
