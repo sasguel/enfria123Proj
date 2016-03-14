@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
+
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <title>Formulario</title>
+    </head>
+    
+    <body>
+        <section data-role="page" id="index">
+            
+            <header data-role="header">
+                
+                <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+            
+            </header>
+
+            <h5><div style="text-align:right;"> Para toda la valoración registrar solo los datos pertinentes para cada caso(mujer, gestante o puérpera).</h5>
+
+            <content data-role="content">
+
+                <div id="Formato1">
+
+                    <form id="formFormato1">
+
+                        <label for="fechValo">1.1. Fecha de valoración:</label>
+                        <input name="fechValo" id="fechValo" value="" type="date" placeholder="DD/MM/AAAA">
+
+                        <label for="nombPacien">1.2. Nombre del paciente:</label>
+                        <input name="nombPacien" id="nombPacien" value="" type="text" placeholder="Nombre">
+
+                        <label for="Edad">1.3. Edad:</label>
+                        <input name="Edad" id="Edad" value="" type="text" placeholder="Edad">
+
+                        <label for="Historia clinica">1.4. Historia clínica:</label>
+                        <input name="Historia clínica" id="Historiaclínica" value="" type="text" placeholder="Historia clínica">
+
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>1.5. Estado Civil:</legend>
+                            
+                            <input name="estadoCivil" id="ECSoltero" value="Soltero" checked="checked" type="radio">
+                            <label for="ECSoltero" onclick="inahibilitarEstadoCivilOtro()">Soltero</label>
+                            
+                            <input name="estadoCivil" id="ECCasado" value="Casado" type="radio">
+                            <label for="ECCasado" onclick="inahibilitarEstadoCivilOtro()">Casado</label>
+
+                            <input name="estadoCivil" id="ECU.Estable" value="U.Estable" type="radio">
+                            <label for="ECU.Estable" onclick="inahibilitarEstadoCivilOtro()">U. Estable</label>
+                            
+                            <input name="estadoCivil" id="otro" value="otro" type="radio" onclick="habilitarEstadoCivilOtro()">
+                            <label for="otro">otro</label>
+
+                            <div id="divECOCual"></div>
+                                                      
+                        </fieldset>
+                  
+
+                        <label for="Seguridadsocial">1.6. Seguridad social:</label>
+                        <input name="Seguridadsocial" id="Seguridadsocial" value="Seguridadsocial" type="text" placeholder="Seguridad social">
+
+                        
+
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>1.7. Estado educativo:</legend>
+                                                
+                            <input name="Niveleducativo" id="NEAnalfabeta" value="Analfabeta" checked="checked" type="radio" onclick="inhabilitarNeducativo"> <label for="NEAnalfabeta" > Analfabeta</label>
+                                                                                
+                            <input name="Niveleducativo" id="NEAlfabeta" value="Alfabeta"  type="radio" onclick="habilitarNeducativo"> <label for="NEAlfabeta" > Alfabeta</label>
+                        
+                        </fieldset>
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend> Nivel educativo:</legend>
+
+							<input  name="Neducativo" id="Primaria" value="Primaria"  type="radio" onclick="inhabilitarNeducativoOtro()">
+							<label for="Primaria"> Primaria </label>
+
+							<input  name="Neducativo" id="Secundaria" value="Secundaria"  type="radio" onclick="inhabilitarNeducativoOtro()">
+							<label for="Secundaria" > Secundaria </label>
+
+							<input   name="Neducativo" id="Técnico" value="Técnico"  type="radio" onclick="inhabilitarNeducativoOtro()">
+							<label for="Técnico" >Técnico</label>
+
+							<input  name="Neducativo" id="Universidad" value="Universidad"  type="radio" onclick="inhabilitarNeducativoOtro()">
+							<label for="Universidad" >Universidad</label>
+
+							<input name="Neducativo" id="Otro" value="Otro" checked="checked" type="radio" onclick="habilitarNeducativoOtro">
+							<label for="Otro" > Otro </label>
+
+						
+						   	<div>
+						   	<input type="text" id="Neducativo"></input>
+						
+						</fieldset>
+						        
+                       
+						 		
+
+                               
+
+						</fieldset>  
+
+						        
+                        		
+				 </form>		
+                </div>
+
+
+
+
+
+
+
+
+
+                 <div name="nextPrevious">
+                    <center>
+                        <a href="#pagina2" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-carat-r">siguiente</a>                        
+                    </center>
+                </div>
+            </content>
+           </section>
+
+
+
+        <section data-role="page" id="pagina2">
+            <header data-role="header">
+                <h1>Formulario2</h1>
+            </header>
+            <article data-role="content">
+                <div id="infoBasic2">
+                <div name="nextPrevious">
+                    <center>
+                        <a href="#index" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                        <a href="#pagina3" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                        
+                    </center>
+                </div>
+                </div>
+            </article>
+            
+        </section>
+
+
+        <section data-role="page" id="pagina3">
+            <header data-role="header">
+                <h1>Formulario3</h1>
+            </header>
+            <content data-role="content">
+                <div id="infoBasic3">
+                   
+                <div name="nextPrevious">
+                    <center>
+                        <a href="#pagina2" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>                      
+                    </center>
+                </div>
+                </div>
+            </article>
+          </section>
+
+
+
+
+        <script type="text/javascript">
+
+            function inahibilitarEstadoCivilOtro(){
+
+                var divECOCual = document.getElementById("divECOCual");
+
+                 var desactivado="<input name='ECOCual' id='ECOCual' value='' type='text' placeholder='Estado Civil' disabled='true'>";
+                 divECOCual.innerHTML=desactivado;
+            }
+            function habilitarEstadoCivilOtro(){
+               
+
+                var activado =" <input name='ECOCual' id='ECOCual' value='' type='text' placeholder='Estado Civil'>";
+
+                var divECOCual = document.getElementById("divECOCual");
+                var tieneAlgo = verificarNombPacien();
+
+                if(tieneAlgo){
+                    divECOCual.innerHTML=activado;
+                }
+            }
+
+            function verificarNombPacien(){
+                var tieneAlgo = false;
+                var nombPacien = document.getElementById("nombPacien").value;
+                if (nombPacien != '') {
+                    tieneAlgo = true;
+                };
+                return tieneAlgo;
+            }
+
+            function verificar(){
+                var tieneAlgo = false;
+                var divECOCual = document.getElementById("divECOCual");
+                var otro = document.getElementById("otro").value;
+               
+                var activado =" <input name='botonVerificado' id='botonVerificado' value='hola mundo' type='button'>";
+
+                var desactivado="<input name='botonVerificado' id='botonVerificado' value='hola mundo' type='button' disabled='true'>";
+
+
+                if (otro != ''){
+                    tieneAlgo = true;
+                };
+
+                if(tieneAlgo){
+                    divECOCual.innerHTML=activado;
+                }else{
+                    divECOCual.innerHTML=desactivado;
+                }
+
+            }
+             </script>
+
+    <script type="text/javascript">
+
+           function inahibilitarNiveleducativoAotro(){
+
+                var divECOCual1 = document.getElementById("divECOCual1");
+
+                 var desactivado="<input name='ECOCual1' id='ECOCual1' value='' type='text' placeholder='Nivel educativo' disabled='true'>";
+                 divECOCual1.innerHTML=desactivado;
+            }
+            function habilitarNiveleduvativoAotro(){
+               
+
+                var activado =" <input name='ECOCual1' id='ECOCual1' value='' type='text' placeholder='Nivel educativo'>";
+
+                var divECOCual1 = document.getElementById("divECOCual1");
+                var tienealgo1 = verificarSeguridadsocial();
+
+                if(tienealgo1){
+                    divECOCual1.innerHTML=activado;
+                }
+            }
+
+            function verificarSeguridadsocial(){
+                var tienealgo1 = false;
+                var Seguridadsocial = document.getElementById("Seguridadsocial").value;
+                if (Seguridadsocial != '') {
+                    tienealgo1 = true;
+                };
+                return tienealgo1;
+            }
+
+            function verificar(){
+                var tienealgo1 = false;
+                var divECOCual1 = document.getElementById("divECOCual1");
+                var Aotro = document.getElementById("Aotro").value;
+               
+                var activado =" <input name='botonVerificado' id='botonVerificado' value='hola mundo' type='button'>";
+
+                var desactivado="<input name='botonVerificado' id='botonVerificado' value='hola mundo' type='button' disabled='true'>";
+
+
+                if (Aotro != ''){
+                   tienealgo1 = true;
+                };
+
+                if(tienealgo1){
+                    divECOCual1.innerHTML=activado;
+                }else{
+                    divECOCual1.innerHTML=desactivado;
+                }
+
+            }
+        </script>
+    </body>
+</html>
