@@ -3,35 +3,29 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
         <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.css"/>
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <link rel="stylesheet" href="thema.css"/>
+
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-
-        <link rel="stylesheet" href="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
-
-                <script type="text/javascript" src="jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
-
-                <link rel="stylesheet" href="jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
-
-                <script type="text/javascript" src="jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
-                <link rel="stylesheet" href="thema.css"/>
-        </style>
 
     </head>
 
     <body>
         <section id="index" data-role="page" data-title="NANOCNIC">
-            <header data-role="header"  data-theme="e">
-                <h1>VersionBeta NANOCNIC</h1>
+            <header data-role="header">
+                <h1>Nandoic</h1>
             </header>
             <article data-role="content">
                 <center><img src="logo_unisangil.png"></center>
-                <div data-role="collapsible-set">
+                <div data-role="collapsible-set" class ="principal">
                     <div data-role="collapsible" data-collapsed="true" data-theme="a" data-icon="bars">
                         <h3>Manual</h3>
                         <p>
@@ -48,6 +42,10 @@
                         <h3>Contenidos</h3>
                         <p>
                         <ul data-role="listview" >
+
+                            <li>
+                                <a href="formatosDeValoracion/index.html" rel="external"><h3>Formatos</h3><p>Accede a los formatos de valoración</p></a>
+                            </li>
                             <li>
                                 <a href="NANDAIndex.html" rel="external"><h3>NANDA</h3><p>Accede a NANDA</p></a>
                             </li>
@@ -64,14 +62,14 @@
                         <h3>creditos</h3>
                         <p>
                             <ul data-role="listview">
-                                <li><a href="#creditos" data-rel="dialog">Creditos</a></li>
-                                <li><a href="#webGrafia" data-rel="dialog">WebGrafia</a></li>
+                                <li><a href="#creditos" data-rel="dialog">Créditos</a></li>
+                                <li><a href="#webGrafia" data-rel="dialog">WebGrafía</a></li>
                             </ul>
                         </p>
                     </div>
                 </div>
             </article>
-            <footer data-role="footer" data-position="down" data-mini="true" data-theme="b">
+            <footer data-role="footer" data-position="down" data-mini="true">
                 <h1>HYDRA-PDM/ENFERMERIA</h1>
             </footer>
         </section>
