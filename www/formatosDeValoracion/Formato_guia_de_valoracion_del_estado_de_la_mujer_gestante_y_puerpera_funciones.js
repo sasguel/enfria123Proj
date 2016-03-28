@@ -1,5 +1,4 @@
 
-
             function inahibilitarEstadoCivilOtro(){
 
                 var divECOCual = document.getElementById("divECOCual");
@@ -51,9 +50,7 @@
 
             }
 
-
-
-
+            
            function inahibilitarNiveleducativoAotro(){
 
                 var divECOCual1 = document.getElementById("divECOCual1");
@@ -104,18 +101,3 @@
                 }
 
             }
-        // Hasta aqui los scripts de Jeniffer
-
-
-
-
-
-
-
-
-
-
-
-
-
-        

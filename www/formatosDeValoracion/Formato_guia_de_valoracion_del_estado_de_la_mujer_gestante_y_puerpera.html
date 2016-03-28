@@ -5,12 +5,12 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-        <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
 
-        <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
-        <script type="text/javascript" src="Formato_guia_de_valoracion_del_estado_de_la_mujer_gestante_y_puerpera_funciones.js"></script>
-        <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
-        <script type="text/javascript" src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <title>Formulario</title>
     </head>
@@ -31,8 +31,8 @@
 
                     <legend><h3>1. INFORMACION BASICA:</h3></legend>
 
-                    	<label for="fechValo">1.1. Fecha de valoración:</label>
-                    	<input name="fechValo" id="fechValo" value=""  type="date" placeholder="DD/MM/AA">
+                        <label for="fechValo">1.1. Fecha de valoración:</label>
+                        <input name="fechValo" id="fechValo" value=""  type="date" placeholder="DD/MM/AA">
                                                 
                         <label for="nombPacien">1.2. Nombre del paciente:</label>
                         <input name="nombPacien" id="nombPacien" value="" type="text" placeholder="Nombre">
@@ -79,64 +79,68 @@
                         <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                         <legend> Nivel educativo:</legend>
 
-							<input  name="Neducativo" id="Primaria" value="Primaria"  type="radio" onclick="inhabilitarNeducativoOtro()">
-							<label for="Primaria"> Primaria </label>
+                            <input  name="Neducativo" id="Primaria" value="Primaria"  type="radio" onclick="inhabilitarNeducativoOtro()">
+                            <label for="Primaria"> Primaria </label>
 
-							<input  name="Neducativo" id="Secundaria" value="Secundaria"  type="radio" onclick="inhabilitarNeducativoOtro()">
-							<label for="Secundaria" > Secundaria </label>
+                            <input  name="Neducativo" id="Secundaria" value="Secundaria"  type="radio" onclick="inhabilitarNeducativoOtro()">
+                            <label for="Secundaria" > Secundaria </label>
 
-							<input   name="Neducativo" id="Técnico" value="Técnico"  type="radio" onclick="inhabilitarNeducativoOtro()">
-							<label for="Técnico" >Técnico</label>
+                            <input   name="Neducativo" id="Técnico" value="Técnico"  type="radio" onclick="inhabilitarNeducativoOtro()">
+                            <label for="Técnico" >Técnico</label>
 
-							<input  name="Neducativo" id="Universidad" value="Universidad"  type="radio" onclick="inhabilitarNeducativoOtro()">
-							<label for="Universidad" >Universidad</label>
+                            <input  name="Neducativo" id="Universidad" value="Universidad"  type="radio" onclick="inhabilitarNeducativoOtro()">
+                            <label for="Universidad" >Universidad</label>
 
-							<input name="Neducativo" id="Otro" value="Otro" checked="checked" type="radio" onclick="habilitarNeducativoOtro">
-							<label for="Otro" > Otro </label>
+                            <input name="Neducativo" id="Otro" value="Otro" checked="checked" type="radio" onclick="habilitarNeducativoOtro">
+                            <label for="Otro" > Otro </label>
 
-						
-						   	<div>
-						   	<input type="text" id="NeduOtro" name="NeduOtro" placeholder="Otro"></input>
-						   	</div>
-						
-						</fieldset>
-						        
+                        
+                            <div>
+                            <input type="text" id="NeduOtro" name="NeduOtro" placeholder="Otro"></input>
+                            </div>
+                        
+                        </fieldset>
+                                
                         <label for="Añoscursados">1.7.3. Años Cursados:</label>
                         <input name="Añoscursados" id="Añoscursados" value="" type="text" placeholder="DD/MM/AAAA">
-						
-						<label for="Procedencia">1.8. Procedencia:</label>
+                        
+                        <label for="Procedencia">1.8. Procedencia:</label>
                         <input name="Procedencia" id="Procedencia" value="" type="text" placeholder="Procedencia">
-						
-						<label for="Desplazamiento">1.9. Desplazamiento:</label>
+                        
+                        <label for="Desplazamiento">1.9. Desplazamiento:</label>
                         <input name="Desplazamiento" id="Desplazamiento" value="" type="text" placeholder="Desplazamiento">
-						
-						<label for="OcupaciónActual">1.10. Ocupación Actual:</label>
+                        
+                        <label for="OcupaciónActual">1.10. Ocupación Actual:</label>
                         <input name="AOcupaciónActual" id="OcupaciónActual" value="" type="text" placeholder="Ocupación Actual">
-						
-						<label for="Religión">1.11. Religión:</label>
+                        
+                        <label for="Religión">1.11. Religión:</label>
                         <input name="Religión" id="Religión" value="" type="text" placeholder="Religión">
-						
-						<label for="Dirección">1.12. Dirección (Si procede):</label>
+                        
+                        <label for="Dirección">1.12. Dirección (Si procede):</label>
                         <input name="Dirección" id="Dirección" value="" type="text" placeholder="Dirección">
-						
-						<label for="Teléfono">1.13. Teléfono (Si procede):</label>
+                        
+                        <label for="Teléfono">1.13. Teléfono (Si procede):</label>
                         <input name="Teléfono" id="Teléfono" value="" type="text" placeholder="Teléfono">
-						
-						<label for="Disposición">1.14. Disposición:</label>
+                        
+                        <label for="Disposición">1.14. Disposición:</label>
                         <input name="Disposición" id="Disposición" value="" type="text">
-						
-						<label for="Confiabilidad">1.15. Confiabilidad:</label>
+                        
+                        <label for="Confiabilidad">1.15. Confiabilidad:</label>
                         <input name="Confiabilidad" id="Confiabilidad" value="" type="text">
-						
-						 <div name="nextPrevious">
-                    		<center>
-                        		<a href="#Pag2" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-carat-r">siguiente</a>                        
-                    		</center>
+                        
+                         <div name="nextPrevious">
+                            <center>
+                                <a href="#Pag2" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-carat-r">siguiente</a>                        
+                            </center>
 
-                		</div>                            		 			          
+                        </div>                                                        
             </content>
            </section>   
-        <!--__________ PAGINA 2 __________-->				     
+
+
+        <!--__________ PAGINA 2 __________-->       
+
+                             
         <section data-role="page" id="Pag2">
             
             <header data-role="header">
@@ -148,9 +152,9 @@
 
             <content data-role="conten">
 
-                	<legend><h3>2. INFORMACION DE LA VIVIENDA (para Seguimiento):</h3></legend>
+                    <legend><h4>2. INFORMACION DE LA VIVIENDA (para Seguimiento):</h4></legend>
 
-                	<label for="Númerohabitaciones">2.1. Número de habitaciones:</label>
+                    <label for="Númerohabitaciones">2.1. Número de habitaciones:</label>
                     <input name="Númerohabitaciones" id="Númerohabitaciones" value="" type="text" placeholder="N° de habitaciones">
 
                     <label for="Npersonas">2.2. N° personas por habitación:</label>
@@ -209,23 +213,23 @@
                                            
                         </fieldset>
 
-				    <div class="ui-field-contain">
-    				<label for="select-custom-24">Multiple, icon left, long list:</label>
-    				<select name="select-custom-24" id="select-custom-24" data-native-menu="false" multiple="multiple" data-iconpos="left">
-					    
-					        <option>Opciones</option>
-					        <option value="1" > Salud </option>
-					        <option value="2" > Educación </option>
-					        <option value="3" > Recreación  </option>
-					        <option value="4" > Mercado  </option>
-					        <option value="5" > Centros deportivos </option>
-					        <option value="6" > Religiosos </option>
-					        <option value="7" > Vías acceso </option>
-					        <option value="8" > Transporte </option>
-					        <option value="9" > Medios Comunicación </option>
-					    </select>
-					    </div>
-				   
+                        <div class="ui-field-contain">
+                        <label for="select-custom-24">Recursos del barrio:</label>
+                        <select name="select-custom-24" id="select-custom-24" data-native-menu="false" multiple="multiple" data-iconpos="left">
+                        
+                            <option>Opciones</option>
+                            <option value="1" > Salud </option>
+                            <option value="2" > Educación </option>
+                            <option value="3" > Recreación  </option>
+                            <option value="4" > Mercado  </option>
+                            <option value="5" > Centros deportivos </option>
+                            <option value="6" > Religiosos </option>
+                            <option value="7" > Vías acceso </option>
+                            <option value="8" > Transporte </option>
+                            <option value="9" > Medios Comunicación </option>
+                        </select>
+                    </div>
+                   
              <div name="nextPrevious2">
                     <center>
                         <a href="#Form1" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
@@ -235,7 +239,12 @@
              </div>
            </content>             
         </section>
-        <!--__________ PAGINA 3 __________-->	
+
+
+
+
+        <!--__________ PAGINA 3 __________-->   
+
         <section data-role="page" id="Pag3">
 
             <header data-role="header">
@@ -247,11 +256,11 @@
 
             <content data-role="content">
 
-                	 <legend><h3>3. PROBLEMAS DE SALUD EXISTENTES:</h3></legend>
+                     <legend><h3>3. PROBLEMAS DE SALUD EXISTENTES:</h3></legend>
 
-                	 <legend><h4>3.1. Generales (todas): especificar tipo de problema de salud con tiempo de duración.</h4></legend>
+                     <legend><h4>3.1. Generales (todas): especificar tipo de problema de salud con tiempo de duración.</h4></legend>
 
-                	  <label for="Harte">3.1.1. Hipertensión arterial:</label>
+                      <label for="Harte">3.1.1. Hipertensión arterial:</label>
                     <input name="Harte" id="Harte" value="" type="text" placeholder="problema y duración">
 
                      <label for="HDiab">3.1.2. Diabetes:</label>
@@ -338,7 +347,7 @@
                      <label for="PInfp">3.4.3. Infección puerperal:</label>
                     <input name="PInfp" id="PInfp" value="" type="text">
 
-                     <label for="PMast">3.344. Mastitis:</label>
+                     <label for="PMast">3.3.4. Mastitis:</label>
                     <input name="PMast" id="PMast" value="" type="text">
 
                      <label for="PPscl">3.4.5. Psicosocial:</label>
@@ -362,13 +371,13 @@
                         <a href="#Pag4" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
                     </center>
                 </div>
-                </content>
-            </section>
+            </content>
+          </section>
 
 
-		<!--__________ PAGINA 4 __________-->
+        <!--__________ PAGINA 4 __________-->
 
-         <section data-role="page" id="Pag4">
+           <section data-role="page" id="Pag4">
 
             <header data-role="header">
 
@@ -379,16 +388,15 @@
 
             <content data-role="content">
 
-                	 <legend><h3>4. ANTECENDENTES PERSONALES:</h3></legend>
+                     <legend><h3>4. ANTECENDENTES PERSONALES:</h3></legend>
 
-                	 <legend><h4>4.1. Ginecológicos: </h4></legend>
+                     <legend><h4>4.1. Ginecológicos: </h4></legend>
 
-					<label for="GMenarq">4.1.1. Menarquia:</label>
+                    <label for="GMenarq">4.1.1. Menarquia:</label>
                     <input name="GMenarq" id="GMenarq" value="" type="text">
 
-                     <label for="GPtmen">4.1.2. Patrón menstrual:</label>
-                    <input name="GPtmen" id="GPtmen" value="" type="text">
-
+                     <label> 4.1.2. Patrón menstrual:</label>
+                    
                      <label for="GCcls">4.1.2.1. Ciclos: </label>
                     <input name="GCcls" id="GCcls" value="" type="text">                   
 
@@ -415,43 +423,44 @@
 
                     <label for="GUcrl">4.1.7. Última citología resultado:</label>
                     <input name="GUcrl" id="GUcrl" value="" type="text">
-					
-					<legend><h4>4.2. Obstétricos:</h4></legend>
-					    <fieldset data-role="controlgroup" data-iconpos="right">
-					        <legend><h4>4.2.1.</h4> </legend>
-					        <input name="2G" id="2G" type="checkbox">
-					        <label for="2G">G</label>
+                    
+                    <label><h4>4.2. Obstétricos:</h4></label>
+                        <fieldset data-role="controlgroup" data-iconpos="right">
+                            <legend><h4>4.2.1. </h4></legend>
+                            <input name="2G" id="2G" type="checkbox">
+                            <label for="2G">G</label>
 
-					        <input name="2P" id="2P" type="checkbox">
-					        <label for="2P">P</label>
+                            <input name="2P" id="2P" type="checkbox">
+                            <label for="2P">P</label>
 
-					        <input name="2C" id="2C" type="checkbox">
-					        <label for="2C">C</label>
+                            <input name="2C" id="2C" type="checkbox">
+                            <label for="2C">C</label>
 
-					        <input name="2Ce" id="2Ce" type="checkbox">
-					        <label for="2Ce">Ce</label>
+                            <input name="2Ce" id="2Ce" type="checkbox">
+                            <label for="2Ce">Ce</label>
 
-					        <input name="2A" id="2A" type="checkbox">
-					        <label for="2A">A</label>
+                            <input name="2A" id="2A" type="checkbox">
+                            <label for="2A">A</label>
 
-					        <input name="2E" id="2E" type="checkbox">
-					        <label for="2E">E</label>
+                            <input name="2E" id="2E" type="checkbox">
+                            <label for="2E">E</label>
 
-					        <input name="2O" id="2O" type="checkbox">
-					        <label for="2O">O</label>
+                            <input name="2O" id="2O" type="checkbox">
+                            <label for="2O">O</label>
 
-					        <input name="2Mo" id="2Mo" type="checkbox">
-					        <label for="2Mo">Mo</label>
+                            <input name="2Mo" id="2Mo" type="checkbox">
+                            <label for="2Mo">Mo</label>
 
-					        <input name="2V" id="2V" type="checkbox">
-					        <label for="2V">TV</label>
+                            <input name="2V" id="2V" type="checkbox">
+                            <label for="2V">TV</label>
 
-					        <input name="2M" id="2M" type="checkbox">
-					        <label for="2M">M</label>
+                            <input name="2M" id="2M" type="checkbox">
+                            <label for="2M">M</label>
 
-					    </fieldset>
+                        </fieldset>
+                     <label></label>
 
-					<label for="OFup">4.2.2. FUP:</label>
+                    <label for="OFup">4.2.2. FUP:</label>
                     <input name="OFup" id="OFup" value="" type="text">
 
                     <label for="OIi">4.2.3. Intervalo intergenésico:</label>
@@ -544,8 +553,9 @@
             </content>
           </section>
 
+<!--__________ PAGINA 5 __________-->
 
- 		  <section data-role="page" id="Pag5">
+          <section data-role="page" id="Pag5">
 
             <header data-role="header">
 
@@ -556,11 +566,11 @@
 
             <content data-role="content">
 
-                	 <legend><h4>  5. QUEJA PRINCIPAL:</h4></legend>
-                	 <label for="QPrn"></label>
+                     <legend><h4>  5. QUEJA PRINCIPAL:</h4></legend>
+                     <label for="QPrn"></label>
                     <input name="QPrn" id="QPrn" value="" type="text">
 
-					<label for="GMenarq"><h4>  5.1. Ampliacion de la queja principal: </h4></label>
+                    <label for="GMenarq"><h4>  5.1. Ampliacion de la queja principal: </h4></label>
                     <input name="GMenarq" id="GMenarq" value="" type="text">
 
                     <legend><h4>  6. SIGNOS VITALES:</h4></legend>
@@ -597,7 +607,7 @@
             </content>
           </section>
 
-
+<!--__________ PAGINA 6 __________-->
            <section data-role="page" id="Pag6">
 
             <header data-role="header">
@@ -607,15 +617,15 @@
 
             </header>
 
-                 <content data-role="content">
+            <content data-role="content">
 
-                	<legend><h3>DOMINIOS DE SALUD</h3></legend>
+                     <legend><h3>DOMINIOS DE SALUD</h3></legend>
 
-                	<legend><h4>8. PROMOCION DE LA SALUD</h4></legend>
+                     <legend><h4>8. PROMOCION DE LA SALUD</h4></legend>
 
-                	<legend><h4>8.1. ENTREVISTA:</h4></legend>
+                     <legend><h4>8.1. ENTREVISTA:</h4></legend>
 
-                	<label for="ESdg">  8.1.1. Salud en general: </label>
+                    <label for="ESdg">  8.1.1. Salud en general: </label>
                     <input name="ESdg" id="ESdg" value="" type="text">
 
                     <label for="ERdh"> 8.1.2. Razones de hospitalizaciones:</label>
@@ -636,229 +646,229 @@
                     <legend><h4>8.2. Factores o Conductas de riesgo:</h4></legend>
 
                     <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
-                          <thead>
+    <thead>
       <tr class="ui-bar-d">
         <th data-priority="2">Todas:</th>
         <th data-priority="3"> SI / NO</th>
         <th data-priority="1">Relacionados con vida fértil:</th>
         <th data-priority="5"> SI / NO</th>
       </tr>
-              </thead>
-                                <tbody>
+    </thead>
+    <tbody>
       <tr>
         <th>8.2.1. Consumo sustancias psicoactivas: (cual)</th>
         <td>
         <label for="Csps"></label>
-		<select name="Csps" id="Csps" data-role="slider" data-mini="true">
-		<option value="off">No</option>
-		<option value="on" selected="">Yes</option>
-		</select>
-		</td>
+        <select name="Csps" id="Csps" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
+        </td>
         <td> 8.2.13. Inicio vida sexual < 19 años* </td>
         <td>
         <label for="Ivsx"></label>
-		<select name="Ivsx" id="Ivsx" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
-		</td>
+        <select name="Ivsx" id="Ivsx" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
+        </td>
       </tr>
       <tr>
         <th>8.2.2. Exposición agente químico,  físico,  insecticidas</th>
         <td>
         <label for="Exag"></label>
-		<select name="Exag" id="Exag" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="Exag" id="Exag" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
         <td>8.2.14. Múltiples compañeros sexuales</td>
         <td>
         <label for="Mcsx"></label>
-		<select name="Mcsx" id="Mcsx" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="Mcsx" id="Mcsx" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
       </tr>
       <tr>
         <th>8.2.3. Trabajo forzoso, carga horaria o estrés</th>
         <td>
         <label for="Tfch"></label>
-		<select name="Tfch" id="Tfch" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="Tfch" id="Tfch" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
         <td>8.2.15. Historia de ETS</td>
         <td>
         <label for="HEts"></label>
-		<select name="HEts" id="HEts" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="HEts" id="HEts" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
       </tr>
       <tr>
         <th>8.2.4. Trastorno psiquiátrico</th>
         <td>
         <label for="Tpsq"></label>
-		<select name="Tpsq" id="Tpsq" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Tpsq" id="Tpsq" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td>8.2.16. Malnutrición(IMC > 30 ó < 18)  </td>
         <td>
         <label for="Mimc"></label>
-		<select name="Mimc" id="Mimc" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Mimc" id="Mimc" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.5. Antecedente de autolesión </th>
         <td>
         <label for="Antau"></label>
-		<select name="Antau" id="Antau" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Antau" id="Antau" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td><h5>Solo gestantes:</h5></td>
         <td>
         <label for="Sgst"></label>
-		<select name="Sgst" id="Sgst" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Sgst" id="Sgst" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.6. Antecedente de abuso sexual</th>
         <td>
         <label for="Aabsx"></label>
-		<select name="Aabsx" id="Aabsx" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Aabsx" id="Aabsx" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td>8.2.17. Embarazo adolescente(10-19 años) </td>
         <td>
         <label for="Eadl"></label>
-		<select name="Eadl" id="Eadl" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Eadl" id="Eadl" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.7. Violencia doméstica </th>
         <td>
         <label for="vdmst"></label>
-		<select name="vdmst" id="vdmst" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="vdmst" id="vdmst" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td>8.2.18. Edad obstétrica extrema(< 16 ó > 35)</td>
         <td>
         <label for="Eoxt"></label>
-		<select name="Eoxt" id="Eoxt" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Eoxt" id="Eoxt" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.8. Abuso sexual</th>
         <td>
         <label for="absxll"></label>
-		<select name="absxll" id="absxll" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="absxll" id="absxll" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td>8.2.19. Gran multípara</td>
         <td>
         <label for="grnmul"></label>
-		<select name="grnmul" id="grnmul" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="grnmul" id="grnmul" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.9. Baja escolaridad </th>
         <td>
         <label for="bajcol"></label>
-		<select name="bajcol" id="bajcol" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="bajcol" id="bajcol" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
         <td>8.2.20. Embarazo deseado </td>
         <td>
         <label for="embds"></label>
-		<select name="embds" id="embds" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="embds" id="embds" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
       </tr>
       <tr>
         <th>8.2.10. Bajo nivel socioeconómico </th>
         <td>
         <label for="bnsoc"></label>
-		<select name="bnsoc" id="bnsoc" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="bnsoc" id="bnsoc" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
         <td>8.2.21. Curso de preparación</td>
         <td>
         <label for="curspp"></label>
-		<select name="curspp" id="curspp" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="curspp" id="curspp" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.11. Toma de citología regularmente </th>
         <td>
         <label for="Tcrgl"></label>
-		<select name="Tcrgl" id="Tcrgl" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Tcrgl" id="Tcrgl" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td>8.2.22. Madre soltera</td>
         <td>
         <label for="mdrsol"></label>
-		<select name=mdrsol"" id="mdrsol" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name=mdrsol"" id="mdrsol" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
         <th>8.2.12. Medicación permanente: (cuál): </th>
         <td>
         <label for="MEdper"></label>
-		<select name="MEdper" id="MEdper" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="MEdper" id="MEdper" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
         <td>8.2.23. Toma de micronutrientes</td>
         <td>
         <label for="Tommcr"></label>
-		<select name="Tommcr" id="Tommcr" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Tommcr" id="Tommcr" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
@@ -867,11 +877,11 @@
         <td>Ácido fólico:</td>
         <td>
         <label for="Acdfol"></label>
-		<select name="Acdfol" id="Acdfol" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
-		</td>
+        <select name="Acdfol" id="Acdfol" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
+        </td>
       </tr>
       <tr>
         <th></th>
@@ -879,10 +889,10 @@
         <td>Sulfato ferroso:</td>
         <td>
         <label for="Sulfrr"></label>
-		<select name="Sulfrr" id="Sulfrr" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>
+        <select name="Sulfrr" id="Sulfrr" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>
         </td>
       </tr>
       <tr>
@@ -891,10 +901,10 @@
         <td>Carbonato de Calcio: </td>
         <td>
         <label for="carcal"></label>
-		<select name="carcal" id="carcal" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="carcal" id="carcal" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
       </tr>
       <tr>
@@ -903,17 +913,15 @@
         <td>Otro:</td>
         <td>
         <label for="Ootroo"></label>
-		<select name="Ootroo" id="Ootroo" data-role="slider" data-mini="true">
-    	<option value="off">No</option>
-    	<option value="on" selected="">Yes</option>
-		</select>	
+        <select name="Ootroo" id="Ootroo" data-role="slider" data-mini="true">
+        <option value="off">No</option>
+        <option value="on" selected="">Yes</option>
+        </select>   
         </td>
       </tr>
 
     </tbody>
   </table>
-
-
                 <div name="nextPrevious6">
                     <center>
                         <a href="#Pag5" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
@@ -923,64 +931,10 @@
                 </div>
              </content>
           </section>
-
-           <section data-role="page" id="Pag7">
-
-            <header data-role="header">
-
-               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
-                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
-
-            </header>
-
-            <content data-role="content">
-
-                	 <legend>2.12. Servicios públicos:</legend>
-
-
-
-
-                 <div name="nextPrevious7">
-                    <center>
-                        <a href="#Pag6" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
-                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
-                        <a href="#Pag8" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
-                    </center>
-                </div>
-            </content>
-          </section>
-
-
-          <section data-role="page" id="Pag8">
-
-            <header data-role="header">
-
-               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
-                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
-
-            </header>
-
-            <content data-role="content">
-
-                	 <legend>2.12. Servicios públicos:</legend>
-
-
-
-
-                <div name="nextPrevious8">
-                    <center>
-                        <a href="#Pag7" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
-                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
-                        <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
-                    </center>
-                </div>
-            </content>
-          </section>
-   
 <!--Hasta aqui el codigo de Jeniffer OJO ANTES DE SEGUIR AGREGANDO SECTIONS MODIFICAR LOS BOTONES "SIGUIENTE Y ATRAS" 
         Me refiero al <a href="#Pagina" para no citar por error otra pagina
 -->
-    <section data-role="page" id="Pag9">
+    <section data-role="page" id="Pag7">
         <header data-role="header">
             <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
             <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
@@ -1095,12 +1049,581 @@
             </table>
             <div name="nextPrevious9">
                     <center>
+                        <a href="#Pag6" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                        <a href="#Pag8" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                    </center>
+                </div>
+        </content>
+    </section>
+
+
+<!--__________ PAGINA 7 __________-->
+
+           <section data-role="page" id="Pag8">
+
+            <header data-role="header">
+
+               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+
+            </header>
+
+            <content data-role="content">
+
+                     <legend><h3>11. ACTIVIDAD Y REPOSO</h3></legend>
+
+                     <legend><h4>11.1 SUEÑO / REPOSO </h4></legend>
+
+                     <legend><h5>11.1.1. ENTREVISTA: </h5></legend>
+
+                     <label for="Enhdd"> 11.1.1.1. N° de horas que duerme diariamente:</label>
+                    <input name="Enhdd" id="Enhdd" value="" type="text">
+
+                    <label for="Ehids">  11.1.1.2. Hora de inicio del sueño:</label>
+                    <input name="Ehids" id="Ehids" value="" type="text">
+
+                    <label for="Ehfsñ">  11.1.1.3. Hora de finalización sueño: </label>
+                    <input name="Ehfsñ" id="Ehfsñ" value="" type="text">
+
+                    <label for="Epcsñ">  11.1.1.4. Problemas para conciliar el sueño:</h4></label>
+                    <input name="Epcsñ" id="Epcsñ" value="" type="text">
+
+                    <label for="ETapd">  11.1.1.5. Técnicas o ayuda para dormir: </label>
+                    <input name="ETapd" id="ETapd" value="" type="text">
+
+                    <label for="Epdsñ"> 11.1.1.6. Problemas duarante el sueño:</label>
+                    <input name="Epdsñ" id="Epdsñ" value="" type="text">
+
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>11.1.1.6. Problemas duarante el sueño:</legend>
+                            
+                            <input name="Problemassueño" id="Psning" value="Psning" checked="checked" type="radio" onclick="inahibilitarProblemassueñoOtro(), inahibilitarProblemassueñoPesadillas(), inahibilitarProblemassueñoSueñoliaviano(), inahibilitarProblemassueñoDifilcultad()">
+                            <label for="Psning" >Ninguno</label>
+                            
+                            <input name="Problemassueño" id="Pspdll" value="Pspdll" type="radio" onclick="inahibilitarProblemassueñoOtro()">
+                            <label for="Pspdll" >Pesadillas</label>
+
+                            <input name="Problemassueño" id="psslv" value="psslv" type="radio" onclick="inahibilitarProblemassueñoOtro(), h222ibilitarProblemassueñoSueñoliaviano()">
+                            <label for="psslv" >Sueño liviano</label>
+
+                            <input name="Problemassueño" id="psdis" value="psdis" type="radio" onclick="inahibilitarProblemassueñoOtro(), hibilitarProblemassueñoDifilcultad()">
+                            <label for="psdis">Dificultad para iniciar el sueño</label>
+                            
+                            <input name="Problemassueño" id="psotro" value="psotro" type="radio" onclick="hibilitarProblemassueñoOtro()">
+                            <label for="psotro">Otro</label>
+
+                            <div id="divECOCual"></div>
+                                                      
+                        </fieldset>
+
+                    <label for="Sdcfd">11.1.1.7. Sensación de cansancio o falta de descanso:</label>
+                    <input name="Sdcfd" id="Sdcfd" value="" type="text">
+
+                    <label for="Pppds">11.1.1.8. Problemas para permanecer despierta:</label>
+                    <input name="Pppds" id="Pppds" value="" type="text">
+
+                    <label for="Icsñ">11.1.1.9. Insatisfacción con el sueño:</label>
+                    <input name="Icsñ" id="Icsñ" value="" type="text">
+
+                    <label for="Dprcn">11.1.1.10. Dificultades para la relajación conciente:</label>
+                    <input name="Dprcn" id="Dprcn" value="" type="text">
+
+                     <legend><h4>11.2 ACTIVIDAD / EJERCICIO </h4></legend>
+
+                     <legend><h5>11.2.1. ENTREVISTA: </h5></legend>
+
+                     <label for="Cprafs"> 11.2.1.1. Capacidad para realizar actividad física:</label>
+                    <input name="Cprafs" id="Cprafs" value="" type="text">
+
+                    <label for="Cpsavd"> Sólo AVD:  </label>
+                    <input name="Cpsavd" id="Cpsavd" value="" type="text">
+
+                    <label for="Afse"> Actividad física (Caminata o ejercicios): </label>
+                    <input name="Afse" id="Afse" value="" type="text">
+
+                    <label for="ReguladdGmnpr"> 11.2.1.2. Regularidad:</label>
+                    <input name="ReguladdGmnpr" id="ReguladdGmnpr" value="" type="text">
+
+                    <label for="Gmnpr"> 11.2.1.3. Gimnasia prenatal:</label>
+                    <input name="Gmnpr" id="Gmnpr" value="" type="text">
+
+                    <label for="ctrepr"> 11.2.1.4. Contraindicación para ejercicio prenatal:</label>
+                    <input name="ctrepr" id="ctrepr" value="" type="text">
+
+                    <label for="Encal"> Cuál:</label>
+                    <input name="Encal" id="Encal" value="" type="text">
+
+                    <label for="Gimpost"> 11.2.1.5. Gimnasia postnatal:</label>
+                    <input name="Gimpost" id="Gimpost" value="" type="text">
+
+                    <legend><h5>11.2.1. EXAMEN FÍSICO: </h5></legend>
+
+                    <legend><h5>11.2.2.1. Cuello: </h5></legend>
+
+                    <label for="Cpuls"> 11.2.2.1.1. Pulsaciones :</label>
+                    <input name="Cpuls" id="Cpuls" value="" type="text">
+
+                    <label for="CGangl"> 11.2.2.1.2. Ganglios: </label>
+                    <input name="CGangl" id="CGangl" value="" type="text">
+
+                    <label for="Cmdesc"> 11.2.2.1.3. Masas (describir):</label>
+                    <input name="Cmdesc" id="Cmdesc" value="" type="text">
+
+                    <legend><h5>11.2.2.2. Función Motora: </h5></legend>
+
+                    <label for="FMmarcha"> 11.2.2.1. Marcha:</label>
+                    <input name="FMmarcha" id="FMmarcha" value="" type="text">
+
+
+                    <label> 11.2.2.2. Conformación columna:</label>                   
+
+
+                    <label for="FMcrnl"> Curvaturas normales:</label>
+                    <input name="FMcrnl" id="FMcrnl" value="" type="text">
+
+
+                    <label for="FMHpf"> Hipercifosis:</label>
+                    <input name="FMHpf" id="FMHpf" value="" type="text">
+
+
+                    <label for="FMhpd"> Hiperlordosis:</label>
+                    <input name="FMhpd" id="FMhpd" value="" type="text">
+
+
+                    <label for="FMescol"> Escoliosis:</label>
+                    <input name="FMescol" id="FMescol" value="" type="text">
+
+                    <label>11.2.2.3. Conformación articulación coxo femoral: </label>
+
+                    <label for="CAnormal"> Normal:</label>
+                    <input name="CAnormal" id="CAnormal" value="" type="text">
+
+                    <label for="CAdefcg"> Defectos congénitos:</label>
+                    <input name="CAdefcg" id="CAdefcg" value="" type="text">
+
+                    <label>11.2.2.4. Problemas de abducción:</label>
+
+                    <label for="PAóseos"> Óseos: </label>
+                    <input name="PAóseos" id="PAóseos" value="" type="text">
+
+                    <label for="PAMusc"> Musculares: </label>
+                    <input name="PAMusc" id="PAMusc" value="" type="text">
+
+                    <label for="PADrabd"> 11.2.2.5. Diástasis Rectos abdominales:</label>
+                    <input name="PADrabd" id="PADrabd" value="" type="text">
+
+                    <legend><h4>11.3. EQUILIBRIO DE LA ENERGÍA: </h4></legend>
+                    
+                    <label for="EEsse"> 11.3.1. Se siente con energía:</label>
+                    <input name="EEsse" id="EEsse" value="" type="text">
+
+                    <label for="EEFatg"> 11.3.2. Fatiga:</label>
+                    <input name="EEFatg" id="EEFatg" value="" type="text">
+
+                    <legend><h4>11.4. RESPUESTA CARDIOVASCULARES / PULMONARES: </h4></legend>
+
+                    <legend><h4>11.4.1. EXAMEN FÍSICO: </h4></legend>
+
+                    <legend><h4>11.4.1.1. Respiración: </h4></legend>
+
+                    <label > 11.4.1.1.1. Tipo:</label>
+
+                    <label for="Ttrcc"> Torácica:</label>
+                    <input name="Ttrcc" id="Ttrcc" value="" type="text">
+
+                    <label for="Tabdml"> Abdominal:</label>
+                    <input name="Tabdml" id="Tabdml" value="" type="text">
+
+                    <label> 11.4.1.1.2. Vía:</label>                    
+
+                    <label for="VNsl"> Nasal:</label>
+                    <input name="VNsl" id="VNsl" value="" type="text">
+
+                    <label for="VBcl"> Bucal:</label>                    
+                    <input name="VBcl" id="VBcl" value="" type="text">
+
+                    <label> 11.4.1.1.3. Ritmo:</label>
+
+                    <label for="Rrglr"> Regular:</label>
+                    <input name="Rrglr" id="Rrglr" value="" type="text">
+
+                    <label for="Rirrgl"> Irregular:</label>
+                    <input name="Rirrgl" id="Rirrgl" value="" type="text">
+
+                    <label> 11.4.1.1.4. Profundidad:</label>
+
+                    <label for="Pprmd"> Promedio:</label>
+                    <input name="Pprmd" id="Pprmd" value="" type="text">
+
+                    <label for="Pprfd"> Profunda:</label>
+                    <input name="Pprfd" id="Pprfd" value="" type="text">
+
+                    <label for="Pspfcl"> Superficial:</label>
+                    <input name="Pspfcl" id="Pspfcl" value="" type="text">
+
+
+                    <legend><h4>11.4.1.2. Nariz: </h4></legend>
+
+                    <label for="NFnper"> 11.4.1.2.1. Fosas nasales permeables:</label>
+                    <input name="NFnper" id="NFnper" value="" type="text">
+
+                    <label for="Ndfres"> 11.4.1.2.2. Dificultad para respirar:</label>
+                    <input name="Ndfres" id="Ndfres" value="" type="text">
+
+                    <label for="Nalnas"> 11.4.1.2.3. Aleteo Nasal:</label>
+                    <input name="Nalnas" id="Nalnas" value="" type="text">
+
+                    <label for="NMasas"> 11.4.1.2.4. Masas:</label>
+                    <input name="NMasas" id="NMasas" value="" type="text">
+
+                    <label for="Ncrpt"> 11.4.1.2.5. Crepitaciones:</label>
+                    <input name="Ncrpt" id="Ncrpt" value="" type="text">
+
+                    <label for="Ndlr"> 11.4.1.2.6. Dolor:</label>
+                    <input name="Ndlr" id="Ndlr" value="" type="text">
+
+                    <label> 11.4.1.2.7. Alteraciones:</label>
+
+                    <label for="Adisnea"> Disnea:</label>
+                    <input name="Adisnea" id="Adisnea" value="" type="text">
+
+                    <label for="Aortpn"> Ortopnea:</label>
+                    <input name="Aortpn" id="Aortpn" value="" type="text">
+                    
+
+                    <legend><h4>11.4.1.3. Tórax: </h4></legend>
+
+                    <label for="Tsmtr"> 11.4.1.3.1. Simetría:</label>
+                    <input name="Tsmtr" id="Tsmtr" value="" type="text">
+
+                    <label > 11.4.1.3.2. Espacios intercostales:</label>                    
+
+                    <label for="EIretr"> Retracciones:</label>
+                    <input name="EIretr" id="EIretr" value="" type="text">
+
+                    <label for="EIabbms"> Abombamientos:</label>
+                    <input name="EIabbms" id="EIabbms" value="" type="text">
+
+                    <label for="umacc"> 11.4.1.3.3. Uso músculos accesorios:</label>
+                    <input name="umacc" id="umacc" value="" type="text">
+
+                    <label> 11.4.1.3.4. Frémito vocal:</label>
+
+                    <label for="FVfrvo"> Normal:</label>
+                    <input name="FVfrvo" id="FVfrvo" value="" type="text">
+
+                    <label for="FVaumnt"> Aumentado:</label>
+                    <input name="FVaumnt" id="FVaumnt" value="" type="text">
+
+                    <label for="FVdsmd"> Disminuido:</label>
+                    <input name="FVdsmd" id="FVdsmd" value="" type="text">
+
+                    <label for="FVrrpt"> 11.4.1.3.5. Ruidos Respiratorios:</label>
+                    <input name="FVrrpt" id="FVrrpt" value="" type="text">
+
+                    <label for="FVsad"> 11.4.1.3.6. Sonidos adventicios: (describir)</label>
+                    <input name="FVsad" id="FVsad" value="" type="text">
+
+
+                    <legend><h4>11.4.1.4. Valoración cardiovascular: </h4></legend>
+
+                    <label for="VCritmo"> 11.4.1.4.1. Ritmo:</label>
+                    <input name="VCritmo" id="VCritmo" value="" type="text">
+
+                    <label for="VCpmi"> 11.4.1.4.2. PMI:</label>
+                    <input name="VCpmi" id="VCpmi" value="" type="text">
+
+                    <label for="VCsoplos"> 11.4.1.4.3. Soplos:</label>
+                    <input name="VCsoplos" id="VCsoplos" value="" type="text">
+
+                    <label for="VCrsbg"> 11.4.1.4.4. Ruidos sobreagregados:</label>
+                    <input name="VCrsbg" id="VCrsbg" value="" type="text">
+
+                    <label> 11.4.1.4.5. Pulsos:</label>
+
+                    <label for="Plcart"> Carotideo:</label>
+                    <input name="Plcart" id="Plcart" value="" type="text">
+
+                    <label for="Plbrq"> Braquial:</label>
+                    <input name="Plbrq" id="Plbrq" value="" type="text">
+
+                    <label for="Plrdl"> Radial:</label>
+                    <input name="Plrdl" id="Plrdl" value="" type="text">
+
+                    <label for="Plpopl"> Poplíteo:</label>
+                    <input name="Plpopl" id="Plpopl" value="" type="text">
+
+                    <label for="Plfmrl"> Femoral:</label>
+                    <input name="Plfmrl" id="Plfmrl" value="" type="text">
+
+                    <label for="Plpedl"> Pedial:</label>
+                    <input name="Plpedl" id="Plpedl" value="" type="text">
+
+                    <label for="Plllcap"> 11.4.1.4.6. Llenado capilar:</label>
+                    <input name="Plllcap" id="Plllcap" value="" type="text">
+
+                    <label for="Plpgnt"> 11.4.1.4.7. Prueba de Gant (si procede):</label>
+                    <input name="Plpgnt" id="Plpgnt" value="" type="text">
+
+                    <label for="Pltlg"> 11.4.1.4.8. Telangiectasis:</label>
+                    <input name="Pltlg" id="Pltlg" value="" type="text">
+                    
+                    <label for="Plvrcs"> 11.4.1.4.9. Várices:</label>
+                    <input name="Plvrcs" id="Plvrcs" value="" type="text">
+
+                    <label for="Pledma"> 11.4.1.4.10. Edema:</label>
+                    <input name="Pledma" id="Pledma" value="" type="text">
+
+                    <label for="Pldoalt"> 11.4.1.4.11. Describir otras alteraciones:</label>
+                    <input name="Pldoalt" id="Pldoalt" value="" type="text">          
+
+                 <div name="nextPrevious7">
+                    <center>
+                        <a href="#Pag7" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                        <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                    </center>
+                </div>
+            </content>
+          </section>
+
+
+          <section data-role="page" id="Pag9">
+
+            <header data-role="header">
+
+               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+
+            </header>
+
+            <content data-role="content">
+
+                     <legend><h4>12. PERCEPCION Y COGNICION </h4></legend>
+
+                     <legend><h5>12.1. ENTREVISTA: </h5></legend>
+
+                     <label for="Endconc"> 12.1.1. NIVEL DE CONCIENCIA:</label>
+                    <input name="Endconc" id="Endconc" value="" type="text">
+
+                    <label> 12.1.2. MEMORIA:</label>
+
+                    <label for="Mminmd"> Inmediata:</label>
+                    <input name="Mminmd" id="Mminmd" value="" type="text">
+
+                    <label for="Mmrect"> Reciente:</label>
+                    <input name="Mmrect" id="Mmrect" value="" type="text">
+
+                    <label for="Mmrmt"> Remota:</label>
+                    <input name="Mmrmt" id="Mmrmt" value="" type="text">
+
+                    <label for="Atenccn"> 12.1.3. Atención:</label>
+                    <input name="Atenccn" id="Atenccn" value="" type="text">
+
+                    <label for="Conctra"> 12.1.4. Concentración:</label>
+                    <input name="Conctra" id="Conctra" value="" type="text">
+
+                    <label for="Idacedd"> 12.1.5. Ideas acorde a su edad:</label>
+                    <input name="Idacedd" id="Idacedd" value="" type="text">
+
+                    <label for="Rmidacr"> 12.1.6. Razonamiento moral (ideas acordes a la sociedad):</label>
+                    <input name="Rmidacr" id="Rmidacr" value="" type="text">
+
+                    <label for="Tmddcs"> 12.1.7. Toma de decisiones:</label>
+                    <input name="Tmddcs" id="Tmddcs" value="" type="text">
+
+                    <label > 12.1.8. Realizar a la mujer preguntas concernientes solo a los conocimientos relacionados con su situación actual. Conocimientos en:</label>
+
+                    <label for="RMcsc"> Cuidados según su caso:</label>
+                    <input name="RMcsc" id="RMcsc" value="" type="text">
+
+                    <label for="RMhgntl"> Higiene genital:</label>
+                    <input name="RMhgntl" id="RMhgntl" value="" type="text">
+
+                    <label for="RMcamgs"> Cambios gestación:</label>
+                    <input name="RMcamgs" id="RMcamgs" value="" type="text">
+
+                    <label for="RMtprt"> Trabajo de parto y parto:</label>
+                    <input name="RMtprt" id="RMtprt" value="" type="text">
+
+                    <label for="RMcambp"> Cambios en el puerperio:</label>
+                    <input name="RMcambp" id="RMcambp" value="" type="text">
+
+                    <label for="RMcrnd"> Cuidados del recién nacido:</label>
+                    <input name="RMcrnd" id="RMcrnd" value="" type="text">
+
+                    <label for="RMfacrs"> Factores de riesgo según su caso:</label>
+                    <input name="RMfacrs" id="RMfacrs" value="" type="text">
+
+                    <label for="RMsxd"> Sexualidad:</label>
+                    <input name="RMsxd" id="RMsxd" value="" type="text">
+
+                    <label for="RMcdgs"> Cuidados de la gestación:</label>
+                    <input name="RMcdgs" id="RMcdgs" value="" type="text">
+
+                    <label for="RMrspj"> Respiración y pujo:</label>
+                    <input name="RMrspj" id="RMrspj" value="" type="text">
+
+                    <label for="RMcdpp"> Cuidados en el puerperio:</label>
+                    <input name="RMcdpp" id="RMcdpp" value="" type="text">
+
+                    <label for="RMlacmt"> Lactancia materna:</label>
+                    <input name="RMlacmt" id="RMlacmt" value="" type="text">
+
+                    <label for="RMpsmj"> Problemas de salud de la mujer:</label>
+                    <input name="RMpsmj" id="RMpsmj" value="" type="text">
+
+                    <label for="RMplfm"> Planificación familiar:</label>
+                    <input name="RMplfm" id="RMplfm" value="" type="text">
+
+                    <label for="RMsgalg"> Signos alarma en gestación:</label>
+                    <input name="RMsgalg" id="RMsgalg" value="" type="text">
+
+                    <label for="RMsgalpr"> Signos de alarma en puerperio:</label>
+                    <input name="RMsgalpr" id="RMsgalpr" value="" type="text">
+
+                    <label for="RMestneo"> Estimulación neonatal:</label>
+                    <input name="RMestneo" id="RMestneo" value="" type="text">
+
+                    <label > COMUNICACION:</label>
+
+                    <label for="CMcomp"> 12.1.9. Comprensión:</label>
+                    <input name="CMcomp" id="CMcomp" value="" type="text">
+
+                    <label for="CMexp"> 12.1.10. Expresión:</label>
+                    <input name="CMexp" id="CMexp" value="" type="text">
+
+                    <label for="CMafas"> 12.1.11. Afasia:</label>
+                    <input name="CMafas" id="CMafas" value="" type="text">
+
+                    <label for="CMlengcor"> 12.1.12. Lenguaje corporal:</label>
+                    <input name="CMlengcor" id="CMlengcor" value="" type="text">
+
+                    <label for="CMcohex"> 12.1.13. Coherencia al expresarse:</label>
+                    <input name="CMcohex" id="CMcohex" value="" type="text">
+
+                     <legend><h5>12.2. EXAMEN FÍSICO: </h5></legend>
+
+                    <label for="EFcojbb"> OJOS: 12.2.1. Conjuntiva bulbar y palpebral:</label>
+                    <input name="EFcojbb" id="EFcojbb" value="" type="text">
+
+                    <label > 12.2.2. Pupilas:</label>
+
+                    <label for="PPtmñ"> Tamaño:</label>
+                    <input name="PPtmñ" id="PPtmñ" value="" type="text">
+
+                    <label for="PPisc"> Isocóricas:</label>
+                    <input name="PPisc" id="PPisc" value="" type="text">
+
+                    <label for="PPrccrp"> Reacción corporal:</label>
+                    <input name="PPrccrp" id="PPrccrp" value="" type="text">
+
+                    <label for="AGdvs"> 12.2.3. Agudeza visual (si procede):</label>
+                    <input name="AGdvs" id="AGdvs" value="" type="text">
+
+                    <label for="OIscr"> OIDOS: 12.2.4. Secreciones (tipo)</label>
+                    <input name="OIscr" id="OIscr" value="" type="text">
+
+                    <label for="AGaud"> 12.2.5. Agudeza auditiva (si procede):</label>
+                    <input name="AGaud" id="AGaud" value="" type="text">
+
+                    <label for="FCoord"> 12.2.6. Fuerza y coordinación:</label>
+                    <input name="FCoord" id="FCoord" value="" type="text">
+
+                    <label for="RFljpat"> 12.2.7. Reflejo patelar:</label>
+                    <input name="RFljpat" id="RFljpat" value="" type="text">
+
+                     <label> 12.2.8. Sensibilidad: </label>
+
+                    <label for="SSsprf"> Superficial y profunda::</label>
+                    <input name="SSsprf" id="SSsprf" value="" type="text">
+
+                     <label> 12.2.9. Alteraciones: </label>
+
+                      <label for="Alprs"> Parestesias:</label>
+                    <input name="Alprs" id="Alprs" value="" type="text">
+
+                    <label for="ALotraa"> Otra:</label>
+                    <input name="ALotraa" id="ALotraa" value="" type="text">
+
+                     <label for="PCspr"> 12.2.10. Pares craneales (si procede):</label>
+                    <input name="PCspr" id="PCspr" value="" type="text">                              
+
+
+                <div name="nextPrevious8">
+                    <center>
                         <a href="#Pag8" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
                         <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
                         <a href="#Pag10" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
                     </center>
                 </div>
-        </content>
-    </section>
+            </content>
+          </section>
+
+
+          <section data-role="page" id="Pag10">
+
+            <header data-role="header">
+
+               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+
+            </header>
+
+            <content data-role="content">
+
+                     <legend><h3>13. AUTOPERCEPCION </h3></legend>
+
+                     <legend><h4>13.1. ENTREVISTA: </h4></legend>
+
+                     <label for="Cprafs"> 11.2.1.1. Capacidad para realizar actividad física:</label>
+                    <input name="Cprafs" id="Cprafs" value="" type="text">
+
+
+
+
+                <div name="nextPrevious9">
+                    <center>
+                        <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                        <a href="#Pag11" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                    </center>
+                </div>
+            </content>
+          </section>
+
+
+
+          <section data-role="page" id="Pag11">
+
+            <header data-role="header">
+
+               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+
+            </header>
+
+            <content data-role="content">
+
+                     <legend><h4>11.2 ACTIVIDAD / EJERCICIO </h4></legend>
+
+                     <legend><h5>11.2.1. ENTREVISTA: </h5></legend>
+
+                     <label for="Cprafs"> 11.2.1.1. Capacidad para realizar actividad física:</label>
+                    <input name="Cprafs" id="Cprafs" value="" type="text">
+
+
+
+
+                <div name="nextPrevious10">
+                    <center>
+                        <a href="#Pag10" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                        <a href="#Pag12" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                    </center>
+                </div>
+            </content>
+          </section>
     </body>
 </html>
