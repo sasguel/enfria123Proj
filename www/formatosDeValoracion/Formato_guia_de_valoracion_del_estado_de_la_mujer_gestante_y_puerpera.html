@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
 
+<<<<<<< HEAD
         <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
 
         <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
@@ -16,6 +18,13 @@
 
         <script type="text/javascript" src="js/Formato_guia_de_valoracion_del_estado_de_la_mujer_gestante_y_puerpera_funciones.js"></script>
 
+=======
+        <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/Formato_guia_de_valoracion_del_estado_de_la_mujer_gestante_y_puerpera_funciones.js"></script>
+>>>>>>> 63f5e0883e1a00de7d58622d9b4a886c30d89101
         <script type="text/javascript" src="cordova.js"></script>
         <title>Formulario</title>
     </head>
@@ -141,11 +150,8 @@
                         </div>                                                        
             </content>
            </section>   
+<!--__________ PAGINA 2 __________-->       
 
-
-        <!--__________ PAGINA 2 __________-->       
-
-                             
         <section data-role="page" id="Pag2">
             
             <header data-role="header">
@@ -220,7 +226,7 @@
 
                         <div class="ui-field-contain">
                         <label for="select-custom-24">Recursos del barrio:</label>
-                        <select name="select-custom-24" id="select-custom-24" data-native-menu="false" multiple="multiple" data-iconpos="left">
+                        <select name="select-custom-24" id="select-custom-24" data-native-menu="true" multiple="multiple" data-iconpos="left">
                         
                             <option>Opciones</option>
                             <option value="1" > Salud </option>
@@ -245,10 +251,7 @@
            </content>             
         </section>
 
-
-
-
-        <!--__________ PAGINA 3 __________-->   
+<!--__________ PAGINA 3 __________-->   
 
         <section data-role="page" id="Pag3">
 
@@ -379,8 +382,7 @@
             </content>
           </section>
 
-
-        <!--__________ PAGINA 4 __________-->
+<!--__________ PAGINA 4 __________-->
 
            <section data-role="page" id="Pag4">
 
@@ -613,7 +615,7 @@
           </section>
 
 <!--__________ PAGINA 6 __________-->
-           <section data-role="page" id="Pag6">
+    <section data-role="page" id="Pag6">
 
             <header data-role="header">
 
@@ -651,30 +653,30 @@
                     <legend><h4>8.2. Factores o Conductas de riesgo:</h4></legend>
 
                     <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
-    <thead>
-      <tr class="ui-bar-d">
-        <th data-priority="2">Todas:</th>
-        <th data-priority="3"> SI / NO</th>
-        <th data-priority="1">Relacionados con vida fértil:</th>
-        <th data-priority="5"> SI / NO</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>8.2.1. Consumo sustancias psicoactivas: (cual)</th>
-        <td>
-        <label for="Csps"></label>
-        <select name="Csps" id="Csps" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
-        </select>
-        </td>
-        <td> 8.2.13. Inicio vida sexual < 19 años* </td>
-        <td>
-        <label for="Ivsx"></label>
-        <select name="Ivsx" id="Ivsx" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+            <thead>
+            <tr class="ui-bar-d">
+            <th data-priority="2">Todas:</th>
+            <th data-priority="3"> SI / NO</th>
+            <th data-priority="1">Relacionados con vida fértil:</th>
+            <th data-priority="5"> SI / NO</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <th>8.2.1. Consumo sustancias psicoactivas: (cual)</th>
+            <td>
+            <label for="Csps"></label>
+            <select name="Csps" id="Csps" data-role="slider" data-mini="true">
+            <option value="off" selected="">No</option>
+            <option value="on">Yes</option>
+            </select>
+            </td>
+            <td> 8.2.13. Inicio vida sexual < 19 años* </td>
+            <td>
+            <label for="Ivsx"></label>
+            <select name="Ivsx" id="Ivsx" data-role="slider" data-mini="true">
+            <option value="off"selected="">No</option>
+        <option value="on">Yes</option>
         </select>
         </td>
       </tr>
@@ -683,16 +685,16 @@
         <td>
         <label for="Exag"></label>
         <select name="Exag" id="Exag" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
         <td>8.2.14. Múltiples compañeros sexuales</td>
         <td>
         <label for="Mcsx"></label>
         <select name="Mcsx" id="Mcsx" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
       </tr>
@@ -701,16 +703,16 @@
         <td>
         <label for="Tfch"></label>
         <select name="Tfch" id="Tfch" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
         <td>8.2.15. Historia de ETS</td>
         <td>
         <label for="HEts"></label>
         <select name="HEts" id="HEts" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
       </tr>
@@ -719,16 +721,16 @@
         <td>
         <label for="Tpsq"></label>
         <select name="Tpsq" id="Tpsq" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
         <td>8.2.16. Malnutrición(IMC > 30 ó < 18)  </td>
         <td>
         <label for="Mimc"></label>
         <select name="Mimc" id="Mimc" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -737,16 +739,16 @@
         <td>
         <label for="Antau"></label>
         <select name="Antau" id="Antau" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
         <td><h5>Solo gestantes:</h5></td>
         <td>
         <label for="Sgst"></label>
         <select name="Sgst" id="Sgst" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -755,16 +757,16 @@
         <td>
         <label for="Aabsx"></label>
         <select name="Aabsx" id="Aabsx" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
         <td>8.2.17. Embarazo adolescente(10-19 años) </td>
         <td>
         <label for="Eadl"></label>
         <select name="Eadl" id="Eadl" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -773,16 +775,16 @@
         <td>
         <label for="vdmst"></label>
         <select name="vdmst" id="vdmst" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
         <td>8.2.18. Edad obstétrica extrema(< 16 ó > 35)</td>
         <td>
         <label for="Eoxt"></label>
         <select name="Eoxt" id="Eoxt" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -791,16 +793,16 @@
         <td>
         <label for="absxll"></label>
         <select name="absxll" id="absxll" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on">Yes</option>
         </select>
         </td>
         <td>8.2.19. Gran multípara</td>
         <td>
         <label for="grnmul"></label>
         <select name="grnmul" id="grnmul" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -809,16 +811,16 @@
         <td>
         <label for="bajcol"></label>
         <select name="bajcol" id="bajcol" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
         <td>8.2.20. Embarazo deseado </td>
         <td>
         <label for="embds"></label>
         <select name="embds" id="embds" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
       </tr>
@@ -827,16 +829,16 @@
         <td>
         <label for="bnsoc"></label>
         <select name="bnsoc" id="bnsoc" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
         <td>8.2.21. Curso de preparación</td>
         <td>
         <label for="curspp"></label>
         <select name="curspp" id="curspp" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -845,16 +847,16 @@
         <td>
         <label for="Tcrgl"></label>
         <select name="Tcrgl" id="Tcrgl" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
         <td>8.2.22. Madre soltera</td>
         <td>
         <label for="mdrsol"></label>
         <select name=mdrsol"" id="mdrsol" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -863,16 +865,16 @@
         <td>
         <label for="MEdper"></label>
         <select name="MEdper" id="MEdper" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
         <td>8.2.23. Toma de micronutrientes</td>
         <td>
         <label for="Tommcr"></label>
         <select name="Tommcr" id="Tommcr" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -883,8 +885,8 @@
         <td>
         <label for="Acdfol"></label>
         <select name="Acdfol" id="Acdfol" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -895,8 +897,8 @@
         <td>
         <label for="Sulfrr"></label>
         <select name="Sulfrr" id="Sulfrr" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>
         </td>
       </tr>
@@ -907,8 +909,8 @@
         <td>
         <label for="carcal"></label>
         <select name="carcal" id="carcal" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
       </tr>
@@ -919,8 +921,8 @@
         <td>
         <label for="Ootroo"></label>
         <select name="Ootroo" id="Ootroo" data-role="slider" data-mini="true">
-        <option value="off">No</option>
-        <option value="on" selected="">Yes</option>
+        <option value="off" selected="">No</option>
+        <option value="on" >Yes</option>
         </select>   
         </td>
       </tr>
@@ -937,15 +939,14 @@
              </content>
           </section>
 <!--Hasta aqui el codigo de Jeniffer OJO ANTES DE SEGUIR AGREGANDO SECTIONS MODIFICAR LOS BOTONES "SIGUIENTE Y ATRAS" 
-        Me refiero al <a href="#Pagina" para no citar por error otra pagina
--->
+        Me refiero al <a href="#Pagina" para no citar por error otra pagina-->
     <section data-role="page" id="Pag7">
         <header data-role="header">
             <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
             <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
         </header>
         <content data-role="content">
-            <table >
+            <table>
                 <thead>
                     <tr>
                         <th data-priority="1">Laboratorios</th>
@@ -1062,21 +1063,364 @@
         </content>
     </section>
 
+    <section data-role="page" id="Pag8">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Ecografias</th>
+                        <th align="left">Edad gestacional</th>
+                        <th align="left">Peso/Talla Percentil</th>
+                        <th align="left">Placenta</th>
+                        <th align="left">Liquido amniotico</th>
+                        <th align="left">Otro</th>
+                        <th align="left" colspan="2">Controles/Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th align="left">Primer Trimestre</th>
+                        <td><input name="ptEG" id="ptEG" type="text"></td>
+                        <td><input name="ptPtp" id="ptPtp" type="text"></td>
+                        <td><input name="ptP" id="ptP" type="text"></td>
+                        <td><input name="ptLA" id="ptLA" type="text"></td>
+                        <td><input name="ptO" id="ptO" type="text"></td>
+                        <th align="left">Enfermeria</th>
+                        <td><input name="cbENF" id="cbENF" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Segundo Trimestre</th>
+                        <td><input name="stEG" id="stEG" type="text"></td>
+                        <td><input name="stPtp" id="stPtp" type="text"></td>
+                        <td><input name="stP" id="stP" type="text"></td>
+                        <td><input name="stLA" id="stLA" type="text"></td>
+                        <td><input name="stO" id="stO" type="text"></td>
+                        <th align="left">Medicina</th>
+                        <td><input name="cbMED" id="cbMED" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Tercer Trimestre</th>
+                        <td><input name="ttEG" id="ttEG" type="text"></td>
+                        <td><input name="ttPtp" id="ttPtp" type="text"></td>
+                        <td><input name="ttP" id="ttP" type="text"></td>
+                        <td><input name="ttLA" id="ttLA" type="text"></td>
+                        <td><input name="ttO" id="ttO" type="text"></td>
+                        <th align="left">Nutricion</th>
+                        <td><input name="cbNUT" id="cbNUT" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Otra</th>
+                        <td><input name="oEG" id="oEG" type="text"></td>
+                        <td><input name="oPtp" id="oPtp" type="text"></td>
+                        <td><input name="oP" id="oP" type="text"></td>
+                        <td><input name="oLA" id="oLA" type="text"></td>
+                        <td><input name="oO" id="oO" type="text"></td>
+                        <th align="left">Otro</th>
+                        <td><input name="cbO" id="cbO" type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div name="nextPrevious9">
+                <center>
+                    <a href="#Pag7" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                    <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                    <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                </center>
+            </div>
+        </content>
+    </section>
 
+    <section data-role="page" id="Pag9">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="6">Tiempo de Aplicacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2" valign="middle">Vacunas</th>
+                        <th>Mujer edad fertil</th>
+                        <th>Gestacion</th>
+                        <th>Postparto</th>
+                    </tr>
+                    <tr>
+                        <th>SI &nbsp; &nbsp; &nbsp; NO</th>
+                        <th>SI &nbsp; &nbsp; &nbsp; NO</th>
+                        <th>SI &nbsp; &nbsp; &nbsp; NO</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Sarampión-Rubéola</th>
+                        <td align="center"><input data-role="flipswitch" name="MEF" id="srMEF" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td
+                        >
+                    </tr>
+                    <tr>
+                        <th align="left">VPH</th>
+                        <td align="center"><input data-role="flipswitch" name="MEF" id="vpMEF" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Toxoide antitetanico</th>
+                        <td align="center"><input data-role="flipswitch" name="MEF" id="taMEF" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input data-role="flipswitch" name="Gest" id="taGES" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Influenza</th>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input data-role="flipswitch" name="Gest" id="inGES" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Fiebre amarilla (si viaje)</th>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input data-role="flipswitch" name="Gest" id="faGES" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th align="left">Tos ferina</th>
+                        <td align="center"><input disabled="disabled" data-role="flipswitch" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input data-role="flipswitch" name="Gest" id="tfGES" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                        <td align="center"><input data-role="flipswitch" name="PostP" id="tfPP" data-on-text="SI" data-off-text="No" type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div name="nextPrevious9">
+                <center>
+                    <a href="#Pag8" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                    <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                    <a href="#Pag10" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                </center>
+            </div>
+        </content>
+    </section>
+
+
+    <section data-role="page" id="Pag10">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+                <legend><h1>Examen fisico</h1></legend>
+                <h3>Apariencia General</h3>
+                <input name="agconst" id="agconst" type="text" placeholder="Constitucion" data-clear-btn="true"> 
+                <h3>Estatura</h3><td>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <input name="same" id="agESTalt"  value="on" checked="checked" type="radio">
+                    <label for="agESTalt" >Alto</label>
+                    <input name="same" id="agESTmed"  value="off" type="radio">
+                    <label for="agESTmed" >Medio</label>
+                    <input name="same" id="agESTbaj"  value="other" type="radio">
+                    <label for="agESTbaj" >Bajo</label>
+                    </fieldset><td>                        
+                <label for="agEA">Edad cronologica acorde<br>con edad aparente</label><input type="checkbox" id="agEA">
+                <h3>Cara</h3>
+                <input name="csimetria" id="csimetria" type="text" placeholder="Simetria" data-clear-btn="true">
+                <input name="cfascies" id="cfascies" type="text" placeholder="Fascies" data-clear-btn="true">
+                <input name="csensi" id="csensi" type="text" placeholder="Sensibilidad" data-clear-btn="true">
+                <h3>Piel</h3>
+                <input name="Pintegridad" id="Pintegridad" type="text" placeholder="Integridad" data-clear-btn="true">
+                <input name="Ptextura" id="Ptextura" type="text" placeholder="Textura" data-clear-btn="true">
+                <input name="Phumec" id="Phumec" type="text" placeholder="Humectacion" data-clear-btn="true">
+                <input name="Pacne" id="Pacne" type="text" placeholder="Acné" data-clear-btn="true">
+                <h3>Cloasma</h3>
+                <input name="cloasma" id="cloasma" type="text" placeholder="Cloasma" data-clear-btn="true">
+                <h3>Movimientos involuntarios</h3>
+                <input name="movIn" id="movIn" type="text" placeholder="Movimientos involuntarios" data-clear-btn="true">
+                <h3>Edema</h3>
+                <input name="edema" id="edema" type="text" placeholder="Edema" data-clear-btn="true">
+                <h3>Vello distribucion</h3>
+                <input name="vdis" id="vdis" type="text" placeholder="Distribucion" data-clear-btn="true">
+                <h3>Masas</h3>
+                <input name="masas" id="masas" type="text" placeholder="Masas" data-clear-btn="true">
+                <div name="nextPrevious9">
+                <center>
+                    <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                    <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                    <a href="#Pag11" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                </center>
+            </div>
+            
+        </content>
+    </section>
+
+    <section data-role="page" id="Pag11">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+                <legend><h1>Nutricion</h1></legend>
+                <h2>Entrevista</h2>
+                <h3>Dieta Actual</h3>
+                <input name="comdiasDia" id="comidasDia" type="text" placeholder="Numero de comidas al dia" data-clear-btn="true">
+                <input name="dApetito" id="dApetito" type="text" placeholder="Apetito" data-clear-btn="true">
+                <input name="cpalimen" id="cpalimen" type="text" placeholder="Condiciones de Preparacion de Alimentos" data-clear-btn="true">
+                <input name="apLiqu" id="apLiqu" type="text" placeholder="Aporte de liquidos" data-clear-btn="true">
+                <h3>Alteraciones</h3>
+                <input name="ANauseas" id="ANauseas" type="text" placeholder="Nauseas" data-clear-btn="true">
+                <input name="Areflugas" id="Areflugas" type="text" placeholder="Reflujo gastroesofacico" data-clear-btn="true">
+                <input name="AaverCo" id="AaverCo" type="text" placeholder="Aversion a comer" data-clear-btn="true">
+                <input name="aSed" id="aSed" type="text" placeholder="Sed" data-clear-btn="true">
+                <input name="alOtro" id="alOtro" type="text" placeholder="Otro" data-clear-btn="true">
+                <h2>Examen Fisico</h2>
+                <input name="nefPeso" id="nefPeso" type="text" placeholder="Peso" data-clear-btn="true">
+                <input name="nefTalla" id="nefTalla" type="text" placeholder="Talla" data-clear-btn="true">
+                <input name="nefIMC" id="nefIMC" type="text" placeholder="IMC" data-clear-btn="true">
+                <input name="nefPIG" id="nefPIG" type="text" placeholder="Peso Inicio de Gestación" data-clear-btn="true">
+                <input name="nefPesoAct" id="nefPesoAct" type="text" placeholder="Peso Actual" data-clear-btn="true">
+                <input name="nefClIncPeso" id="nefClIncPeso" type="text" placeholder="Clasificacion incremento de peso" data-clear-btn="true">
+                <h3>Labios</h3>
+                <input name="nefLSimCo" id="nefLSimCo" type="text" placeholder="Simetria Y Color" data-clear-btn="true">
+                <input name="nefLHum" id="nefLHum" type="text" placeholder="Humedad" data-clear-btn="true">
+                <input name="nefLInte" id="nefLInte" type="text" placeholder="Integridad" data-clear-btn="true">
+                <h3>Dientes</h3>
+                <input name="nefDInte" id="nefDInte" type="text" placeholder="Integridad" data-clear-btn="true">
+                <input name="nefDObtu" id="nefDObtu" type="text" placeholder="Obturaciones" data-clear-btn="true">
+                <input name="nefDCaries" id="nefDCaries" type="text" placeholder="Caries" data-clear-btn="true">
+                <h3>Encias</h3>
+                <input name="nefEColor" id="nefEColor" type="text" placeholder="Color" data-clear-btn="true">
+                <input name="nefEGoG" id="nefEGoG" type="text" placeholder="Gengivitis ó Gengivorragia" data-clear-btn="true">
+                <input name="nefEEpulis" id="nefEEpulis" type="text" placeholder="Epulis" data-clear-btn="true">
+                <h3>Mucosa oral</h3>
+                <input name="nefMOColor" id="nefMOColor" type="text" placeholder="Color" data-clear-btn="true">
+                <input name="nefMOHumedad" id="nefMOHumedad" type="text" placeholder="Humedad" data-clear-btn="true">
+                <input name="nefMOLesiones" id="nefMOLesiones" type="text" placeholder="Lesiones" data-clear-btn="true">
+                <h3>Lengua</h3>
+                <input name="nefLnSimetria" id="nefLnSimetria" type="text" placeholder="Simetria" data-clear-btn="true">
+                <input name="nefLnHumedad" id="nefLnHumedad" type="text" placeholder="Humedad" data-clear-btn="true">
+                <h3>Amigdalas</h3>
+                <input name="nefATam" id="nefATam" type="text" placeholder="Tamaño" data-clear-btn="true">
+                <input name="nefAInte" id="nefAInte" type="text" placeholder="Integridad" data-clear-btn="true">
+                <h3>Cabello</h3>
+                <input name="nefCInte" id="nefCInte" type="text" placeholder="Integridad" data-clear-btn="true">
+                <input name="nefCImpla" id="nefCImpla" type="text" placeholder="Implantación" data-clear-btn="true">
+                <h3>Glandula Tiroides</h3>
+                <input name="nefGt" id="nefGt" type="text" placeholder="Glandula tiroides" data-clear-btn="true">
+
+                <div name="nextPrevious9">
+                <center>
+                    <a href="#Pag10" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                    <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                    <a href="#Pag12" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                </center>
+            </div>
+            
+        </content>
+    </section>
+
+    <section data-role="page" id="Pag12">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+                <legend><h1>Eliminacion</h1></legend>
+                <h2>Entrevista</h2>
+                <h3>Aspecto Orina</h3>
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                    <input name="aorina" id="apClaro" value="on" type="radio">
+                    <label for="apClaro" >Claro</label>
+                    <input name="aorina" id="Turbio" value="on" type="radio">
+                    <label for="Turbio" >Turbio</label>
+                </fieldset>
+                <input name="desAorina" id="desAorina" type="text" placeholder="Descripción" data-clear-btn="true">
+                <h3>Color</h3>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <input name="Color" id="Cambar" value="on" type="radio">
+                    <label for="Cambar" >Ambar</label>
+                    <input name="Color" id="CMuyClaro" value="on" type="radio">
+                    <label for="CMuyClaro" >Muy Claro</label>
+                    <input name="Color" id="Ccolurica" value="on" type="radio">
+                    <label for="Ccolurica" >Colúrica</label>
+                    <input name="Color" id="Chemat" value="on" type="radio">
+                    <label for="Chemat" >Hematúrica</label>
+                </fieldset>
+                <h3>Olor</h3>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <input name="Olor" id="oCaract" value="on" onclick="desactivarOtro()" type="radio">
+                    <label for="oCaract" >Caracteristico</label>
+                    <input name="Olor" id="oFet" value="on" onclick="desactivarOtro()" type="radio">
+                    <label for="oFet" >Fetido</label>
+                    <input name="Olor" id="olOtro" value="on" onclick="activarOtro()" type="radio">
+                    <label for="olOtro" >Otro</label>
+                    </fieldset>
+                    <div id="add_Olor">
+                    <br><br>
+                    </div>
+                <input name="miccDia" id="miccDia" type="text" placeholder="Nº micciones/dia" data-clear-btn="true">
+                <input name="Ocaract" id="Ocaract" type="text" placeholder="Otras Caracteristicas" data-clear-btn="true">
+                <input name="DiHoraria" id="DiHoraria" type="text" placeholder="Diuresis horaria" data-clear-btn="true">
+                <input name="balancelale" id="balancelale" type="text" placeholder="Balance LA/LE" data-clear-btn="true">
+                <h3>Alteraciones</h3>
+                <input name="alPola" id="alPola" type="text" placeholder="Polaquiuria" data-clear-btn="true">
+                <input name="alNicturia" id="alNicturia" type="text" placeholder="Nicturia" data-clear-btn="true">
+                <input name="alPoliuria" id="alPoliuria" type="text" placeholder="Poliuria" data-clear-btn="true">
+                <input name="alDisuria" id="alDisuria" type="text" placeholder="Disuria" data-clear-btn="true">
+                <input name="alUrgencia" id="alUrgencia" type="text" placeholder="Urgencia" data-clear-btn="true">
+                <input name="alRetencion" id="alRetencion" type="text" placeholder="Retención" data-clear-btn="true">
+                <input name="alTenesmo" id="alTenesmo" type="text" placeholder="Tenesmo" data-clear-btn="true">
+                <input name="alIncontinencia" id="alIncontinencia" type="text" placeholder="Incontinencia" data-clear-btn="true">
+                <h3>Deposiciones</h3>
+                <h4>Consistencia</h4>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <input name="Deposiciones" id="eDcConsistente" value="on" type="radio">
+                    <label for="eDcConsistente" >Consistente</label>
+                    <input name="Deposiciones" id="eDcAcuosa" value="on" type="radio">
+                    <label for="eDcAcuosa" >Acuosa</label>
+                    <input name="Deposiciones" id="eDcDura" value="on" type="radio">
+                    <label for="eDcDura" >Dura</label>
+                </fieldset>
+                <input name="eDFrecuencia" id="eDFrecuencia" type="text" placeholder="Frecuencia de evacuación" data-clear-btn="true">
+                <h4>Alteraciones</h4>
+                <input name="eDAlMoco" id="eDAlMoco" type="text" placeholder="Moco" data-clear-btn="true">
+                <input name="eDAlSangre" id="eDAlSangre" type="text" placeholder="Sangre" data-clear-btn="true">
+                <input name="eDAlAcolia" id="eDAlAcolia" type="text" placeholder="Acolia" data-clear-btn="true">
+                <input name="eDAlDolor" id="eDAlDolor" type="text" placeholder="Dolor al evacuar" data-clear-btn="true">
+                
+                <h2>Examen Fisico</h2>
+                <input name="eEfAbdomen" id="eEfAbdomen" type="text" placeholder="Abdomen" data-clear-btn="true">
+                <input name="eEfIpiel" id="eEfIpiel" type="text" placeholder="Integridad de la piel" data-clear-btn="true">
+                <input name="eEfEtipo" id="eEfEtipo" type="text" placeholder="Estrias Tipo" data-clear-btn="true">
+                <input name="eEfCicatrices" id="eEfCicatrices" type="text" placeholder="Cicatrices" data-clear-btn="true">
+                <input name="eEfRIntes" id="eEfRIntes" type="text" placeholder="Ruidos Intestinales" data-clear-btn="true">
+                <input name="eEfMasas" id="eEfMasas" type="text" placeholder="Masas (descrbibir)" data-clear-btn="true">
+                
+                <div name="nextPrevious9">
+                <center>
+                    <a href="#Pag11" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                    <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                    <a href="#Pag13" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                </center>
+            </div>
+            
+        </content>
+    </section>
+
+<!--Aqui acaba el codigo de JUAN siguiente seccion #16 en la pag16-->
 <!--__________ PAGINA 7 __________-->
 
-           <section data-role="page" id="Pag8">
-
-            <header data-role="header">
-
-               <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
-                <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
-
-            </header>
-
-            <content data-role="content">
-
-                     <legend><h3>11. ACTIVIDAD Y REPOSO</h3></legend>
+    <section data-role="page" id="Pag13">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <legend><h3>11. ACTIVIDAD Y REPOSO</h3></legend>
 
                      <legend><h4>11.1 SUEÑO / REPOSO </h4></legend>
 
@@ -1385,16 +1729,15 @@
 
                  <div name="nextPrevious7">
                     <center>
-                        <a href="#Pag7" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Pag12" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
                         <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
-                        <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                        <a href="#Pag14" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
                     </center>
                 </div>
-            </content>
-          </section>
+        </content>
+    </section>
 
-
-          <section data-role="page" id="Pag9">
+    <section data-role="page" id="Pag14">
 
             <header data-role="header">
 
@@ -1558,16 +1901,15 @@
 
                 <div name="nextPrevious8">
                     <center>
-                        <a href="#Pag8" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Pag13" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
                         <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
-                        <a href="#Pag10" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                        <a href="#Pag15" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
                     </center>
                 </div>
             </content>
-          </section>
+    </section>
 
-
-          <section data-role="page" id="Pag10">
+   <section data-role="page" id="Pag15">
 
             <header data-role="header">
 
@@ -1582,17 +1924,51 @@
 
                      <legend><h4>13.1. ENTREVISTA: </h4></legend>
 
-                     <label for="Cprafs"> 11.2.1.1. Capacidad para realizar actividad física:</label>
-                    <input name="Cprafs" id="Cprafs" value="" type="text">
+                     <label for="ENagcms"> 13.1.1. A gusto consigo misma:</label>
+                    <input name="ENagcms" id="ENagcms" value="" type="text">
 
+                    <label for="ENAgcem"> 13.1.2. A gusto con su embarazo:</label>
+                    <input name="ENAgcem" id="ENAgcem" value="" type="text">
+
+                    <label for="ENcomd"> 13.1.3. Cómoda con el proceso por el que pasa:</label>
+                    <input name="ENcomd" id="ENcomd" value="" type="text">
+
+                    <label for="ENeval"> 13.1.4. Evaluación de sí misma:</label>
+                    <input name="ENeval" id="ENeval" value="" type="text">
+
+                     <legend><h4>13.2. EXAMEN FÍSICO: </h4></legend>
+
+                     <label for="EXFpp"> 13.2.1. Presentación personal:</label>
+                    <input name="EXFpp" id="EXFpp" value="" type="text">
+
+                    <label for="EXFcontv"> 13.2.2. Contacto visual:</label>
+                    <input name="EXFcontv" id="EXFcontv" value="" type="text">
+
+                    <label for="EXFtvz"> 13.2.3. Tono de voz:</label>
+                    <input name="EXFtvz" id="EXFtvz" value="" type="text">
+
+                    <label for="EXFdist"> 13.2.4. Distracción:</label>
+                    <input name="EXFdist" id="EXFdist" value="" type="text">
+
+                    <label for="EXFabl"> 13.2.5. Abulia:</label>
+                    <input name="EXFabl" id="EXFabl" value="" type="text">
+
+                    <label for="EXFsgc"> 13.2.6. Seguimiento a cuidados: </label>
+                    <input name="EXFsgc" id="EXFsgc" value="" type="text">
+
+                    <label for="EXFprtc"> 13.2.7. Falta parte corporal:</label>
+                    <input name="EXFprtc" id="EXFprtc" value="" type="text">
+
+                    <label for="EXFenf"> 13.2.8. Enfermedad o Embarazo complicado o de alto (que afecten estima o percepción propia):</label>
+                    <input name="EXFenf" id="EXFenf" value="" type="text">
 
 
 
                 <div name="nextPrevious9">
                     <center>
-                        <a href="#Pag9" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Pag14" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
                         <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
-                        <a href="#Pag11" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                        <a href="#Pag16" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
                     </center>
                 </div>
             </content>
@@ -1600,7 +1976,7 @@
 
 
 
-          <section data-role="page" id="Pag11">
+          <section data-role="page" id="Pag16">
 
             <header data-role="header">
 
@@ -1611,24 +1987,367 @@
 
             <content data-role="content">
 
-                     <legend><h4>11.2 ACTIVIDAD / EJERCICIO </h4></legend>
+                     <legend><h4>14. ROL Y RELACIONES: </h4></legend>
 
-                     <legend><h5>11.2.1. ENTREVISTA: </h5></legend>
+                     <legend><h5>14.1. ENTREVISTA: </h5></legend>
 
-                     <label for="Cprafs"> 11.2.1.1. Capacidad para realizar actividad física:</label>
-                    <input name="Cprafs" id="Cprafs" value="" type="text">
+                     <label> 14.1.1. En su familia es:</label>
 
+                     <label for="Famcfm"> Cuidadora de familia:</label>
+                    <input name="Famcfm" id="Famcfm" value="" type="text">
 
+                     <label for="Famprov"> Proveedora de recursos:</label>
+                    <input name="Famprov" id="Famprov" value="" type="text">
 
+                     <label for="Famorient"> Orientadora del hogar:</label>
+                    <input name="Famorient" id="Famorient" value="" type="text">
+
+                     <label for="Famdep"> Depende de ella:</label>
+                    <input name="Famdep" id="Famdep" value="" type="text">
+
+                     <label for="Sscrsd"> 14.1.2. Se siente capaz de responder por el cuidado de su familia:</label>
+                    <input name="Sscrsd" id="Sscrsd" value="" type="text">
+
+                     <label for="Tiptrb"> 14.1.3. Tipo de trabajo:</label>
+                    <input name="Tiptrb" id="Tiptrb" value="" type="text">
+
+                     <label for="consing"> 14.1.4. Considera ingresos suficientes:</label>
+                    <input name="consing" id="consing" value="" type="text">
+
+                    <label> 14.1.5. Relaciones familiares:</label>
+
+                     <label for="Relbuen"> Buenas:</label>
+                    <input name="Relbuen" id="Relbuen" value="" type="text">
+
+                     <label for="Relacep"> Aceptables:</label>
+                    <input name="Relacep" id="Relacep" value="" type="text">
+
+                     <label for="Relmal"> Malas:</label>
+                    <input name="Relmal" id="Relmal" value="" type="text">
+
+                     <label> 14.1.6. Relaciones amigos:</label>
+
+                     <label for="RELAbuen"> Buenas:</label>
+                    <input name="RELAbuen" id="RELAbuen" value="" type="text">
+
+                     <label for="RELaacep"> Aceptables:</label>
+                    <input name="RELaacep" id="RELaacep" value="" type="text">
+
+                     <label for="RELAmal"> Malas:</label>
+                    <input name="RELAmal" id="RELAmal" value="" type="text">
+
+                    <label> 14.1.7. Relaciones de pareja:</label>
+
+                     <label for="RELPbuen"> Buenas:</label>
+                    <input name="RELPbuen" id="RELPbuen" value="" type="text">
+
+                     <label for="RELPacep"> Aceptables:</label>
+                    <input name="RELPacep" id="RELPacep" value="" type="text">
+
+                     <label for="RELPmal"> Malas:</label>
+                    <input name="RELPmal" id="RELPmal" value="" type="text">
+
+                    <label for="Intteracc"> 14.1.8. Interacción:</label>
+                    <input name="Intteracc" id="Intteracc" value="" type="text">
+
+                    <label for="Rrechh"> 14.1.9. Rechazo:</label>
+                    <input name="Rrechh" id="Rrechh" value="" type="text">
+
+                    <label for="Aisllam"> 14.1.10. Aislamiento:</label>
+                    <input name="Aisllam" id="Aisllam" value="" type="text">
+
+                     <label> 14.1.11. Desempeño del rol gestante:</label>
+
+                     <label for="DESauto"> Autocuidado:</label>
+                    <input name="DESauto" id="DESauto" value="" type="text">
+
+                     <label for="DESdisp"> Disposición para aprender:</label>
+                    <input name="DESdisp" id="DESdisp" value="" type="text">
+
+                     <label for="DESacep"> Aceptación:</label>
+                    <input name="DESacep" id="DESacep" value="" type="text">
+
+                     <label for="DESaleg"> Alegría:</label>
+                    <input name="DESaleg" id="DESaleg" value="" type="text">
+
+                     <label> 14.1.12. Desempeño de rol de madre:</label>
+
+                     <label for="DESRaut"> Autocuidado:</label>
+                    <input name="DESRaut" id="DESRaut" value="" type="text">
+
+                     <label for="DESRcuid"> Cuidado de recién nacido:</label>
+                    <input name="DESRcuid" id="DESRcuid" value="" type="text">
+
+                     <label for="DESRdisp"> Disposición para aprender:</label>
+                    <input name="DESRdisp" id="DESRdisp" value="" type="text">
+
+                    <label for="DESRaleg"> Alegría:</label>
+                    <input name="DESRaleg" id="DESRaleg" value="" type="text">
+
+                    <label for="Famligg"> 14.1.13. Familiograma (si seguimiento):</label>
+                    <input name="Famligg" id="Famligg" value="" type="text">
+
+                    <label> 14.2. EXAMEN FÍSICO:</label>
+
+                    <label for="EFdtsobj"> 14.2.1. Datos objetivos: A la entrevista.</label>
+                    <input name="EFdtsobj" id="EFdtsobj" value="" type="text">
+
+                    <label> 14.2.2. Lactancia materna:</label>
+
+                    <label for="LMofc"> Ofrecimiento de la mama</label>
+                    <input name="LMofc" id="LMofc" value="" type="text">
+
+                    <label for="LMppsmt"> Posición materna:</label>
+                    <input name="LMppsmt" id="LMppsmt" value="" type="text">
+
+                    <label for="LMposn"> Posición neonato:</label>
+                    <input name="LMposn" id="LMposn" value="" type="text">
+
+                    <label for="LMagrr"> Agarre:</label>
+                    <input name="LMagrr" id="LMagrr" value="" type="text">
+
+                    <label for="LMsucc"> Succión:</label>
+                    <input name="LMsucc" id="LMsucc" value="" type="text">
 
                 <div name="nextPrevious10">
                     <center>
-                        <a href="#Pag10" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Pag15" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
                         <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
-                        <a href="#Pag12" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                        <a href="#Pag17" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
                     </center>
                 </div>
             </content>
           </section>
+
+
+    <section data-role="page" id="Pag17">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <legend><h1>SEXUALIDAD</h1></legend>
+            <h2>Entrevista</h2>
+                <input name="sEpM" id="sEpM" type="text" placeholder="Patrón Menstrual" data-clear-btn="true">
+                <input name="sEaM" id="sEaM" type="text" placeholder="Alteraciones Menstruación" data-clear-btn="true">
+                <input name="sEvSAct" id="sEvSAct" type="text" placeholder="Vida Sexual Activa" data-clear-btn="true">
+                <input name="sEDispareuina" id="sEDispareuina" type="text" placeholder="Dispareuina" data-clear-btn="true">
+                <input name="sEsERL" id="sEsERL" type="text" placeholder="Sangrado en la relación sexual" data-clear-btn="true">
+                <input name="sEsVs" id="sEsVs" type="text" placeholder="Satisfacción vida sexual" data-clear-btn="true">
+                <input name="sEcDeVS" id="sEcDeVS" type="text" placeholder="Complicaciones o dificultades en la vida sexual" data-clear-btn="true">
+                <!--Preguntar q'e'eso-->
+                <input name="sEfO" id="sEfO" type="text" placeholder="Fórmula Obstérica" data-clear-btn="true">
+                <input name="sEFUM" id="sEFUM" type="text" placeholder="FUM" data-clear-btn="true">
+                <input name="sEFUR" id="sEFUR" type="text" placeholder="Edad Gestacional por FUR" data-clear-btn="true">
+                <input name="sEEgpE" id="sEEgpE" type="text" placeholder="Edad Gestacional por Ecografia" data-clear-btn="true">
+                <input name="sEFPP" id="sEFPP" type="text" placeholder="FPP" data-clear-btn="true"><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">MONITOREO FETAL ANTEPARTO</th>
+                            <th colspan="2">MONITOREO FETAL INTRAPARTO</th>
+                        </tr>
+                        <tr>
+                            <th align="left">Sin estrés</th>
+                            <th align="left">Categoría</th>
+                            <th align="left">Con estrés</th>
+                            <th align="left">Categoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th align="left">Reactivo</th>
+                            <th rowspan="2"><input name="mFaRInter" id="mFaRInter"type="text" placeholder="Interpretacion" data-clear-btn="true"></input></th>
+                            <th align="left">Negativo</th>
+                            <th rowspan="2"><input name="mFaNInter" id="mFaNInter"type="text" placeholder="Interpretacion" data-clear-btn="true"></input></th>
+                        </tr>
+                        <tr>
+                            <th align="left">No Reactivo</th>
+                            <th align="left">Positivo</th>
+                        </tr>
+                    </tbody>
+                </table>
+            <h2>Examen Fisico</h2>
+            <!--PREGUNTAR POR 15.4.1 NOTA FALTAN LOS PINCHES ID DE TODA ESTA SECCION :V -->
+                <label for="qwerty"><h3>Consistencia</h3></label>
+                <fieldset data-role="controlgroup" data-type="horizontal" id="qwerty">
+                    <input name="Consis" id="Dura" value="on" type="radio">
+                    <label for="Dura" >Dura</label>
+                    <input name="Consis" id="Blanda" value="on" type="radio">
+                    <label for="Blanda" >Blanda</label>
+                </fieldset>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <input name="eFRedBH" id="eFRedBH" type="checkbox">
+                    <label for="eFRedBH">Red Venosa Haller</label>
+                    <input name="eFAreola" id="eFAreola" type="checkbox">
+                    <label for="eFAreola">Areola</label>
+                    <input name="eFTubMont" id="eFTubMont" type="checkbox">
+                    <label for="eFTubMont">Tubérculos Montgomery</label>
+                    <input name="eFestrias" id="eFestrias" type="checkbox">
+                    <label for="eFestrias">Estrías</label>
+                </fieldset>
+                <label for="qwertyII"><h3>Pezón</h3></label>
+                <fieldset data-role="controlgroup" data-type="horizontal" id="qwertyII">
+                    <input name="Pezon" id="eFPEvertido" value="on" type="radio">
+                    <label for="eFPEvertido" >Evertido</label>
+                    <input name="Pezon" id="eFPPlano" value="on" type="radio">
+                    <label for="eFPPlano" >Plano</label>
+                    <input name="Pezon" id="eFPInvertido" value="on" type="radio">
+                    <label for="eFPInvertido" >Invertido</label>
+                </fieldset>
+                <label for="pezonErec"><h3>Erectil</h3></label>
+                <fieldset data-role="controlgroup" data-type="horizontal" id="pezonErec">
+                    <input name="Erectil" id="eFpErectil" value="on" type="radio">
+                    <label for="eFpErectil" >SI</label>
+                    <input name="Erectil" id="eFpNoErectil" value="on" type="radio">
+                    <label for="eFpNoErectil" >NO</label>
+                </fieldset>
+                <label for="secrecion"><h3>Secreción</h3></label>
+                <fieldset data-role="controlgroup" data-type="horizontal" id="secrecion">
+                    <input name="Secrecion" id="eFSecNinguna" value="on" onclick="desSecreOtro()" type="radio">
+                    <label for="eFSecNinguna" >Ninguna</label>
+                    <input name="Secrecion" id="eFSecCalostro" value="on" onclick="desSecreOtro()" type="radio">
+                    <label for="eFSecCalostro" >Calostro</label>
+                    <input name="Secrecion" id="eFSecLecheMaterna" value="on" onclick="desSecreOtro()" type="radio">
+                    <label for="eFSecLecheMaterna">Leche Materna</label>
+                    <input name="Secrecion" id="eFSecOtra" value="on" onclick="actSecreOtro()" type="radio">
+                    <label for="eFSecOtra" >Otra</label>
+                </fieldset>
+                <div id="Sec_otro"></div>
+                <h4>OBSERVACIONES</h4>
+                    <textarea name="ObservacionesEF" id="eFObservaciones" ></textarea>
+
+        <div name="nextPrevious10">
+                    <center>
+                        <a href="#Pag16" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                        <a href="#Pag18" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                    </center>
+                </div>
+        </content>
+    </section>
+
+    <section data-role="page" id="Pag18">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <h1>GESTANTE Y PUERPERA</h1>
+            <h2>Gestante</h2>
+                    <input name="gpGaLUt" id="gpGaLUt" placeholder="Altura Uterina" data-clear-btn="true">
+                    <input name="gpGFCF" id="gpGFCF" placeholder="F.C.F" data-clear-btn="true">
+                    <input name="gpGSituacion" id="gpGSituacion" placeholder="Situacion" data-clear-btn="true">
+                    <input name="gpGPosicion" id="gpGPosicion" placeholder="Posicion" data-clear-btn="true">
+                    <input name="gpGPresentacion" id="gpGPresentacion" placeholder="Presentacion" data-clear-btn="true">
+                <h4>Movimientos fetales percibidos</h4>
+                    <input name="gpMFPMadre" id="gpMFPMadre" placeholder="Madre" data-clear-btn="true">
+                    <input name="gpMFPExaminador" id="gpMFPExaminador" placeholder="Examinador" data-clear-btn="true">
+                    <input name="gpMFPcantida" id="gpMFPcantidad" placeholder="Cantidad/Frecuencia" data-clear-btn="true">
+                <h4>Actividad Uterina</h4>
+                    <input name="gpFrecuencia" id="gpFrecuencia" placeholder="Frecuencia" data-clear-btn="true">
+                    <input name="gpIntensidad" id="gpIntensidad" placeholder="Intensidad" data-clear-btn="true">
+                    <input name="gpDuracion" id="gpDuracion" placeholder="Duración" data-clear-btn="true">
+                    <input name="gpIntervalo" id="gpIntervalo" placeholder="Intervalo" data-clear-btn="true">
+                    <br>
+                    <input name="gpDilatacion" id="gpDilatacion" placeholder="Dilatacion" data-clear-btn="true">
+                    <input name="gpBorramiento" id="gpBorramiento" placeholder="Borramiento" data-clear-btn="true">
+                    <input name="gpEstacion" id="gpEstacion" placeholder="Estacion" data-clear-btn="true">
+                <label for="salidaID"><h4>Salida de liquido por la vagina</h4></label>
+                    <fieldset data-role="controlgroup" data-type="horizontal" id="salidaID">
+                        <input name="SalidaLiquidV" id="gpGSlVSangre" value="on" onclick="descaracTFlu()" type="radio">
+                        <label for="gpGSlVSangre" >Sangre</label>
+                        <input name="SalidaLiquidV" id="gpGSlVLiAnm" value="on" onclick="descaracTFlu()" type="radio">
+                        <label for="gpGSlVLiAnm" >Liquido Amniotico</label>
+                        <input name="SalidaLiquidV" id="gpGSlVFlujo" value="on" onclick="actcaracTFlu()"  type="radio">
+                        <label for="gpGSlVFlujo" >Flujo</label>
+                    </fieldset>
+                    <div id="Cara_FLujo"><br><br></div>
+                    <input name="gpSLCantidad" id="gpSLCantidad" placeholder="Cantidad" data-clear-btn="true">
+                    <input name="gpSLCaracteristicas" id="gpSLCaracteristicas" placeholder="Caracteristicas" data-clear-btn="true">
+                    <input name="gpSLAC" id="gpSLAC" placeholder="Agente Causal" data-clear-btn="true"><br>
+                    <input name="gpCambiosPE" id="gpCambiosPE" placeholder="Cambios Perineales" data-clear-btn="true">
+                    <input name="gpManisETS" id="gpManisETS" placeholder="Manifestaciones ETS" data-clear-btn="true">
+            <h2>Puerpera</h2>
+                <!--Preguntar por tipo de entrada-->
+            <div name="nextPrevious10">
+                        <center>
+                            <a href="#Pag17" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                            <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                            <a href="#Pag19" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                        </center>
+            </div>
+        </content>
+    </section>
+
+     <section data-role="page" id="Pag19">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <legend><h1>AFRONTAMIENTO Y TOLERANCIA AL ESTRÉS</h1></legend>
+            <h2>Entrevista</h2>
+            <!--PREGUNTAR TIPO DE DATO-->
+                    <fieldset data-role="controlgroup" data-type="horizontal" >
+                        <input name="ateE" id="ateEeMBPLA" value="on" type="checkbox">
+                        <label for="ateEeMBPLA">Embarazo Planeado</label>
+                        <input name="ateE" id="ateEeMD" value="on" type="checkbox">
+                        <label for="ateEeMD">Embarazo Deseado</label>
+                        <input name="ateE" id="ateEMsolaVI" value="on" type="checkbox">
+                        <label for="ateEMsolaVI">Madre sola o viuda</label>
+                    </fieldset>
+                    <label for="situAcions"><h3>Afronta situacion actual</h3></label>
+                    <fieldset data-role="controlgroup" data-type="horizontal" id="situAcions">
+                        <input name="AFS" id="afsFortaleza" value="on" type="checkbox">
+                        <label for="afsFortaleza">Fortaleza</label>
+                        <input name="AFS" id="afsInseguridad" value="on" type="checkbox">
+                        <label for="afsInseguridad">Inseguridad</label>
+                        <input name="AFS" id="afsAngustia" value="on" type="checkbox">
+                        <label for="afsAngustia">Angustia</label>
+                        <input name="AFS" id="afsAnsiedad" value="on" type="checkbox">
+                        <label for="afsAnsiedad">Ansiedad</label>
+                        <input name="AFS" id="afsDesinteres" value="on" type="checkbox">
+                        <label for="afsDesinteres">Desinteres</label>
+                        <input name="AFS" id="afsIncertidumbre" value="on" type="checkbox">
+                        <label for="afsIncertidumbre">Incertidumbre</label>
+                        <input name="AFS" id="afsPreocupacion" value="on" type="checkbox">
+                        <label for="afsPreocupacion">Preocupacion</label>
+                    </fieldset>
+            
+
+
+            <div name="nextPrevious10">
+                        <center>
+                            <a href="#Pag18" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                            <a href="#Form1" class="ui-btn ui-btn-inline">Inicio</a>
+                            <a href="#Pag20" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">siguiente</a>                     
+                        </center>
+            </div>
+        </content>
+    </section>
     </body>
 </html>
+
+
+<!--
+    CODIGO DE TABLA CAMBIAR ID PAG10 por el correspondiente
+
+    <section data-role="page" id="Pag10">
+        <header data-role="header">
+            <h1>FORMATO GUÍA DE VALORACION DEL ESTADO DE SALUD </h1>
+            <h1>DE LA MUJER, GESTANTE Y PUERPERA</h1>
+        </header>
+        <content data-role="content">
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </content>
+    </section>
+
+    Codigo LIMPIAR TEXT INPUT
+        data-clear-btn="true"
+    -->
