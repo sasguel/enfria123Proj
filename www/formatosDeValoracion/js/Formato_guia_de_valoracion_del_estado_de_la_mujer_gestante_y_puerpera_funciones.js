@@ -101,3 +101,34 @@
                 }
 
             }
+            function activarOtro () {
+                var insert = "<input name='Olor' id='desOlorOtro' type='text' placeholder='Ingrese Otro Olor' ></input>";
+                var add = document.getElementById("add_Olor");
+                add.innerHTML=insert;
+            }
+            function desactivarOtro(){
+                var insert = "<br><br>";
+                var add = document.getElementById("add_Olor");
+                add.innerHTML=insert;
+            }
+            function actSecreOtro() {
+                var insert = "<input name='SecOtro' id='eFSecOtro' type='text' placeholder='Ingrese la secreción' ></input>";
+                var add = document.getElementById("Sec_otro");
+                add.innerHTML=insert;
+            }
+            function desSecreOtro(){
+                var insert = "<br><br>";
+                var add = document.getElementById("Sec_otro");
+                add.innerHTML=insert;
+            }
+            function actcaracTFlu() {
+                var insert = "<input name='caracTFlu' id='caracTFlu' type='text' placeholder='Caracteristicas' ></input>";
+                var add = document.getElementById("Cara_FLujo");
+                add.innerHTML=insert;
+            }
+            function descaracTFlu(){
+                var insert = "<br><br>";
+                var add = document.getElementById("Cara_FLujo");
+                add.innerHTML=insert;
+            }
+
