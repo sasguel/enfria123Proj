@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+      <meta charset="UTF-8">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+      <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
+      <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+      <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <title>Formulario</title>
+    </head>
+    <body>
+    <!--
+    Saul H. Suarez Florez
+    -->
+      <section data-role="page" id="3_2_examen_fisico">
+        <header data-role="header">
+          <h1>3.2 Examen Físico:</h1>
+        </header>
+        <article>
+          <h5>Ver valoración de abdomen (dominio Nutrición)</h5>
+          <table class="ui-responsive" onclick="td0sanitiavivienda0()">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Adecuada</th>
+                <th>No adecuada</th>
+                <th>Observaciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Disposición de excretas</td>
+                <td><input type="text" id="td0sanitiavivienda0"></td>
+                <td><input type="text" id="td0sanitiavivienda1"></td>
+                <td><input type="text" id="td0sanitiavivienda2"></td>
+              </tr>
+              <tr>
+                <td>Disposición de basuras</td>
+                <td><input type="text" id="td1sanitiavivienda0"></td>
+                <td><input type="text" id="td1sanitiavivienda1"></td>
+                <td><input type="text" id="td1sanitiavivienda2"></td>
+              </tr>
+            </tbody>
+          </table>          
+           <div name="nextPrevious">
+            <center>
+              <a href="#" data-role="button">Volver</a>                         <!-- Falta por definir devolución -->
+              <a href="#4_actividad_y_reposo" data-role="button">Siguiente</a>
+            </center>
+          </div>
+        </article>
+        <footer data-role="footer">
+          <h1>3. Eliminación</h1>
+          <h1>3.2 Examen Físico</h1> 
+        </footer>
+      </section>
+
+      <section data-role="page" id="4_actividad_y_reposo">
+        <header data-role="header">
+          <h1>4. ACTIVIDAD Y REPOSO</h1>
+          <h1>4.1 REPOSO Y SUEÑO</h1> 
+        </header>
+        <article>
+          <label for="horasueno">¿Cuantas horas acostumbra dormir diariamente?</label>     
+          <input name="" pattern="[0-9]*" id="horasueno" value="" type="number">
+          <label for="horarioacostumbrado">Horario acostumbrado para ir a dormir:</label>
+          <input name="" id="horarioacostumbrado" value="" type="text" placeholder="00:00-00:00">  <!-- Horarios de sueno acostumbrado -->
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Tiene problemas para conciliar el sueño?</legend>
+            <input name="problemasueno" id="problemasueno0" value="problemasueno0" type="radio">
+            <label for="problemasueno0">No</label>
+            <input name="problemasueno" id="problemasueno1" value="problemasueno1" type="radio">
+            <label for="problemasueno1">Si</label>
+          </fieldset>  
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Requiere alguna técnica o ayuda para dormir?</legend>
+            <input name="tecnicadormir" id="tecnicadormir0" value="" type="radio">
+            <label for="tecnicadormir0">No</label>
+            <input name="tecnicadormir" id="tecnicadormir1" value="" type="radio">
+            <label for="tecnicadormir1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Presenta sueños y/o pesadilla?</legend>
+            <input name="suenopesadilla" id="suenopesadilla0" value="" type="radio">
+            <label for="suenopesadilla0">No</label>
+            <input name="suenopesadilla" id="suenopesadilla1" value="" type="radio">
+            <label for="suenopesadilla1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Se despierta muy temprano?</legend>
+            <input name="despiertemprano" id="despiertemprano0" value="" type="radio">
+            <label for="despiertemprano0">No</label>
+            <input name="despiertemprano" id="despiertemprano1" value="" type="radio">
+            <label for="despiertemprano1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Se despierta de noche?</legend>
+            <input name="despiertanoche" id="despiertanoche0" value="" type="radio">
+            <label for="despiertanoche0">No</label>
+            <input name="despiertanoche" id="despiertanoche1" value="" type="radio">
+            <label for="despiertanoche1">Si</label>
+          </fieldset>
+          <label for="posiblescausas">Posibles causas:</label>
+          <textarea cols="40" rows="8" name="posiblescausas" id="posiblescausas"></textarea>
+          <label>Cambios asociados a falta de sueño:</label>
+          <input name="apatia" id="apatia" type="checkbox">
+          <label for="apatia">Apatía</label>
+          <input name="cansancio" id="cansancio" type="checkbox">
+          <label for="cansancio">Cansancio</label>
+          <input name="faltadeatencion" id="faltadeatencion" type="checkbox">
+          <label for="faltadeatencion">Falta de Atención</label>
+          <input name="irritabilidad" id="irritabilidad" value="" type="checkbox">
+          <label for="irritabilidad">Irritabilidad</label>
+          <div name="nextPrevious" id="habilitarNext">
+            <center>
+              <a href="#3_2_examen_fisico" data-role="button">Volver</a>
+              <a href="#4_2_1_entrevista" data-role="button">Siguiente</a>
+            </center>
+          </div>
+        </article>
+        <footer data-role="footer">
+          <h1>4. ACTIVIDAD Y REPOSO</h1>
+          <h1>4.1 REPOSO Y SUEÑO</h1> 
+        </footer>
+      </section>
+      <section data-role="page" id="4_2_1_entrevista">
+        <header data-role="header">
+          <h1>4.2 ACTIVIDAD Y EJERCICIO</h1>
+          <h1>4.2.1 Entrevista</h1>
+        </header>
+        <article>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Qué grado de actividad le demanda su trabajo diario?</legend>
+            <input name="gradoactividadtrabajo" id="gradoactividadtrabajo0" value="" type="radio">
+            <label for="gradoactividadtrabajo0">Excesivo</label>
+            <input name="gradoactividadtrabajo" id="gradoactividadtrabajo1" value="" type="radio">
+            <label for="gradoactividadtrabajo1">Poco Mas de lo Normal</label>
+            <input name="gradoactividadtrabajo" id="gradoactividadtrabajo2" value="" type="radio">
+            <label for="gradoactividadtrabajo2">Normal</label>
+            <input name="gradoactividadtrabajo" id="gradoactividadtrabajo3" value="" type="radio">
+            <label for="gradoactividadtrabajo3">Poco Menos de lo Normal</label>
+            <input name="gradoactividadtrabajo" id="gradoactividadtrabajo4" value="" type="radio">
+            <label for="gradoactividadtrabajo4">Casi Nada</label>
+            <input name="gradoactividadtrabajo" id="gradoactividadtrabajo5" value="" type="radio">
+            <label for="gradoactividadtrabajo5">Nada</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Tiene suficiente energía para realizarlo?</legend>
+            <input name="tieneenergiatrabajo" id="tieneenergiatrabajo0" value="" type="radio">
+            <label for="tieneenergiatrabajo0">No</label>
+            <input name="tieneenergiatrabajo" id="tieneenergiatrabajo1" value="" type="radio">
+            <label for="tieneenergiatrabajo1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Se siente cansado con frecuencia?</legend>
+            <input name="sientecansado" id="sientecansado0" value="" type="radio">
+            <label for="sientecansado0">No</label>
+            <input name="sientecansado" id="sientecansado1" value="" type="radio">
+            <label for="sientecansado1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Le cuesta trabajo concentrarse?</legend>
+            <input name="trabajoconcentrarse" id="trabajoconcentrarse0" value="" type="radio">
+            <label for="trabajoconcentrarse0">No</label>
+            <input name="trabajoconcentrarse" id="trabajoconcentrarse1" value="" type="radio">
+            <label for="trabajoconcentrarse1">Si</label>
+          </fieldset>
+          <label for="actividadrecreativa">Tipo de actividad recreativa que realiza:</label>
+          <textarea cols="40" rows="8" name="actividadrecreativa" id="actividadrecreativa"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>¿Su estado o situación actual, le impide realizar actividades recreativas?</legend>
+            <input name="impideactividades" id="impideactividades0" value="" type="radio">
+            <label for="impideactividades0">No</label>
+            <input name="impideactividades" id="impideactividades1" value="" type="radio">
+            <label for="impideactividades1">Si</label>
+          </fieldset>
+          <label for="hospitalizadoactividades">¿Si está hospitalizado(a), qué tipo de actividades recreativas realiza?</label>
+          <textarea cols="40" rows="8" name="hospitalizadoactividades" id="hospitalizadoactividades"></textarea>
+          <table class="ui-responsive">
+            <thead>
+              <tr>
+                <th>Tipo de Cuidado</th>
+                <th></th>
+                <th>Dominancia</th>
+                <th></th>
+                <th>Capacidad Motora</th>
+                <th>Calificación</th>
+                <th></th>
+                <th>Observaciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ambulatorio</td>
+                <td><input type="text" id="ambulatorio"></td>
+                <td>Diestro</td>
+                <td><input type="text" id="diestro"></td>
+                <td>Independencia Total = 0</td>
+                <td>Bañarse</td>
+                <td><input name="" pattern="[0-9]*" id="banarse" value="" type="number"></td>
+                <td><input type="text" id="observacion0"></td>
+              </tr>
+              <tr>
+                <td>Reposo relativo</td>
+                <td><input type="text" id="reposorelativo"></td>
+                <td>Zurdo</td>
+                <td><input type="text" id="zurdo"></td>
+                <td>Ayudado por aparato = 1</td>
+                <td>Vestirse</td>
+                <td><input name="" pattern="[0-9]*" id="vestirse" value="" type="number"></td>
+                <td><input type="text" id="observacion1"></td>
+              </tr>
+              <tr>
+                <td>Cuidado en cama</td>
+                <td><input type="text" id="cuidadoencama"></td>
+                <td>Ambidextro</td>
+                <td><input type="text" id="ambidextro"></td>
+                <td>Ayudado por persona = 2</td>
+                <td>Alimentarse</td>
+                <td><input name="" pattern="[0-9]*" id="alimentarse" value="" type="number"></td>
+                <td><input type="text" id="observacion2"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Ayudado por persona y aparato = 3</td>
+                <td>Eliminar</td>
+                <td><input name="" pattern="[0-9]*" id="Eliminar" value="" type="number"></td>
+                <td><input type="text" id="observacion3"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Dependencia total = 4</td>
+                <td>Movilizarse</td>
+                <td><input name="" pattern="[0-9]*" id="movilizarse" value="" type="number"></td>
+                <td><input type="text" id="observacion4"></td>
+              </tr>
+            </tbody>
+          </table>  
+          <div name="nextPrevious" id="habilitarNext">
+            <center>
+              <a href="#4_actividad_y_reposo" data-role="button">Volver</a>
+              <a href="#4_2_2_examen_fisico" data-role="button">Siguiente</a>
+            </center>
+          </div>
+        </article>
+        <footer data-role="footer">
+          <h1>4.2 ACTIVIDAD Y EJERCICIO</h1>
+          <h1>4.2.1 Entrevista</h1>
+        </footer>
+      </section>
+      <section data-role="page" id="4_2_2_examen_fisico">
+        <header data-role="header">
+          <h1>4.2.2 Examen Físico</h1>
+        </header>
+        <article>
+          <!-- Cabeza -->
+          <h2 align="Center">Cabeza:</h2>
+          <label>Simetría:</label>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <input name="simetriacabeza" id="simetriacabeza0" value="" type="radio">
+            <label for="simetriacabeza0">No</label>
+            <input name="simetriacabeza" id="simetriacabeza1" value="" type="radio">
+            <label for="simetriacabeza1">Si</label>
+          </fieldset>
+          <label>Simetría:</label>
+          <input name="simetriacabeza" id="simetriacabeza2" value="" type="radio">
+          <label for="simetriacabeza2">Simétrico</label>
+          <input name="simetriacabeza" id="simetriacabeza3" value="" type="radio">
+          <label for="simetriacabeza3">Mas de lo normal</label>
+          <input name="simetriacabeza" id="simetriacabeza4" value="" type="radio">
+          <label for="simetriacabeza4">Normal</label>
+          <input name="simetriacabeza" id="simetriacabeza5" value="" type="radio">
+          <label for="simetriacabeza5">Menos de lo normal</label>
+          <input name="simetriacabeza" id="simetriacabeza6" value="" type="radio">
+          <label for="simetriacabeza6">Asimétrico</label>
+          <label for="simetriacabeza7">Simetría:</label>
+          <textarea cols="40" rows="8" name="simetriacabeza7" id="simetria7"></textarea>
+          <label for="formatamanocabeza">Forma y tamaño:</label>
+          <textarea cols="40" rows="8" name="formatamanocabeza" id="formatamanocabeza"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Implantación de cabello:</legend>
+            <input name="implantacioncabellocabeza" id="implantacioncabellocabeza0" value="" type="radio">
+            <label for="implantacioncabellocabeza0">No</label>
+            <input name="implantacioncabellocabeza" id="implantacioncabellocabeza1" value="" type="radio">
+            <label for="implantacioncabellocabeza1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Cabello:</legend>
+            <input name="cabellocabeza" id="cabellocabeza0" value="" type="radio">
+            <label for="cabellocabeza0">No</label>
+            <input name="cabellocabeza" id="cabellocabeza1" value="" type="radio">
+            <label for="cabellocabeza1">Si</label>
+          </fieldset>
+          <label for="caracteristicascabellocabeza">Características:</label>
+          <textarea cols="40" rows="8" name="caracteristicascabellocabeza" id="caracteristicascabellocabeza"></textarea>
+          <label>Higiene:</label>
+          <textarea cols="40" rows="8" name="higienecabeza" id="higienecabeza"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Higiene:</legend>
+            <input name="higienecabeza" id="higienecabeza0" value="" type="radio">
+            <label for="higienecabeza0">No</label>
+            <input name="higienecabeza" id="higienecabeza1" value="" type="radio">
+            <label for="higienecabeza1">Si</label>
+          </fieldset>
+          <label>Cicatrices:</label>
+          <textarea cols="40" rows="8" name="cicatricescabeza" id="cicatricescabeza"></textarea>
+          <label>Cicatrices:</label>
+          <input name="cicatricescabeza" pattern="[0-9]*" id="cicatricescabeza" value="" type="number">
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Cicatrices:</legend>
+            <input name="cicatricescabeza" id="cicatricescabeza0" value="" type="radio">
+            <label for="cicatricescabeza0">No</label>
+            <input name="cicatricescabeza" id="cicatricescabeza1" value="" type="radio">
+            <label for="cicatricescabeza1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Sensibilidad:</legend>
+            <input name="sensibilidadcabeza" id="sensibilidadcabeza0" value="" type="radio">
+            <label for="sensibilidadcabeza0">No</label>
+            <input name="sensibilidadcabeza" id="sensibilidadcabeza1" value="" type="radio">
+            <label for="sensibilidadcabeza1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Masas:</legend>
+            <input name="masascabeza" id="masascabeza0" value="" type="radio">
+            <label for="masascabeza0">No</label>
+            <input name="masascabeza" id="masascabeza1" value="" type="radio">
+            <label for="masascabeza1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Depresiones:</legend>
+            <input name="depresionescabeza" id="depresionescabeza0" value="" type="radio">
+            <label for="depresionescabeza0">No</label>
+            <input name="depresionescabeza" id="depresionescabeza1" value="" type="radio">
+            <label for="depresionescabeza1">Si</label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Fontanelas:</legend>
+            <input name="fontanelascabeza" id="fontanelascabeza0" value="" type="radio">
+            <label for="fontanelascabeza0">No</label>
+            <input name="fontanelascabeza" id="fontanelascabeza1" value="" type="radio">
+            <label for="fontanelascabeza1">Si</label>
+          </fieldset>
+          <!-- Cara  -->
+          <h2 align="Center">Cara:</h2>
+          <label for="formacara">Forma:</label>
+          <textarea cols="40" rows="8" name="formacara" id="formacara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Forma:</legend>
+            <input name="formacara" id="formacara0" value="" type="radio">
+            <label for="formacara0">No</label>
+            <input name="formacara" id="formacara1" value="" type="radio">
+            <label for="formacara1">Si</label>
+          </fieldset>
+          <label for="volumencara">Volumen:</label>
+          <textarea cols="40" rows="8" name="" id="volumencara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Volumen:</legend>
+            <input name="volumencara" id="volumencara0" value="" type="radio">
+            <label for="volumencara0">No</label>
+            <input name="volumencara" id="volumencara1" value="" type="radio">
+            <label for="volumencara1">Si</label>
+          </fieldset>
+          <label for="simetriacara">Simetría:</label>
+          <textarea cols="40" rows="8" name="" id="simetriacara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Simetría:</legend>
+            <input name="simetriacara" id="simetriacara0" value="" type="radio">
+            <label for="simetriacara0">No</label>
+            <input name="simetriacara" id="simetriacara1" value="" type="radio">
+            <label for="simetriacara1">Si</label>
+          </fieldset>
+          <label for="faciescara">Facies:</label>
+          <textarea cols="40" rows="8" name="" id="faciescara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Facies:</legend>
+            <input name="faciescara" id="faciescara0" value="" type="radio">
+            <label for="faciescara0">No</label>
+            <input name="faciescara" id="faciescara1" value="" type="radio">
+            <label for="faciescara1">Si</label>
+          </fieldset>
+          <label for="xantomascara">Xantomas:</label>
+          <textarea cols="40" rows="8" name="" id="xantomascara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Xantomas:</legend>
+            <input name="xantomascara" id="xantomascara0" value="" type="radio">
+            <label for="xantomascara0">No</label>
+            <input name="xantomascara" id="xantomascara1" value="" type="radio">
+            <label for="xantomascara1">Si</label>
+          </fieldset>
+          <label for="pielcara">Piel:</label>
+          <textarea cols="40" rows="8" name="" id="pielcara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Piel:</legend>
+            <input name="pielcara" id="pielcara0" value="" type="radio">
+            <label for="pielcara0">No</label>
+            <input name="pielcara" id="pielcara1" value="" type="radio">
+            <label for="pielcara1">Si</label>
+          </fieldset>
+          <label for="colorcara">Color:</label>
+          <textarea cols="40" rows="8" name="" id="colorcara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Color:</legend>
+            <input name="colorcara" id="colorcara0" value="" type="radio">
+            <label for="colorcara0">No</label>
+            <input name="colorcara" id="colorcara1" value="" type="radio">
+            <label for="colorcara1">Si</label>
+          </fieldset>
+          <label for="integridadcara">Integridad:</label>
+          <textarea cols="40" rows="8" name="" id="integridadcara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Integridad</legend>
+            <input name="integridadcara" id="integridadcara0" value="" type="radio">
+            <label for="integridadcara0">No</label>
+            <input name="integridadcara" id="integridadcara1" value="" type="radio">
+            <label for="integridadcara1">Si</label>
+          </fieldset>
+          <label for="texturacara">Textura:</label>
+          <textarea cols="40" rows="8" name="" id="texturacara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Textura:</legend>
+            <input name="texturacara" id="texturacara0" value="" type="radio">
+            <label for="texturacara0">No</label>
+            <input name="texturacara" id="texturacara1" value="" type="radio">
+            <label for="texturacara1">Si</label>
+          </fieldset>
+          <label for="transpiracion">Transpiración:</label>
+          <textarea cols="40" rows="8" name="" id="transpiracion"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Transpiración:</legend>
+            <input name="transpiracion" id="transpiracion0" value="" type="radio">
+            <label for="transpiracion0">No</label>
+            <input name="transpiracion" id="transpiracion1" value="" type="radio">
+            <label for="transpiracion1">Si</label>
+          </fieldset>
+          <label for="acnecara">Acné:</label>
+          <textarea cols="40" rows="8" name="" id="acnecara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Acné:</legend>
+            <input name="acnecara" id="acnecara0" value="" type="radio">
+            <label for="acnecara0">No</label>
+            <input name="acnecara" id="acnecara1" value="" type="radio">
+            <label for="acnecara1">Si</label>
+          </fieldset>
+          <label for="venuscara">Venus:</label>
+          <textarea cols="40" rows="8" name="" id="venuscara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Venus:</legend>
+            <input name="venuscara" id="venuscara0" value="" type="radio">
+            <label for="venuscara0">No</label>
+            <input name="venuscara" id="venuscara1" value="" type="radio">
+            <label for="venuscara1">Si</label>
+          </fieldset>
+          <label for="lineasarrugascara">Lineas o arrugas:</label>
+          <textarea cols="40" rows="8" name="" id="lineasarrugascara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Lineas o arrugas:</legend>
+            <input name="lineasarrugascara" id="lineasarrugascara0" value="" type="radio">
+            <label for="lineasarrugascara0">No</label>
+            <input name="lineasarrugascara" id="lineasarrugascara1" value="" type="radio">
+            <label for="lineasarrugascara1">Si</label>
+          </fieldset>
+          <label for="movimientoinvoluntarioscara">Movimientos involuntarios:</label>
+          <textarea cols="40" rows="8" name="" id="movimientoinvoluntarioscara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Movimientos involuntarios:</legend>
+            <input name="movimientoinvoluntarioscara" id="movimientoinvoluntarioscara0" value="" type="radio">
+            <label for="movimientoinvoluntarioscara0">No</label>
+            <input name="movimientoinvoluntarioscara" id="movimientoinvoluntarioscara1" value="" type="radio">
+            <label for="movimientoinvoluntarioscara1">Si</label>
+          </fieldset>
+          <label for="egemacara">Egema:</label>
+          <textarea cols="40" rows="8" name="" id="egemacara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Egema:</legend>
+            <input name="egemacara" id="egemacara0" value="" type="radio">
+            <label for="egemacara0">No</label>
+            <input name="egemacara" id="egemacara1" value="" type="radio">
+            <label for="egemacara1">Si</label>
+          </fieldset>
+          <label for="vellocara">Vello:</label>
+          <textarea cols="40" rows="8" name="" id="vellocara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Vello:</legend>
+            <input name="vellocara" id="vellocara0" value="" type="radio">
+            <label for="vellocara0">No</label>
+            <input name="vellocara" id="vellocara1" value="" type="radio">
+            <label for="vellocara1">Si</label>
+          </fieldset>
+          <label for="temperaturacara">Temperatura:</label>
+          <textarea cols="40" rows="8" name="" id="temperaturacara" placeholder="°C"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Temperatura:</legend>
+            <input name="temperaturacara" id="temperaturacara0" value="" type="radio">
+            <label for="temperaturacara0">No</label>
+            <input name="temperaturacara" id="temperaturacara1" value="" type="radio">
+            <label for="temperaturacara1">Si</label>
+          </fieldset>
+          <label for="sensibilidadcara">Sensibilidad:</label>
+          <textarea cols="40" rows="8" name="" id="sensibilidadcara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Sensibilidad:</legend>
+            <input name="sensibilidadcara" id="sensibilidadcara0" value="" type="radio">
+            <label for="sensibilidadcara0">No</label>
+            <input name="sensibilidadcara" id="sensibilidadcara1" value="" type="radio">
+            <label for="sensibilidadcara1">Si</label>
+          </fieldset>
+          <label for="masascara">Masas:</label>
+          <textarea cols="40" rows="8" name="" id="masascara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Masas:</legend>
+            <input name="masascara" id="masascara0" value="" type="radio">
+            <label for="masascara0">No</label>
+            <input name="masascara" id="masascara1" value="" type="radio">
+            <label for="masascara1">Si</label>
+          </fieldset>
+          <label for="dolorsensabilidadcara">Dolor o sensibilidad:</label>
+          <textarea cols="40" rows="8" name="" id="dolorsensabilidadcara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Dolor o sensibilidad:</legend>
+            <input name="dolorsensabilidadcara" id="dolorsensabilidadcara0" value="" type="radio">
+            <label for="dolorsensabilidadcara0">No</label>
+            <input name="dolorsensabilidadcara" id="dolorsensabilidadcara1" value="" type="radio">
+            <label for="dolorsensabilidadcara1">Si</label>
+          </fieldset>
+          <label for="gparoridacara">G. Parótida:</label>
+          <textarea cols="40" rows="8" name="" id="gparoridacara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>G. Parótida:</legend>
+            <input name="gparoridacara" id="gparoridacara0" value="" type="radio">
+            <label for="gparoridacara0">No</label>
+            <input name="gparoridacara" id="gparoridacara1" value="" type="radio">
+            <label for="gparoridacara1">Si</label>
+          </fieldset>
+          <label for="gangliosauricularescara">Ganglios auriculares:</label>
+          <textarea cols="40" rows="8" name="" id="gangliosauricularescara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Ganglios auriculares:</legend>
+            <input name="gangliosauricularescara" id="gangliosauricularescara0" value="" type="radio">
+            <label for="gangliosauricularescara0">No</label>
+            <input name="gangliosauricularescara" id="gangliosauricularescara1" value="" type="radio">
+            <label for="gangliosauricularescara1">Si</label>
+          </fieldset>
+          <label for="arteriatemporalcara">Arteria Temporal:</label>
+          <textarea cols="40" rows="8" name="" id="arteriatemporalcara"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Arteria Temporal:</legend>
+            <input name="arteriatemporalcara" id="arteriatemporalcara0" value="" type="radio">
+            <label for="arteriatemporalcara0">No</label>
+            <input name="arteriatemporalcara" id="arteriatemporalcara1" value="" type="radio">
+            <label for="arteriatemporalcara1">Si</label>
+          </fieldset>
+          <!-- Cuello -->
+          <h2 align="Center">Cuello:</h2>
+          <label for="simetriacuello">Simetría:</label>
+          <textarea cols="40" rows="8" name="simetriacuello" id="simetriacuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Simetría:</legend>
+            <input name="simetriacuello" id="simetriacuello0" value="" type="radio">
+            <label for="simetriacuello0">No</label>
+            <input name="simetriacuello" id="simetriacuello1" value="" type="radio">
+            <label for="simetriacuello1">Si</label>
+          </fieldset>
+          <label for="desarrollomuscularcuello">Desarrollo muscular:</label>
+          <textarea cols="40" rows="8" name="" id="desarrollomuscularcuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Desarrollo muscular:</legend>
+            <input name="desarrollomuscularcuello" id="desarrollomuscularcuello0" value="" type="radio">
+            <label for="desarrollomuscularcuello0">No</label>
+            <input name="desarrollomuscularcuello" id="desarrollomuscularcuello1" value="" type="radio">
+            <label for="desarrollomuscularcuello1">Si</label>
+          </fieldset>
+          <label for="pulsacionescuello">Pulsaciones:</label>
+          <textarea cols="40" rows="8" name="" id="pulsacionescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Pulsaciones:</legend>
+            <input name="pulsacionescuello" id="pulsacionescuello0" value="" type="radio">
+            <label for="pulsacionescuello0">No</label>
+            <input name="pulsacionescuello" id="pulsacionescuello1" value="" type="radio">
+            <label for="pulsacionescuello1">Si</label>
+          </fieldset>
+          <label for="pielcuello">Piel:</label>
+          <textarea cols="40" rows="8" name="pielcuello" id="pielcuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Piel:</legend>
+            <input name="pielcuello" id="pielcuello0" value="" type="radio">
+            <label for="pielcuello0">No</label>
+            <input name="pielcuello" id="pielcuello1" value="" type="radio">
+            <label for="pielcuello1">Si</label>
+          </fieldset>
+          <label for="colorcuello">Color:</label>
+          <textarea cols="40" rows="8" name="" id="colorcuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Color:</legend>
+            <input name="colorcuello" id="colorcuello0" value="" type="radio">
+            <label for="colorcuello0">No</label>
+            <input name="colorcuello" id="colorcuello1" value="" type="radio">
+            <label for="colorcuello1">Si</label>
+          </fieldset>
+          <label for="integridadcuello">Integridad:</label>
+          <textarea cols="40" rows="8" name="integridadcuello" id="integridadcuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Integridad:</legend>
+            <input name="integridadcuello" id="integridadcuello0" value="" type="radio">
+            <label for="integridadcuello0">No</label>
+            <input name="integridadcuello" id="integridadcuello1" value="" type="radio">
+            <label for="integridadcuello1">Si</label>
+          </fieldset>
+          <label for="masascuello">Masas:</label>
+          <textarea cols="40" rows="8" name="" id="masascuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Masas:</legend>
+            <input name="masascuello" id="masascuello0" value="" type="radio">
+            <label for="masascuello0">No</label>
+            <input name="masascuello" id="masascuello1" value="" type="radio">
+            <label for="masascuello1">Si</label>
+          </fieldset>
+          <label for="temperaturacuello">Temperatura:</label>
+          <input name="" id="temperaturacuello" placeholder="°C">
+          <label for="sensibilidadgangliossuboccipitalescuello">Sensibilidad ganglios suboccipitales:</label>
+          <textarea cols="40" rows="8" name="" id="sensibilidadgangliossuboccipitalescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Sensibilidad ganglios suboccipitales:</legend>
+            <input name="sensibilidadgangliossuboccipitalescuello" id="sensibilidadgangliossuboccipitalescuello0" value="" type="radio">
+            <label for="sensibilidadgangliossuboccipitalescuello0">No</label>
+            <input name="sensibilidadgangliossuboccipitalescuello" id="sensibilidadgangliossuboccipitalescuello1" value="" type="radio">
+            <label for="sensibilidadgangliossuboccipitalescuello1">Si</label>
+          </fieldset>
+          <label for="postauricularescuello">Postauriculares:</label>
+          <textarea cols="40" rows="8" name="" id="postauricularescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Postauriculares:</legend>
+            <input name="postauricularescuello" id="postauricularescuello0" value="" type="radio">
+            <label for="postauricularescuello0">No</label>
+            <input name="postauricularescuello" id="postauricularescuello1" value="" type="radio">
+            <label for="postauricularescuello1">Si</label>
+          </fieldset>
+          <label for="submandibularescuello">Submandibulares:</label>
+          <textarea cols="40" rows="8" name="" id="submandibularescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Submandibulares:</legend>
+            <input name="submandibularescuello" id="submandibularescuello0" value="" type="radio">
+            <label for="submandibularescuello0">No</label>
+            <input name="submandibularescuello" id="submandibularescuello1" value="" type="radio">
+            <label for="submandibularescuello1">Si</label>
+          </fieldset>
+          <label for="submentonianoscuello">Submentonianos:</label>
+          <textarea cols="40" rows="8" name="" id="submentonianoscuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Submentonianos:</legend>
+            <input name="submentonianoscuello" id="submentonianoscuello0" value="" type="radio">
+            <label for="submentonianoscuello0">No</label>
+            <input name="submentonianoscuello" id="submentonianoscuello1" value="" type="radio">
+            <label for="submentonianoscuello1">Si</label>
+          </fieldset>
+          <label for="subclavicularescuello">Subclaviculares:</label>
+          <textarea cols="40" rows="8" name="" id="subclavicularescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Subclaviculares:</legend>
+            <input name="subclavicularescuello" id="subclavicularescuello0" value="" type="radio">
+            <label for="subclavicularescuello0">No</label>
+            <input name="subclavicularescuello" id="subclavicularescuello1" value="" type="radio">
+            <label for="subclavicularescuello1">Si</label>
+          </fieldset>
+          <label for="pulsocarotideocuello">Pulso carotídeo:</label>
+          <textarea cols="40" rows="8" name="" id="pulsocarotideocuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Pulso carotídeo:</legend>
+            <input name="pulsocarotideocuello" id="pulsocarotideocuello0" value="" type="radio">
+            <label for="pulsocarotideocuello0">No</label>
+            <input name="pulsocarotideocuello" id="pulsocarotideocuello1" value="" type="radio">
+            <label for="pulsocarotideocuello1">Si</label>
+          </fieldset>
+          <label for="gladulatiroidescuello">Glándula Tiroides:</label>
+          <textarea cols="40" rows="8" name="" id="gladulatiroidescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Glándula Tiroides:</legend>
+            <input name="gladulatiroidescuello" id="gladulatiroidescuello0" value="" type="radio">
+            <label for="gladulatiroidescuello0">No</label>
+            <input name="gladulatiroidescuello" id="gladulatiroidescuello1" value="" type="radio">
+            <label for="gladulatiroidescuello1">Si</label>
+          </fieldset>
+          <label for="glandulasubmandibularescuello">Glándulas submandibulares:</label>
+          <textarea cols="40" rows="8" name="" id="glandulasubmandibularescuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Glándulas submandibulares:</legend>
+            <input name="glandulasubmandibularescuello" id="glandulasubmandibularescuello0" value="" type="radio">
+            <label for="glandulasubmandibularescuello0">No</label>
+            <input name="glandulasubmandibularescuello" id="glandulasubmandibularescuello1" value="" type="radio">
+            <label for="glandulasubmandibularescuello1">Si</label>
+          </fieldset>
+          <label for="traqueacuello">Traquea:</label>
+          <textarea cols="40" rows="8" name="" id="traqueacuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Traquea:</legend>
+            <input name="traqueacuello" id="traqueacuello0" value="" type="radio">
+            <label for="traqueacuello0">No</label>
+            <input name="traqueacuello" id="traqueacuello1" value="" type="radio">
+            <label for="traqueacuello1">Si</label>
+          </fieldset>
+          <label for="arteriascarotidascuello">Arterias carótidas:</label>
+          <textarea cols="40" rows="8" name="" id="arteriascarotidascuello"></textarea>
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+            <legend>Arterias carótidas:</legend>
+            <input name="arteriascarotidascuello" id="arteriascarotidascuello0" value="" type="radio">
+            <label for="arteriascarotidascuello0">No</label>
+            <input name="arteriascarotidascuello" id="arteriascarotidascuello1" value="" type="radio">
+            <label for="arteriascarotidascuello1">Si</label>
+          </fieldset>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>POSTURA</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Función</th>
+                <th>Motora</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Estática</th>
+                <th></th>
+                <th></th>
+                <th>Dinámica (Marcha)</th>
+                <th></th>
+                <th></th>
+                <th>Movilidad</th>
+                <th></th>
+                <th>Fuerza</th>
+                <th>Muscular</th>
+                <th></th>
+                <th>Medición</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Posición</td>
+                <td>Simetría</td>
+                <td>Fases</td>
+                <td>Normal</td>
+                <td>Alterada</td>
+                <td></td>
+                <td>Activa</td>
+                <td>Pasiva</td>
+                <td>0</td>
+                <td><input type="text" id="tablaexamenfisico0"></td>
+                <td>Longitudinal</td>
+                <td>Real</td>
+                <td><input type="text" id="tablaexamenfisico1"></td>
+              </tr>
+              <tr>
+                <td>Cabeza y Cuello</td>
+                <td><input type="text" id="tablaexamenfisico2"></td>
+                <td><input type="text" id="tablaexamenfisico3"></td>
+                <td>Apoyo</td>
+                <td><input type="text" id="tablaexamenfisico4"></td>
+                <td><input type="text" id="tablaexamenfisico5"></td>
+                <td>Normal</td>
+                <td><input type="text" id="tablaexamenfisico6"></td>
+                <td><input type="text" id="tablaexamenfisico7"></td>
+                <td>1</td>
+                <td><input type="text" id="tablaexamenfisico8"></td>
+                <td></td>
+                <td>Aparente</td>
+                <td><input type="text" id="tablaexamenfisico9"></td>
+              </tr>
+              <tr>
+                <td>Hombros</td>
+                <td><input type="text" id="tablaexamenfisico10"></td>
+                <td><input type="text" id="tablaexamenfisico11"></td>
+                <td>Propulsión</td>
+                <td><input type="text" id="tablaexamenfisico12"></td>
+                <td><input type="text" id="tablaexamenfisico13"></td>
+                <td>Dolor</td>
+                <td><input type="text" id="tablaexamenfisico14"></td>
+                <td><input type="text" id="tablaexamenfisico15"></td>
+                <td>2</td>
+                <td><input type="text" id="tablaexamenfisico16"></td>
+                <td>Circunferencial</td>
+                <td>MMSS</td>
+                <td><input type="text" id="tablaexamenfisico17"></td>
+              </tr>
+              <tr>
+                <td>MMSS</td>
+                <td><input type="text" id="tablaexamenfisico18"></td>
+                <td><input type="text" id="tablaexamenfisico19"></td>
+                <td>Balanceo</td>
+                <td><input type="text" id="tablaexamenfisico20"></td>
+                <td><input type="text" id="tablaexamenfisico21"></td>
+                <td>Limitación</td>
+                <td><input type="text" id="tablaexamenfisico22"></td>
+                <td><input type="text" id="tablaexamenfisico23"></td>
+                <td>3</td>
+                <td><input type="text" id="tablaexamenfisico24"></td>
+                <td></td>
+                <td>MMII</td>
+                <td><input type="text" id="tablaexamenfisico25"></td>
+              </tr>
+              <tr>
+                <td>Tronco</td>
+                <td><input type="text" id="tablaexamenfisico26"></td>
+                <td><input type="text" id="tablaexamenfisico27"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Mov. Anormales</td>
+                <td><input type="text" id="tablaexamenfisico28"></td>
+                <td><input type="text" id="tablaexamenfisico29"></td>
+                <td>4</td>
+                <td><input type="text" id="tablaexamenfisico30"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Caderas</td>
+                <td><input type="text" id="tablaexamenfisico31"></td>
+                <td><input type="text" id="tablaexamenfisico32"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+                <td><input type="text" id="tablaexamenfisico33"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>MMII</td>
+                <td><input type="text" id="tablaexamenfisico34"></td>
+                <td><input type="text" id="tablaexamenfisico35"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div name="nextPrevious" id="habilitarNext">
+            <center>
+              <a href="#4_2_1_entrevista" data-role="button">Volver</a>
+              <a href="#" data-role="button">Siguiente</a>
+            </center>
+          </div>
+        </article>
+        <footer data-role="footer">
+          <h1>4.2 ACTIVIDAD Y EJERCICIO</h1>
+          <h1>4.2.2 Examen Físico</h1>
+        </footer>
+      </section>
+<!-- 
+  -- Material --
+          -- estructura basica --
+           <section data-role="page" id="">
+            <header data-role="header">
+              <h1></h1>
+            </header>
+            <article>
+              <div name="nextPrevious" id="habilitarNext">
+                <center>
+                  <a href="#" data-role="button">Volver</a>
+                  <a href="#" data-role="button">Siguiente</a>
+                </center>
+              </div>
+            </article>
+            <footer data-role="footer">
+              <h1></h1>
+              <h1></h1>
+            </footer>
+          </section>
+
+          -- Tablas--
+            <table class="ui-responsive">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td><input type="text" id=""></td>
+                  <td><input type="text" id=""></td>
+                  <td><input type="text" id=""></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input type="text" id=""></td>
+                  <td><input type="text" id=""></td>
+                  <td><input type="text" id=""></td>
+                </tr>
+              </tbody>
+            </table>  
+
+          -- Pregunta y repuesta corta--        
+            <label for=""></label>
+            <input name="" id="fr" value="" type="fr" placeholder="">
+            <input name="" pattern="[0-9]*" id="" value="" type="number">
+            <input name="" id="" class="custom" type="radio">
+            <input name="" id="" value="" type="checkbox">
+
+          -- Pregunta y repuesta larga--
+            <label for=""></label>
+            <textarea cols="40" rows="8" name="" id=""></textarea>
+
+          -- Pregunta si/no --
+            <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+              <legend></legend>
+              <input name="" id="" value="" type="radio">
+              <label for=""></label>
+              <input name="" id="" value="" type="radio">
+              <label for=""></label>
+            </fieldset>
+-->
+      <script type="text/javascript">
+        function td0sanitiavivienda0()
+          {
+            var habilitarNext = document.getElementById("habilitarNext");
+            var j = 0;
+            var contador = 0;
+            for (var i = 0; i < 2; i++) 
+              {
+                for (var k = 0; k < 3; k++) 
+                  {                    
+                    if(document.getElementById("td"+j+"sanitiavivienda"+k).value=='')
+                      {
+                        contador++;
+                      }
+                  };
+                j++;
+              };
+            if (contador==0) 
+              {
+                var activar="<disabled='false'>";
+                habilitarNext.innerHTML=activar;
+              };
+            else
+              {     
+                var desactivado="<disabled='true'>";
+                habilitarNext.innerHTML=desactivado;
+              };
+          }
+      </script>
+  </body>
+</html>
