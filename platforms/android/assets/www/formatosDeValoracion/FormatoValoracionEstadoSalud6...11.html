@@ -5,30 +5,31 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
 
-        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
 
-        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="/js/codigo.js"></script>
         <title>Formulario</title>
     </head>
     <body>
-        <section data-role="page" id="formularioValoracion">
+        <section data-role="page" id="formAutoper">
             <header data-role="header">
                 <h1>6. AUTOPERCEPCIÓN</h1>
             </header>
             <content data-role="content">
 
                 <b><p align="left">6.1 Entrevista</p></b>
-                <div id="infoAutoper">
+                <div id="divEntrevista">
                     <form id="formEntrevista">
-                        <label for="desMismo">¿Cómo se describe a sí mismo?:</label>
-                        <textarea name="desMismo" id="desMismo"></textarea>
+                        <label for="txArDescribe">¿Cómo se describe a sí mismo?:</label>
+                        <textarea name="txArDescribe" id="txArDescribe"></textarea>
 
-                        <label for="sienAgusto">¿Se siente agusto consigo mismo?:</label>
-                        <textarea name="sienAgusto" id="sienAgusto"></textarea>
+                        <label for="txAesienAgusto">¿Se siente agusto consigo mismo?:</label>
+                        <textarea name="txAesienAgusto" id="txAesienAgusto"></textarea>
 
                         <label for="cosNogusta">¿Hay cosas de usted mismo o de su cuerpo, que no le gustan?:</label>
                         <textarea name="cosNogusta" id="cosNogusta"></textarea>
@@ -48,7 +49,7 @@
                 </div>
 
                 <b><p align="left">6.2 Examen Físico</p></b>
-                <div id="infoAutoper">
+                <div id="divExamenFisico">
                     <form id="formExafisico">
                         <label for="contVisual">¿El individuo, mantiene el contacto visual?:</label>
                         <textarea name="contVisual" id="contVisual"></textarea>
@@ -192,7 +193,7 @@
                         
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Cree usted que puede responder por el cuidado de su familia?:</legend>
-                            <input name="cuifami" id="cuiFamSi" value="Si" checked="checked" type="radio">
+                            <input name="cuifami" id="cuiFamSi" value="Si" type="radio">
                             <label for="cuiFamSi">Si</label>
                             <input name="cuifami" id="cuiFamNo" value="No" type="radio">
                             <label for="cuiFamNo">No</label>
@@ -204,7 +205,7 @@
                         
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Ingresos suficientes:</legend>
-                                <input name="ingSufi" id="ingSufiSi" value="Si" checked="checked" type="radio">
+                                <input name="ingSufi" id="ingSufiSi" value="Si" type="radio">
                                 <label for="ingSufiSi">Si</label>
                                 <input name="ingSufi" id="ingSufiNo" value="No" type="radio">
                                 <label for="ingSufiNo">No</label>
@@ -214,7 +215,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Estudia:</legend>
-                                <input name="estudia" id="estuSi" value="Si" checked="checked" type="radio">
+                                <input name="estudia" id="estuSi" value="Si" type="radio">
                                 <label for="estuSi">Si</label>
                                 <input name="estudia" id="estuNo" value="No" type="radio">
                                 <label for="estuNo">No</label>
@@ -222,7 +223,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Rendimiento satisfatorio:</legend>
-                                <input name="rendSatis" id="rendSatisBueno" value="Bueno" checked="checked" type="radio">
+                                <input name="rendSatis" id="rendSatisBueno" value="Bueno" type="radio">
                                 <label for="rendSatisBueno">Bueno</label>
                                 <input name="rendSatis" id="rendSatisRegular" value="Regular" type="radio">
                                 <label for="rendSatisRegular">Regular</label>
@@ -232,7 +233,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Relaciones con compañeros y/o amigos:</legend>
-                                <input name="relaAmigos" id="relaAmigosBuena" value="Buenas" checked="checked" type="radio">
+                                <input name="relaAmigos" id="relaAmigosBuena" value="Buenas" type="radio">
                                 <label for="relaAmigosBuena">Buenas</label>
                                 <input name="relaAmigos" id="relaAmigosAcept" value="Aceptables" type="radio">
                                 <label for="relaAmigosAcept">Aceptables</label>
@@ -242,7 +243,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Pertence a algún grupo u organización:</legend>
-                                <input name="grupOrga" id="grupOrgaSi" value="Si" checked="checked" type="radio">
+                                <input name="grupOrga" id="grupOrgaSi" value="Si" type="radio">
                                 <label for="grupOrgaSi">Si</label>
                                 <input name="grupOrga" id="grupOrgaNo" value="No" type="radio">
                                 <label for="grupOrgaNo">No</label>
@@ -250,7 +251,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Se siente a gusto en el grupo?:</legend>
-                                <input name="sienBien" id="sienBienSi" value="Si" checked="checked" type="radio">
+                                <input name="sienBien" id="sienBienSi" value="Si" type="radio">
                                 <label for="sienBienSi">Si</label>
                                 <input name="sienBien" id="sienBienNo" value="No" type="radio">
                                 <label for="sienBienNo">No</label>
@@ -260,7 +261,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Accidentes o enfermedades frecuentes:</legend>
-                                <input name="enfFrecu" id="enfFrecuSi" value="Si" checked="checked" type="radio">
+                                <input name="enfFrecu" id="enfFrecuSi" value="Si" type="radio">
                                 <label for="enfFrecuSi">Si</label>
                                 <input name="enfFrecu" id="enfFrecuNo" value="No" type="radio">
                                 <label for="enfFrecuNo">No</label>
@@ -268,7 +269,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Abuso físico y/o psicológico:</legend>
-                                <input name="abusFisico" id="abusFisicoSi" value="Si" checked="checked" type="radio">
+                                <input name="abusFisico" id="abusFisicoSi" value="Si" type="radio">
                                 <label for="abusFisicoSi">Si</label>
                                 <input name="abusFisico" id="abusFisicoNo" value="No" type="radio">
                                 <label for="abusFisicoNo">No</label>
@@ -276,7 +277,7 @@
 
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>Castigos frecuentes:</legend>
-                                <input name="castFrecuen" id="castFrecuenSi" value="Si" checked="checked" type="radio">
+                                <input name="castFrecuen" id="castFrecuenSi" value="Si" type="radio">
                                 <label for="castFrecuenSi">Si</label>
                                 <input name="castFrecuen" id="castFrecuenNo" value="No" type="radio">
                                 <label for="castFrecuenNo">No</label>
@@ -306,7 +307,7 @@
                         
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Postura correcta:</legend>
-                            <input name="postCorrecta" id="postCorrectaSi" value="Si" checked="checked" type="radio">
+                            <input name="postCorrecta" id="postCorrectaSi" value="Si" type="radio">
                             <label for="postCorrectaSi">Si</label>
                             <input name="postCorrecta" id="postCorrectaNo" value="No" type="radio">
                             <label for="postCorrectaNo">No</label>
@@ -314,7 +315,7 @@
 
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Agarre adecuado del pezón:</legend>
-                            <input name="agarrPezon" id="agarrPezonSi" value="Si" checked="checked" type="radio">
+                            <input name="agarrPezon" id="agarrPezonSi" value="Si" type="radio">
                             <label for="agarrPezonSi">Si</label>
                             <input name="agarrPezon" id="agarrPezonNo" value="No" type="radio">
                             <label for="agarrPezonNo">No</label>
@@ -322,7 +323,7 @@
 
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Continuidad en la succión:</legend>
-                            <input name="contSuccion" id="contSuccionSi" value="Si" checked="checked" type="radio">
+                            <input name="contSuccion" id="contSuccionSi" value="Si" type="radio">
                             <label for="contSuccionSi">Si</label>
                             <input name="contSuccion" id="contSuccionNo" value="No" type="radio">
                             <label for="contSuccionNo">No</label>
@@ -357,7 +358,7 @@
                         
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Relaciones con el sexo opuesto:</legend>
-                            <input name="relaSexo" id="relaSexoBuenas" value="Buenas" checked="checked" type="radio">
+                            <input name="relaSexo" id="relaSexoBuenas" value="Buenas" type="radio">
                             <label for="relaSexoBuenas">Buenas</label>
                             <input name="relaSexo" id="relaSexoAcep" value="Aceptables" type="radio">
                             <label for="relaSexoAcep">Aceptables</label>
@@ -367,7 +368,7 @@
 
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Tiene vida sexual activa?:</legend>
-                            <input name="vidaSexu" id="vidaSexuSi" value="Si" checked="checked" type="radio">
+                            <input name="vidaSexu" id="vidaSexuSi" value="Si" type="radio">
                             <label for="vidaSexuSi">Si</label>
                             <input name="vidaSexu" id="vidaSexuNo" value="No" type="radio">
                             <label for="vidaSexuNo">No</label>
@@ -378,7 +379,7 @@
 
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>Utiliza anticonceptivos?:</legend>
-                            <input name="utilAnti" id="utilAntiSi" value="Si" checked="checked" type="radio">
+                            <input name="utilAnti" id="utilAntiSi" value="Si" type="radio">
                             <label for="utilAntiSi">Si</label>
                             <input name="utilAnti" id="utilAntiNo" value="No" type="radio">
                             <label for="utilAntiNo">No</label>
@@ -483,52 +484,119 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td><input id="N1C1" type="text" placeholder="Ectópico" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                                <td></td>
+                                <td><input id="N1C1" type="text" placeholder="Viven" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input id="N1C1" type="text" placeholder="Grávida" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1C1" type="text" placeholder="Aborto" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                                <td></td>
+                                <td><input id="N1C1" type="text" placeholder="Muert.1°Semana" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input id="N1C1" type="text" placeholder="Parto" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1C1" type="text" placeholder="Vaginal" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1C1" type="text" placeholder="Nac. Vivos" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1C1" type="text" placeholder="Muert.Desp.1°Semana" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><input id="N1C1" type="text" placeholder="Cesárea" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1C1" type="text" placeholder="Nac. Muertos" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!--
+                    <label for="gravida">Grávida</label>
+                    <input id="gravida" onkeypress="return justNumbers(event);" value="1"></input>
+
+                    
+
+                    <fieldset data-role="controlgroup" data-type="vertical">
+                            <input name="select3" id="selectEctopico" value="Ectópico" type="checkbox" onclick="habilitarInputEctopico();">
+                            <label for="selectEctopico">Ectópico</label>
+                            <div id="divEAP"></div>
+                            <input name="select3" id="selectAborto" value="Aborto" type="checkbox" onclick="habilitarInputAborto();">
+                            <label for="selectAborto">Aborto</label>
+                            <div id="divEAP2"></div>
+                            <input name="select3" id="selectParto" value="Parto" type="checkbox" onclick="habilitarInputParto();">
+                            <label for="selectParto">Parto</label>
+                            
+                            <div id="divEAP3"></div>
+
+                    </fieldset>
+                    -->
+                    
+
+            
                     <form id="examFisico">
                     <b><p align="left">8.2 Examen Físico</p></b>
                     
                     <p align="left">8.2.1 Mamas</p>
 
                     <label>Tamaño:</label> 
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>1. Proporcional:</legend>
-                            <input name="tamPro" id="tamProSi" value="Si" checked="checked" type="radio">
+                            <input name="tamPro" id="tamProSi" value="Si" type="radio">
                             <label for="tamProSi">Si</label>
                             <input name="tamPro" id="tamProNo" value="No" type="radio">
                             <label for="tamProNo">No</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>2. Supernumerarias:</legend>
-                            <input name="Super" id="SuperSi" value="Si" checked="checked" type="radio">
+                            <input name="Super" id="SuperSi" value="Si" type="radio">
                             <label for="SuperSi">Si</label>
                             <input name="Super" id="SuperNo" value="No" type="radio">
                             <label for="SuperNo">No</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>3. Simetría conservada:</legend>
-                            <input name="Sime" id="SimeSi" value="Si" checked="checked" type="radio">
+                            <input name="Sime" id="SimeSi" value="Si"type="radio">
                             <label for="SimeSi">Si</label>
                             <input name="Sime" id="SimeNo" value="No" type="radio">
                             <label for="SimeNo">No</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>4. Consistencia:</legend>
-                            <input name="Consis" id="ConsisDura" value="Dura" checked="checked" type="radio">
+                            <input name="Consis" id="ConsisDura" value="Dura" type="radio">
                             <label for="ConsisDura">Dura</label>
                             <input name="Consis" id="ConsisBlan" value="Blanda" type="radio">
                             <label for="ConsisBlan">Blanda</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>5. Piel:</legend>
-                            <input name="piel" id="pielVeno" value="Red Venosa" checked="checked" type="radio">
+                            <input name="piel" id="pielVeno" value="Red Venosa" type="checkbox">
                             <label for="pielVeno">Red Venosa</label>
-                            <input name="piel" id="pielPigm" value="Pigmentación" type="radio">
+                            <input name="piel" id="pielPigm" value="Pigmentación" type="checkbox">
                             <label for="pielPigm">Pigmentación</label>
-                            <input name="piel" id="pielEstri" value="Estrías" type="radio">
+                            <input name="piel" id="pielEstri" value="Estrías" type="checkbox">
                             <label for="pielEstri">Estrías</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>6. Tipo:</legend>
-                            <input name="tipo" id="tipo1" value="I" checked="checked" type="radio">
+                            <input name="tipo" id="tipo1" value="I" type="radio">
                             <label for="tipo1">I</label>
                             <input name="tipo" id="tipo2" value="II" type="radio">
                             <label for="tipo2">II</label>
@@ -537,29 +605,32 @@
                             <input name="tipo" id="tipo4" value="IV" type="radio">
                             <label for="tipo4">IV</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>7. Areola: 
                                 <label for="formaAreo">Forma:</label>
                                 <input name="formaAreo" id="formaAreo" value="" type="text">
                             </legend>
-                            <input name="areo" id="areoPrim" value="Areola primaria" checked="checked" type="radio">
+                            <input name="areo" id="areoPrim" value="Areola primaria" type="checkbox">
                             <label for="areoPrim">Areola primaria</label>
-                            <input name="areo" id="areoSecun" value="Areola secundaria" type="radio">
+                            <input name="areo" id="areoSecun" value="Areola secundaria" type="checkbox">
                             <label for="areoSecun">Areola secundaria</label>
-                            <input name="areo" id="tuberMont" value="Tubérculos Montgomery" type="radio">
+                            <input name="areo" id="tuberMont" value="Tubérculos Montgomery" type="checkbox">
                             <label for="tuberMont">Tubérculos Montgomery</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>8. Pezón:</legend>
-                            <input name="pezon" id="pezonPla" value="Plano" checked="checked" type="radio">
+                            <input name="pezon" id="pezonPla" value="Plano" type="checkbox">
                             <label for="pezonPla">Plano</label>
-                            <input name="pezon" id="pezonEver" value="Evertido" type="radio">
+                            <input name="pezon" id="pezonEver" value="Evertido" type="checkbox">
                             <label for="pezonEver">Evertido</label>
-                            <input name="pezon" id="pezonCent" value="Centrado" type="radio">
+                            <input name="pezon" id="pezonCent" value="Centrado" type="checkbox">
                             <label for="pezonCent">Centrado</label>
-                            <input name="pezon" id="pezonErec" value="Eréctil" type="radio">
+                            <input name="pezon" id="pezonErec" value="Eréctil" type="checkbox">
                             <label for="pezonErec">Eréctil</label>
                         </fieldset>
+
                         <label for="observa">Observaciones:</label>
                         <textarea name="observa" id="observa"></textarea>
                         <b><p>Nota: La valoración de genitales externos masculinos y femeninos solo se realiza si se ha identificado algún tipo de alteración, o si se requiere una valoración física completa.</p></b>
@@ -595,36 +666,42 @@
 
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>2. Las situaciones difíciles las enfrenta con:</legend>
-                            <input name="situDifi" id="situDifiAnsi" value="off" checked="checked" type="radio">
+                            <input name="situDifi" id="situDifiAnsi" value="off" type="checkbox">
                             <label for="situDifiAnsi">Ansiedad</label>
-                            <input name="situDifi" id="situDifiMied" value="Miedo" type="radio">
+                            <input name="situDifi" id="situDifiMied" value="Miedo" type="checkbox">
                             <label for="situDifiMied">Miedo</label>
-                            <input name="situDifi" id="situDifiInsegu" value="Inseguridad" type="radio">
+                            <input name="situDifi" id="situDifiInsegu" value="Inseguridad" type="checkbox">
                             <label for="situDifiInsegu">Inseguridad</label>
-                            <input name="situDifi" id="situDifiLlanto" value="Llanto" type="radio">
+                            <input name="situDifi" id="situDifiLlanto" value="Llanto" type="checkbox">
                             <label for="situDifiLlanto">Llanto</label>
-                            <input name="situDifi" id="situDifiForta" value="Fortaleza" type="radio">
+                            <input name="situDifi" id="situDifiForta" value="Fortaleza" type="checkbox">
                             <label for="situDifiForta">Fortaleza</label>
-                            <input name="situDifi" id="situDifiDecis" value="Decisión" type="radio">
+                            <input name="situDifi" id="situDifiDecis" value="Decisión" type="checkbox">
                             <label for="situDifiDecis">Decisión</label>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
-                        <legend>3. Cuando está preocupado(a) a quien acude:</legend>
-                            <input name="preoAcude" id="preoAcudeFami" value="Soltero" checked="checked" type="radio">
+                            <legend>3. Cuando está preocupado(a) a quien acude:</legend>
+                            <input name="preoAcude" id="preoAcudeFami" value="Familiar" type="checkbox" onclick="desabilitarOtro()">
                             <label for="preoAcudeFami">Familiar</label>
-                            <input name="preoAcude" id="preoAcudeAmigo" value="Casado" type="radio">
+                            <input name="preoAcude" id="preoAcudeAmigo" value="Amigo" type="checkbox" onclick="desabilitarOtro()">
                             <label for="preoAcudeAmigo">Amigo</label>
-                            <input name="preoAcude" id="preoAcudeOtro" value="Otro" type="radio">
+                            <input name="preoAcude" id="preoAcudeOtro" value="Otro" type="checkbox" onclick="habilitarPreocupadoOtro()">
                             <label for="preoAcudeOtro">Otro</label>
+                            
+                            <div id="divECOCual"></div>
                         </fieldset>
+
                         <fieldset data-role="controlgroup" data-type="vertical">
                             <legend>4. En momentos díficiles:</legend>
-                            <input name="momenDifi" id="momenDifiAlcoh" value="Toma alcohol" checked="checked" type="radio">
+                            <input name="momenDifi" id="momenDifiAlcoh" value="Toma alcohol" type="checkbox" onclick="desabilitarOtro1()">
                             <label for="momenDifiAlcoh">Toma alcohol</label>
-                            <input name="momenDifi" id="momenDifiDrog" value="Droga" type="radio">
+                            <input name="momenDifi" id="momenDifiDrog" value="Droga" type="checkbox" onclick="desabilitarOtro1()">
                             <label for="momenDifiDrog">Droga</label>
-                            <input name="momenDifi" id="momenDifiOtro" value="Otro" type="radio">
+                            <input name="momenDifi" id="momenDifiOtro" value="Otro" type="checkbox" onclick="habilitarMomentosDifiOtro()">
                             <label for="momenDifiOtro">Otro</label>
+
+                            <div id="divECOCual1"></div>
                         </fieldset>
 
                     </form>
@@ -650,9 +727,10 @@
                     <div id="infoPrincipios">
                         <form id="formEntrevista4">    
                             <b><p align="left">10.1 Entrevista</p></b>
+
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>1. ¿La religión es importante en su vida?:</legend>
-                                <input name="reliImpo" id="reliImpoMuch" value="Mucho" checked="checked" type="radio">
+                                <input name="reliImpo" id="reliImpoMuch" value="Mucho" type="radio">
                                 <label for="reliImpoMuch">Mucho</label>
                                 <input name="reliImpo" id="reliImpoNorm" value="Normal" type="radio">
                                 <label for="reliImpoNorm">Normal</label>
@@ -661,20 +739,23 @@
                                 <input name="reliImpo" id="reliImpoNada" value="Para nada" type="radio">
                                 <label for="reliImpoNada">Para nada</label>
                             </fieldset>
+
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>1.1 ¿Le ayuda a superar problemas?:</legend>
-                                <input name="reliProbl" id="reliProblSi" value="Si" checked="checked" type="radio">
+                                <input name="reliProbl" id="reliProblSi" value="Si" type="radio">
                                 <label for="reliProblSi">Si</label>
                                 <input name="reliProbl" id="reliProblNo" value="No" type="radio">
                                 <label for="reliProblNo">No</label>
                             </fieldset>
+
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>2. ¿Tiene planes y esperanzas para el futuro?:</legend>
-                                <input name="planEspe" id="planEspeSi" value="Si" checked="checked" type="radio">
+                                <input name="planEspe" id="planEspeSi" value="Si" type="radio">
                                 <label for="planEspeSi">Si</label>
                                 <input name="planEspe" id="planEspeNo" value="No" type="radio">
                                 <label for="planEspeNo">No</label>
                             </fieldset>
+
                             <label for="valores">3. Para usted, ¿cuáles son los valores importantes de la vida?:</label>
                             <input name="valores" id="valores" value="" type="text">
                             <label for="respValores">3.1 Los respeta y actúa de acuerdo con ellos?:</label>
@@ -702,14 +783,14 @@
                             <b><p align="left">11.1 Entrevista</p></b>
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>1. ¿Presenta heridas o laceraciones en piel o mucosas?:</legend>
-                                <input name="heridPiel" id="heridPielSi" value="Si" checked="checked" type="radio">
+                                <input name="heridPiel" id="heridPielSi" value="Si" type="radio">
                                 <label for="heridPielSi">Si</label>
                                 <input name="heridPiel" id="heridPielNo" value="No" type="radio">
                                 <label for="heridPielNo">No</label>
                             </fieldset>
                             <fieldset data-role="controlgroup" data-type="vertical">
                                 <legend>1. ¿Cicatrizan sus heridas con facilidad?:</legend>
-                                <input name="heriCica" id="heriCicaSi" value="Si" checked="checked" type="radio">
+                                <input name="heriCica" id="heriCicaSi" value="Si" type="radio">
                                 <label for="heriCicaSi">Si</label>
                                 <input name="heriCica" id="heriCicaNo" value="No" type="radio">
                                 <label for="heriCicaNo">No</label>
@@ -724,5 +805,6 @@
                     </div>
                 </article>
         </section>
+        
     </body>
 </html>
