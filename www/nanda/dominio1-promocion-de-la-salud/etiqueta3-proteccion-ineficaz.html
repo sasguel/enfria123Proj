@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="../../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.css"/>
+        <link rel="stylesheet" href="../../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <link rel="stylesheet" href="thema.css"/>
+
+        <script type="text/javascript" src="../../js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script type="text/javascript" src="../js/resul.js"></script>
+
+        <script type="text/javascript" src="../../cordova.js"></script>
+        </style>
+
+    </head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta #</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta3: Protección ineficaz</p>
+				<p class="bblue" id="definicion">Edfinicion: Disminución de la capacidad para autoprotegerse de amenazas internas y externas, como enfermedades o lesiones.</p>
+				<p class="bgray" id="dominio">Dominio1: Promoción de la salud</p>
+				<p class="borange" id="clase">Clase: Gestión de la salud</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Alteración de la coagulación.">
+						<label for="carDef1" name="lCarDef">Alteración de la coagulación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Anorexia.">
+						<label for="carDef2" name="lCarDef">Anorexia.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Escalofríos.">
+						<label for="carDef3" name="lCarDef">Escalofríos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Tos.">
+						<label for="carDef4" name="lCarDef">Tos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Deficiencia inmunitaria.">
+						<label for="carDef5" name="lCarDef">Deficiencia inmunitaria.</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Disnea..">
+						<label for="carDef6" name="lCarDef">Disnea..</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Fatiga.">
+						<label for="carDef7" name="lCarDef">Fatiga.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Inmovilidad.">
+						<label for="carDef8" name="lCarDef">Inmovilidad.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Deterioro de la cicatrización.">
+						<label for="carDef9" name="lCarDef">Deterioro de la cicatrización.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Insomnio.">
+						<label for="carDef10" name="lCarDef">Insomnio.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Prurito.">
+						<label for="carDef11" name="lCarDef">Prurito.</label>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Respuestas desadaptadas al estrés.">
+						<label for="carDef12" name="lCarDef">Respuestas desadaptadas al estrés.</label>
+
+						<input type="checkbox" name="carDef" id="carDef13" value ="Alteración neurosensorial.">
+						<label for="carDef13" name="lCarDef">Alteración neurosensorial.</label>
+
+						<input type="checkbox" name="carDef" id="carDef14" value ="Úlceras por presión..">
+						<label for="carDef14" name="lCarDef">Úlceras por presión..</label>
+
+						<input type="checkbox" name="carDef" id="carDef15" value ="Agitación.">
+						<label for="carDef15" name="lCarDef">Agitación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef16" value ="Debilidad.">
+						<label for="carDef16" name="lCarDef">Debilidad.</label>
+
+						<input type="checkbox" name="carDef" id="carDef17" value ="Desorientación.">
+						<label for="carDef17" name="lCarDef">Desorientación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef18" value ="Sudoración.">
+						<label for="carDef18" name="lCarDef">Sudoración.</label>
+
+						
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Perfiles hematológicos anormales (p. ej., leucopenia, trombocitopenia, anemia, coagulación)." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Perfiles hematológicos anormales (p. ej., leucopenia, trombocitopenia, anemia, coagulación).</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Cáncer.">
+						<label for="facRel2" name="lFacRel" >Cáncer.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Extremos de edad.">
+						<label for="facRel3" name="lFacRel" >Extremos de edad.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Trastornos inmunitarios.">
+						<label for="facRel4" name="lFacRel" >Trastornos inmunitarios.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Nutrición inadecuada.">
+						<label for="facRel5" name="lFacRel" >Nutrición inadecuada.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Medicamentos (p. ej., antineoplásicos, corticoesteroides, terapia inmunitaria, anticoagulantes, trombolíticos).">
+						<label for="facRel6" name="lFacRel" >Medicamentos (p. ej., antineoplásicos, corticoesteroides, terapia inmunitaria, anticoagulantes, trombolíticos).</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Abuso de sustancias.">
+						<label for="facRel7" name="lFacRel" >Abuso de sustancias.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Efectos secundarios del tratamiento (p. ej., cirugía, radioterapia).">
+						<label for="facRel8" name="lFacRel" >Efectos secundarios del tratamiento (p. ej., cirugía, radioterapia).</label>
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>

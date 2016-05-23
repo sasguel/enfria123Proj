@@ -13,13 +13,13 @@
 
         <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
         <script type="text/javascript" src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/SQLite/dataBase.js"></script>
 
         <script type="text/javascript" src="../cordova.js"></script>
         </style>
 
     </head>
-	<body>
-<!--__________ formatos __________-->
+	<body onload='cargarPacientes();'>
 		<section id="index" data-role="page" data-title="NANDOIC">
 			<header data-role="header">
 				<h1>NANDOIC</h1>
@@ -31,7 +31,33 @@
 				</div>
 			</header>
 			<article data-role="content">
-				<h1>Sitio actualmente en construcción</h1>
+				<h1>Pacientes</h1>
+				<a href="#nuevo" role="button" rel='external' class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="flip">Nuevo Paciente</a>
+				<div id="pacientes">
+				</div>
+			</article>
+			<footer data-role="footer" data-theme="b">
+				<h1>HYDRA-PDM/ENDERMERIA-GIS</h1>
+			</footer>
+		</section>
+
+
+
+
+		<section id="nuevo" data-role="panel" data-title="NANDOIC">
+			<header data-role="header">
+				<h1>NANDOIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-1)" rel="external">volver</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<h1>Pacientes</h1>
+				<input type='number' placeholder='Documento' id='id_paciente'>
+				<input type='text' placeholder='nombre' id='paciente_nombre'>
+				<input type='button' onclick='AgregarPaciente();' value='Agregar'>
 			</article>
 			<footer data-role="footer" data-theme="b">
 				<h1>HYDRA-PDM/ENDERMERIA-GIS</h1>

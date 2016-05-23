@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="../../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.css"/>
+        <link rel="stylesheet" href="../../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <link rel="stylesheet" href="thema.css"/>
+
+        <script type="text/javascript" src="../../js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script type="text/javascript" src="../js/resul.js"></script>
+
+        <script type="text/javascript" src="../../cordova.js"></script>
+        </style>
+
+    </head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Etiqueta 11</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta11: Estreñimiento</p>
+				<p class="bblue" id="definicion">Definicion: Disminución de la frecuencia normal de defecación, acompañada de eliminación dificultosa o incompleta de heces y/o eliminación de heces excesivamente duras y secas</p>
+				<p class="bgray" id="dominio">Dominio 3: Eliminación e Intercambio</p>
+				<p class="borange" id="clase">Clase 2: Función gastrointestinal</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Dolor abdominal.">
+						<label for="carDef1" name="lCarDef">Dolor abdominal.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Sensibilidad abdominal con resistencia muscular palpable.">
+						<label for="carDef2" name="lCarDef">Sensibilidad abdominal con resistencia muscular palpable.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Sensibilidad abdominal sin resistencia muscular palpable.">
+						<label for="carDef3" name="lCarDef">Sensibilidad abdominal sin resistencia muscular palpable.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Anorexia.">
+						<label for="carDef4" name="lCarDef">Anorexia.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Presentaciones atípicas en ancianos (p. ej., cambios del estado  mental, incontinencia urinaria, caídas inexplicables, aumento de la temperatura corporal).">
+						<label for="carDef5" name="lCarDef">Presentaciones atípicas en ancianos (p. ej., cambios del estado  mental, incontinencia urinaria, caídas inexplicables, aumento de la temperatura corporal).</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Ruidos abdominales.">
+						<label for="carDef6" name="lCarDef">Ruidos abdominales.</label>
+
+						<input type="checkbox" name="carDef" id="carDef7" value ="Sangre roja brillante en las heces.">
+						<label for="carDef7" name="lCarDef">Sangre roja brillante en las heces.</label>
+
+						<input type="checkbox" name="carDef" id="carDef8" value ="Cambios en el patrón intestinal.">
+						<label for="carDef8" name="lCarDef">Cambios en el patrón intestinal.</label>
+
+						<input type="checkbox" name="carDef" id="carDef9" value ="Disminución de la frecuencia.">
+						<label for="carDef9" name="lCarDef">Disminución de la frecuencia.</label>
+
+						<input type="checkbox" name="carDef" id="carDef10" value ="Disminución del volumen de las heces.">
+						<label for="carDef10" name="lCarDef">Disminución del volumen de las heces.</label>
+
+						<input type="checkbox" name="carDef" id="carDef11" value ="Distensión abdominal.">
+						<label for="carDef11" name="lCarDef">Distensión abdominal.</label>
+
+						<input type="checkbox" name="carDef" id="carDef12" value ="Sensación de plenitud rectal.">
+						<label for="carDef12" name="lCarDef">Sensación de plenitud rectal.</label>
+
+						<input type="checkbox" name="carDef" id="carDef13" value ="Sensación de presión rectal.">
+						<label for="carDef13" name="lCarDef">Sensación de presión rectal.</label>
+
+						<input type="checkbox" name="carDef" id="carDef14" value ="Fatiga generalizada.">
+						<label for="carDef14" name="lCarDef">Fatiga generalizada.</label>
+
+						<input type="checkbox" name="carDef" id="carDef15" value ="Heces duras, secas y formadas.">
+						<label for="carDef15" name="lCarDef">Heces duras, secas y formadas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef16" value ="Cefaleas.">
+						<label for="carDef16" name="lCarDef">Cefaleas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef17" value ="Sonidos abdominales hiperactivos.">
+						<label for="carDef17" name="lCarDef">Sonidos abdominales hiperactivos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef18" value ="Sonidos abdominales hipoactivos.">
+						<label for="carDef18" name="lCarDef">Sonidos abdominales hipoactivos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef19" value ="Aumento de la presión abdominal.">
+						<label for="carDef19" name="lCarDef">Aumento de la presión abdominal.</label>
+
+						<input type="checkbox" name="carDef" id="carDef20" value ="Indigestión.">
+						<label for="carDef20" name="lCarDef">Indigestión.</label>
+
+						<input type="checkbox" name="carDef" id="carDef21" value ="Náuseas.">
+						<label for="carDef21" name="lCarDef">Náuseas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef22" value ="Rebosamiento de heces líquidas.">
+						<label for="carDef22" name="lCarDef">Rebosamiento de heces líquidas.</label>
+
+						<input type="checkbox" name="carDef" id="carDef23" value ="Dolor al defecar.">
+						<label for="carDef23" name="lCarDef">Dolor al defecar.</label>
+
+						<input type="checkbox" name="carDef" id="carDef24" value ="Masa abdominal palpable.">
+						<label for="carDef24" name="lCarDef">Masa abdominal palpable.</label>
+
+						<input type="checkbox" name="carDef" id="carDef25" value ="Masa rectal palpable.">
+						<label for="carDef25" name="lCarDef">Masa rectal palpable.</label>
+
+						<input type="checkbox" name="carDef" id="carDef26" value ="Percusión abdominal sorda.">
+						<label for="carDef26" name="lCarDef">Percusión abdominal sorda.</label>
+
+						<input type="checkbox" name="carDef" id="carDef27" value ="Presencia de heces de consistencia pastosa en el recto.">
+						<label for="carDef27" name="lCarDef">Presencia de heces de consistencia pastosa en el recto.</label>
+
+						<input type="checkbox" name="carDef" id="carDef28" value ="Flatulencia grave.">
+						<label for="carDef28" name="lCarDef">Flatulencia grave.</label>
+
+						<input type="checkbox" name="carDef" id="carDef29" value ="Esfuerzo excesivo en la defecación.">
+						<label for="carDef29" name="lCarDef">Esfuerzo excesivo en la defecación.</label>
+
+						<input type="checkbox" name="carDef" id="carDef30" value ="Incapacidad para eliminar las heces.">
+						<label for="carDef30" name="lCarDef">Incapacidad para eliminar las heces.</label>
+
+						<input type="checkbox" name="carDef" id="carDef31" value ="Vómitos.">
+						<label for="carDef31" name="lCarDef">Vómitos.</label>
+					</fieldset>
+
+
+					<!--FACTORES RELACIONALES-->
+
+
+				
+					<fieldset data-role="controlgroup">
+
+						<h3 class="bred">Factores relacionales: Funcionales</h3>
+
+						<input type="radio" name="facRel" id="facRel1" value ="Debilidad de los músculos abdominales." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Debilidad de los músculos abdominales.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Ignorar habitualmente la urgencia para defecar.">
+						<label for="facRel2" name="lFacRel" >Ignorar habitualmente la urgencia para defecar.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Uso inadecuado del inodoro (p. ej., falta de tiempo, postura para la defecación, privacidad).">
+						<label for="facRel3" name="lFacRel" >Uso inadecuado del inodoro (p. ej., falta de tiempo, postura para la defecación, privacidad).</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Actividad física insuficiente.">
+						<label for="facRel4" name="lFacRel" >Actividad física insuficiente.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Hábitos de defecación irregulares.">
+						<label for="facRel5" name="lFacRel" >Hábitos de defecación irregulares.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Cambios ambientales recientes.">
+						<label for="facRel6" name="lFacRel" >Cambios ambientales recientes.</label>
+
+
+						<h3 class="bred">Factores relacionales: Psicológicos</h3>
+
+
+						<input type="radio" name="facRel" id="facRel7" value ="Depresión.">
+						<label for="facRel7" name="lFacRel" >Depresión.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Estrés emocional.">
+						<label for="facRel8" name="lFacRel" >Estrés emocional.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Confusión mental.">
+						<label for="facRel9" name="lFacRel" >Confusión mental.</label>
+
+
+						<h3 class="bred">Factores relacionales: Farmacológicos</h3>
+
+
+						<input type="radio" name="facRel" id="facRel10" value ="Antiácidos que contienen aluminio.">
+						<label for="facRel10" name="lFacRel" >Antiácidos que contienen aluminio.</label>
+
+						<input type="radio" name="facRel" id="facRel11" value ="Anticolinérgicos.">
+						<label for="facRel11" name="lFacRel" >Anticolinérgicos.</label>
+
+						<input type="radio" name="facRel" id="facRel12" value ="Anticonvulsivos.">
+						<label for="facRel12" name="lFacRel" >Anticonvulsivos.</label>
+
+						<input type="radio" name="facRel" id="facRel13" value ="Antidepresivos.">
+						<label for="facRel13" name="lFacRel" >Antidepresivos.</label>
+
+						<input type="radio" name="facRel" id="facRel14" value ="Agentes antilipemiantes.">
+						<label for="facRel14" name="lFacRel" >Agentes antilipemiantes.</label>
+
+						<input type="radio" name="facRel" id="facRel15" value ="Sales de bismuto.">
+						<label for="facRel15" name="lFacRel" >Sales de bismuto.</label>
+
+						<input type="radio" name="facRel" id="facRel16" value ="Carbonato cálcico.">
+						<label for="facRel16" name="lFacRel" >Carbonato cálcico.</label>
+
+						<input type="radio" name="facRel" id="facRel17" value ="Bloqueantes de los canales del calcio.">
+						<label for="facRel17" name="lFacRel" >Bloqueantes de los canales del calcio.</label>
+
+						<input type="radio" name="facRel" id="facRel18" value ="Diuréticos.">
+						<label for="facRel18" name="lFacRel" >Diuréticos.</label>
+
+						<input type="radio" name="facRel" id="facRel19" value ="Sales de hierro.">
+						<label for="facRel19" name="lFacRel" >Sales de hierro.</label>
+
+						<input type="radio" name="facRel" id="facRel20" value ="Sobredosis de laxantes.">
+						<label for="facRel20" name="lFacRel" >Sobredosis de laxantes.</label>
+
+						<input type="radio" name="facRel" id="facRel21" value ="Antiinflamatorios no esteroideos.">
+						<label for="facRel21" name="lFacRel" >Antiinflamatorios no esteroideos.</label>
+
+						<input type="radio" name="facRel" id="facRel22" value ="Opiáceos.">
+						<label for="facRel22"name="lFacRel" >Opiáceos.</label>
+
+						<input type="radio" name="facRel" id="facRel23" value ="Fenotiazidas..">
+						<label for="facRel23" name="lFacRel" >Fenotiazidas..</label>
+
+						<input type="radio" name="facRel" id="facRel24" value ="Sedantes.">
+						<label for="facRel24" name="lFacRel" >Sedantes.</label>
+
+						<input type="radio" name="facRel" id="facRel25" value ="Simpaticomiméticos.">
+						<label for="facRel25" name="lFacRel" >Simpaticomiméticos.</label>
+
+
+						<h3 class="bred">Factores relacionales: Mecánicos</h3>
+
+
+						<input type="radio" name="facRel" id="facRel26" value ="Desequilibrio electrolítico.">
+						<label for="facRel26" name="lFacRel" >Desequilibrio electrolítico.</label>
+
+						<input type="radio" name="facRel" id="facRel27" value ="Hemorroides.">
+						<label for="facRel27" name="lFacRel" >Hemorroides.</label>
+
+						<input type="radio" name="facRel" id="facRel28" value ="Enfermedad de Hirschsprung.">
+						<label for="facRel28" name="lFacRel" >Enfermedad de Hirschsprung.</label>
+
+						<input type="radio" name="facRel" id="facRel29" value ="Deterioro neurológico.">
+						<label for="facRel29" name="lFacRel" >Deterioro neurológico.</label>
+
+						<input type="radio" name="facRel" id="facRel30" value ="Obesidad.">
+						<label for="facRel30" name="lFacRel" >Obesidad.</label>
+
+						<input type="radio" name="facRel" id="facRel31" value ="Obstrucción posquirúrgica.">
+						<label for="facRel31" name="lFacRel" >Obstrucción posquirúrgica.</label>
+
+						<input type="radio" name="facRel" id="facRel32" value ="Embarazo.">
+						<label for="facRel32" name="lFacRel" >Embarazo.</label>
+
+						<input type="radio" name="facRel" id="facRel33" value ="Agrandamiento prostático.">
+						<label for="facRel33" name="lFacRel" >Agrandamiento prostático.</label>
+
+						<input type="radio" name="facRel" id="facRel34" value ="Absceso rectal.">
+						<label for="facRel34" name="lFacRel" >Absceso rectal.</label>
+
+						<input type="radio" name="facRel" id="facRel35" value ="Fisura rectal o anal.">
+						<label for="facRel35" name="lFacRel" >Fisura rectal o anal.</label>
+
+						<input type="radio" name="facRel" id="facRel36" value ="Estenosis rectal o anal.">
+						<label for="facRel36" name="lFacRel" >Estenosis rectal o anal.</label>
+
+						<input type="radio" name="facRel" id="facRel37" value ="Prolapso rectal.">
+						<label for="facRel37" name="lFacRel" >Prolapso rectal.</label>
+
+						<input type="radio" name="facRel" id="facRel38" value ="Úlcera rectal.">
+						<label for="facRel38"name="lFacRel" >Úlcera rectal.</label>
+
+						<input type="radio" name="facRel" id="facRel39" value ="Rectocele.">
+						<label for="facRel39" name="lFacRel" >Rectocele.</label>
+
+						<input type="radio" name="facRel" id="facRel40" value ="Tumores.">
+						<label for="facRel40" name="lFacRel" >Tumores.</label>
+
+
+						<h3 class="bred">Factores relacionales: Fisiológicos</h3>
+
+
+						<input type="radio" name="facRel" id="facRel41" value ="Cambio en el patrón de alimentación.">
+						<label for="facRel41" name="lFacRel" >Cambio en el patrón de alimentación.</label>
+
+						<input type="radio" name="facRel" id="facRel42" value ="Cambio en el tipo de alimentos ingeridos.">
+						<label for="facRel42" name="lFacRel" >Cambio en el tipo de alimentos ingeridos.</label>
+
+						<input type="radio" name="facRel" id="facRel43" value ="Disminución de la motilidad del tracto gastrointestinal.">
+						<label for="facRel43" name="lFacRel" >Disminución de la motilidad del tracto gastrointestinal.</label>
+
+						<input type="radio" name="facRel" id="facRel44" value ="Deshidratación.">
+						<label for="facRel44" name="lFacRel" >Deshidratación.</label>
+
+						<input type="radio" name="facRel" id="facRel45" value ="Dentición inadecuada.">
+						<label for="facRel45" name="lFacRel" >Dentición inadecuada.</label>
+
+						<input type="radio" name="facRel" id="facRel46" value ="Higiene oral inadecuada.">
+						<label for="facRel46" name="lFacRel" >Higiene oral inadecuada.</label>
+
+						<input type="radio" name="facRel" id="facRel47" value ="Ingesta insuficiente de fibras.">
+						<label for="facRel47" name="lFacRel" >Ingesta insuficiente de fibras.</label>
+
+						<input type="radio" name="facRel" id="facRel48" value ="Aporte insuficiente de líquidos.">
+						<label for="facRel48"name="lFacRel" >Aporte insuficiente de líquidos.<7/label>
+
+						<input type="radio" name="facRel" id="facRel49" value ="Malos hábitos alimentarios.">
+						<label for="facRel49" name="lFacRel" >Malos hábitos alimentarios.</label>
+
+
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico2()">
+				</form>
+
+			</article3>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer4>
+		</section>
+
+		<section id=5"ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header6>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article8>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer9>
+        </section>
+	</body>
+</html>
