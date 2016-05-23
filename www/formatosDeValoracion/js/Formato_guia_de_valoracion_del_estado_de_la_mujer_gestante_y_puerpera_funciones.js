@@ -149,15 +149,15 @@
             function habilitarProblemassueñopsotro(){       
                 var activado =" <input name='ECOCual3' id='ECOCual3' value='' type='text' placeholder='Otro'>";
                 var divECOCual3 = document.getElementById("divECOCual3");
-                var tieneAlgo3 = verificarEpdsñ();
+                var tieneAlgo3 = verificarETapd();
                 if(tieneAlgo3){
                     divECOCual3.innerHTML=activado;
                 }
             }
-            function verificarEpdsñ(){
+            function verificarETapd(){
                 var tieneAlgo3 = false;
-                var Epdsñ = document.getElementById("Epdsñ").value;
-                if (Epdsñ != '') {
+                var ETapd = document.getElementById("ETapd").value;
+                if (ETapd != '') {
                     tieneAlgo3 = true;
                 };
                 return tieneAlgo3;
@@ -180,7 +180,6 @@
                 }
             }
 
-
             function activarOtro () {
                 var insert = "<input name='Olor' id='desOlorOtro' type='text' placeholder='Ingrese Otro Olor' ></input>";
                 var add = document.getElementById("add_Olor");
@@ -201,16 +200,6 @@
                 var add = document.getElementById("Sec_otro");
                 add.innerHTML=insert;
             }
-            /*function actcaracTFlu() {
-                var insert = "<input name='caracTFlu' id='caracTFlu' type='text' placeholder='Caracteristicas' ></input>";
-                var add = document.getElementById("Cara_FLujo");
-                add.innerHTML=insert;
-            }
-            function descaracTFlu(){
-                var insert = "<br><br>";
-                var add = document.getElementById("Cara_FLujo");
-                add.innerHTML=insert;
-            }*/
             function activarMFP(){
             var insert="<fieldset data-role='controlgroup'><label for='gpMFPMadre'>Madre</label><input name='gpMFPSNS' id='gpMFPMadre' type='radio'><label for='gpMFPExaminador'>Examinador</label><input name='gpMFPSNS' id='gpMFPExaminador' type='radio'></fieldset><input name='gpMFPcantida' id='gpMFPcantidad' placeholder='Cantidad/Frecuencia'>";  
             var add = document.getElementById("MFPin");
@@ -220,4 +209,38 @@
             var insert="";  
             var add = document.getElementById("MFPin");
             add.innerHTML=insert;
+            }
+            function activarDolorAll(){
+                var insert="<div class='ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear'>";
+                    insert +="<input id='cefiLocaci' name='cefiLocaci' data-clear-btn='true' placeholder='Localizacion' type='text'>";
+                    insert +="<a title='Clear text' href='#' tabindex='-1' aria-hidden='true' class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden'>Clear text</a>";
+                    insert +="</div>";
+                    insert +="<div class='ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear'>";
+                    insert +="<input id='cefiDuraci' name='cefiDuraci' data-clear-btn='true' placeholder='Duracion' type='text'>";
+                    insert +="<a title='Clear text' href='#' tabindex='-1' aria-hidden='true' class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden'>Clear text</a>";
+                    insert +="</div>";
+                    insert +="<div class='ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear'>";
+                    insert +="<input id='cefiCurso' name='cefiCurso' data-clear-btn='true' placeholder='Curso' type='text'>";
+                    insert +="<a title='Clear text' href='#' tabindex='-1' aria-hidden='true' class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden'>Clear text</a>";
+                    insert +="</div>";
+                    insert +="<div class='ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear'>";
+                    insert +="<input id='cefiIntens' name='cefiIntens' data-clear-btn='true' placeholder='Intensidad' type='text'>";
+                    insert +="<a title='Clear text' href='#' tabindex='-1' aria-hidden='true' class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden'>Clear text</a>";
+                    insert +="</div>";
+                var add=document.getElementById("inner_dolor");
+                add.innerHTML=insert;
+            }
+            function desactivarDolorAll(){
+                var insert="";
+                var add= document.getElementById("inner_dolor");
+                add.innerHTML=insert;
+
+            }
+            function insertarDetails(){
+                var verf=document.getElementById(inner_dolor);
+                if(verf==null){
+                    activarDolorAll();
+                }else{
+                    desactivarDolorAll();
+                }
             }

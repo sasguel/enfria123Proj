@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
+
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <link href="estilo.css"rel="stylesheet" type="text/css"/>
+
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/codigo.js"></script>
+        <title>Formulario</title>
+    </head>
+    <body>
+
+        <section data-role="page" id="infobasica">
+            <header data-role="header">
+                <h1 id="formatovaloracion"> FORMATO PARA </h1>
+                <h1>LA VALORACIÓN DEL</h1> 
+                <h1>ESTADO DE SALUD</h1>
+                
+             </header>
+
+            <article>
+
+            <!-- primera pagina-->
+            <h2 id="informacionbasica"> INFORMACIÓN BASICA</h2>
+           <label for="text-fechavaloracion">Fecha de Valoración:</label>
+           <input name="text-fechavaloracion" id="text-fechavaloracion" value="" type="text">
+           
+           <label for="text-text-nombre">Nombre:</label>
+           <input name="text-nombre" id="text-nombre" value="" type="text">
+
+           <label for="text-historiacli">Historia Clinica:</label>
+           <input name="text-historiacli" id="text-historiacli" value="" type="text">
+
+           <label for="text-direccion">Dirección:</label>
+           <input name="text-direccion" id="text-direccion" value="" type="text">
+
+           <label for="text-tel">N° Celular:</label>
+           <input name="text-tel" id="text-tel" value="" type="text">
+
+           <label for="text-Procedencia">Procedencia:</label>
+           <input name="text-Procedencia" id="text-Procedencia" value="" type="text">
+
+            <label for="text-Seguridad">Afilianción a Entidad de Seguridad Social:</label>
+           <input name="text-Seguridad" id="text-Seguridad" value="" type="text">
+      
+            <label id="sexo">Sexo:</label>
+            <label for="radio-masculino">Masculino</label>
+            <input name="radio-sexo" id="radio-masculino" class="custom" type="radio"> 
+           <label for="radio-femenino">Femenino</label>
+           <input name="radio-sexo" id="radio-femenino" class="custom" type="radio">
+     
+          <label for="number-edad">Edad:</label>
+          <input name="number" pattern="[0-9]*" id="number-edad" value="" type="number">
+
+          
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" id="estadoci">
+          <legend id="estadocivil">Estado Civil:</legend>
+                            
+           <input name="estadoCivil" id="ECSoltero" value="Soltero"type="radio" onclick="quitarOtro();">
+           <label for="ECSoltero">Soltero</label>
+                            
+           <input name="estadoCivil" id="ECCasado" value="Casado" type="radio" onclick="quitarOtro();">
+           <label for="ECCasado">Casado</label> 
+
+            <input name="estadoCivil" id="ECCestable" value="Casado" type="radio" onclick="quitarOtro();">
+           <label for="ECCestable">U.Estable</label> 
+
+           <input name="estadoCivil" id="otro" value="otro" type="radio" onclick="habilitarestadoCivil2();">
+           <label for="otro">Otro</label>
+            
+           <div id="divestadocivil2"></div>
+
+        </fieldset>
+
+
+
+         <!--radio que me escoge los dos primero y los otros uno or uno y habilita y inabilita la caja de text-->
+          <label for="text-religion">Religión:</label>
+          <input name="text-religion" id="text-religion" value="" type="text">
+
+       
+          <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" id="edu">
+          <legend id="educacionn">Educación:</legend>
+                            
+           <input name="educacion" id="ealfabeta" value="ealfabeta" type="radio">
+           <label for="ealfabeta">Alfabeta</label>
+                            
+          <input name="educacion" id="eanalfabeta" value="eanalfabeta" type="radio">
+           <label for="eanalfabeta">Analfabeta</label>
+
+           </fieldset>
+
+           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" id="niveledu">
+            <legend id="niveledu">Nivel Educativo:</legend> 
+
+           <input name="leducacion" id="eprimaria" value="eprimaria"  type="radio" onclick="quitarOtro1();">
+           <label for="eprimaria">Primaria</label>
+
+           <input name="leducacion" id="esecundaria" value="esecundaria" type="radio" onclick="quitarOtro1();">
+           <label for="esecundaria">Secundaria</label>
+
+            <input name="leducacion" id="eunivaersidad" value="eunivaersidad"  type="radio" onclick="quitarOtro1();">
+           <label for="eunivaersidad">Universidad</label>
+
+           <input name="leducacion" id="eotro" value="eotro"  type="radio" onclick="habilitarEducaOtro();">
+           <label for="eotro">Otro</label>
+
+           <div id="divleducacion2"> </div>
+
+            <!--habilita el txt de otro para poner el otro nivel educadivo-->
+           </fieldset>
+
+           <label for="number-añoscursados">Años Cursados:</label>
+          <input name="number" pattern="[0-9]*" id="number-añoscursados" value="" type="number">
+
+
+
+           <label for="text-ocupacion">Ocupación Actual:</label>
+           <input name="text-ocupacion" id="text-ocupacion" value="" type="text">
+
+           <label for="text-confiabilidad">Confiabilidad:</label>
+           <input name="text-confiabilidad" id="text-confiabilidad" value="" type="text">
+
+            <label for="text-presponsable">Persona Responsable:</label>
+           <input name="text-presponsable" id="text-presponsable" value="" type="text">
+
+            <!--termina 1pagina -->
+            <center>
+                
+                <a href="#infobasica2" data-role="button" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r" >Siguiente</a>
+            </center>
+
+           </article>
+         </section>  
+
+
+         <!--2 pagina-->
+
+        <section data-role="page" id="infobasica2">
+           <header data-role="header">
+            <h1 id="desvivienda"> DESCRIPCIÓN VIVIENDA</h1>
+               
+             </header>
+
+            <article>
+               
+
+                  <label for="caracteristicas">Caracteristicas:</label>
+                  <textarea cols="40" rows="8" name="caracteristicas" id="caracteristicas"></textarea>
+
+                  <fieldset data-role="controlgroup" data-type="vertical" id="tservipu">
+                    <legend id"servipublicos">SERVICIOS PUBLICOS:</legend>
+                    <input name="checkbox-acueducto" id="checkbox-acueducto" type="checkbox">
+                    <label for="checkbox-acueducto">Acueducto</label>
+                    <input name="checkbox-luz" id="checkbox-luz" type="checkbox">
+                    <label for="checkbox-luz">Luz</label>
+                    <input name="checkbox-alcantarillado" id="checkbox-alcantarillado" type="checkbox">
+                    <label for="checkbox-alcantarillado">Alcantarillado</label>
+                    <input name="checkbox-gas" id="checkbox-gas" type="checkbox">
+                    <label for="checkbox-gas">Gas</label>
+                  </fieldset>
+            
+
+            
+                  <fieldset data-role="controlgroup" data-type="vertical" id="reba">
+                    <legend id"recurbario">RECURSOS DEL BARRIO:</legend>
+                    <input name="checkbox-pavimento" id="checkbox-pavimento" type="checkbox">
+                    <label for="checkbox-pavimento">Pavimentación</label>
+                    <input name="checkbox-salud" id="checkbox-salud" type="checkbox">
+                    <label for="checkbox-salud">Salud</label>
+                    <input name="checkbox-edu" id="checkbox-edu" type="checkbox">
+                    <label for="checkbox-edu">Educación</label>
+                    <input name="checkbox-recreacion" id="checkbox-recreacion" type="checkbox">
+                    <label for="checkbox-recreacion">Recreación</label>
+                    <input name="checkbox-mercado" id="checkbox-mercado" type="checkbox">
+                    <label for="checkbox-mercado">Mercado</label>
+                    <input name="checkbox-cendeportivo" id="checkbox-cendeportivo" type="checkbox">
+                    <label for="checkbox-cendeportivo">Centro Deportivo</label>
+                    <input name="checkbox-religioso" id="checkbox-religioso" type="checkbox">
+                    <label for="checkbox-religioso">Religiosos</label>
+                    <input name="checkbox-transporte" id="checkbox-transporte" type="checkbox">
+                    <label for="checkbox-transporte">Transporte</label>
+                    <input name="checkbox-mcomunicacion" id="checkbox-mcomunicacion" type="checkbox">
+                    <label for="checkbox-mcomunicacion">Medios de Comunicación</label>
+                  </fieldset>
+
+              <label for="observaciones">Observaciones:</label>
+             <textarea cols="40" rows="8" name="observaciones" id="observaciones"></textarea>
+           
+          
+        <div name="nextPrevious" id"siguientepa1">
+        <center>
+        <a href="#infobasica" data-role="button" id"volver1" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+        <a href="#infobasica3" data-role="button" id"sigiente2" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+        </center>
+      </div>
+
+      </article>
+
+        </section>
+         <!--termina la 2 pagina y pasa a siguiente y atras-->
+        <!--3 pagina-->
+
+          <section data-role="page" id="infobasica3">
+           <header data-role="header">
+            <h1 id"problemedi"> PROBLEMAS MEDICOS</h1>
+
+                
+             </header>
+          <article>
+           
+             
+                  <fieldset data-role="controlgroup" data-type="vertical" id="problemedi">
+                    <legend id"problemediexis">PROBLEMAS MEDICOS EXISTENCIALES:</legend>
+                    <input name="checkbox-diabetis" id="checkbox-diabetis" type="checkbox">
+                    <label for="checkbox-diabetis">Diabetis</label>
+                    <input name="checkbox-harteria" id="checkbox-harteria" type="checkbox">
+                    <label for="checkbox-harteria">Hipertensión Arterial</label>
+                    <input name="checkbox-acv" id="checkbox-acv" type="checkbox">
+                    <label for="checkbox-acv">ACV</label>
+                    <input name="checkbox-cardiopatias" id="checkbox-cardiopatias" type="checkbox">
+                    <label for="checkbox-cardiopatias">Cardiopatías</label>
+                    <input name="checkbox-cancer" id="checkbox-cancer" type="checkbox">
+                    <label for="checkbox-cancer">Cáncer</label>
+                    <input name="checkbox-otros" id="checkbox-otros" type="checkbox">
+                    <label for="checkbox-otros">Otros</label>
+                    <input name="checkbox-alergias" id="checkbox-alergias" type="checkbox">
+                    <label for="checkbox-alergias">Alergias </label> <!-- falta alegico a-->
+      
+                  </fieldset>
+         
+
+           
+                  <fieldset data-role="controlgroup" data-type="vertical" id="aparatoper">
+                    <legend id"aparaperma">APARATOS DE LISO PERMANENTES:</legend>
+                    <input name="checkbox-protesisi" id="checkbox-protesisi" type="checkbox">
+                    <label for="checkbox-protesisi">Protesis</label><!--fata protesisi de-->
+
+                    <input name="checkbox-anteojos" id="checkbox-anteojos" type="checkbox">
+                    <label for="checkbox-anteojos">Anteojos</label>
+                    <input name="checkbox-lentes" id="checkbox-lentes" type="checkbox">
+                    <label for="checkbox-lentes">Lentes de Contacto</label>
+                    <input name="checkbox-audifinos" id="checkbox-audifinos" type="checkbox">
+                    <label for="checkbox-audifinos">Audífonos</label>
+                    <input name="checkbox-baston" id="checkbox-baston" type="checkbox">
+                    <label for="checkbox-baston">Baston</label>
+                    <input name="checkbox-muletas" id="checkbox-muletas" type="checkbox">
+                    <label for="checkbox-muletas">Muletas</label>
+                    <input name="checkbox-sillaru" id="checkbox-sillaru" type="checkbox">
+                    <label for="checkbox-sillaru">Silla de Ruedas</label> 
+                    <input name="checkbox-marcapasos" id="checkbox-marcapasos" type="checkbox">
+                    <label for="checkbox-marcapasos">Marcapaso</label> 
+                    <input name="checkbox-otross" id="checkbox-otross" type="checkbox">
+                    <label for="checkbox-otross">Otro</label> <!--habilitar otro-->
+      
+                  </fieldset>
+             
+              
+                     <legend id"sigvitales">SIGNOS VITALES:</legend>
+                       <label for="tenp">T°:</label>
+                        <input name="" id="tenp" value="" type="tenp" placeholder="C°">
+                       <label for="pulso">PULSO:</label>
+                        <input name="" id="pulso" value="" type="pulso" placeholder="/min">
+                         <label for="fr">F.R:</label>
+                        <input name="" id="fr" value="" type="fr" placeholder="/min">
+                         <label for="pa">P.A:</label>
+                        <input name="" id="pa" value="" type="pa" placeholder="mm.hg">
+                    
+
+             <div name="nextPrevious" id"siguientepa2">
+                <center>
+                 <a href="#infobasica2" data-role="button" id"volver2" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                <a href="#infobasica4" data-role="button" id="siguiente2" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+          </article>
+        </section>
+        <!--termina la 3 paguina va atras y siguiente-->
+
+
+
+        <!--4 pagina-->
+
+
+        <section data-role="page" id="infobasica4">
+           <header data-role="header">
+                <h1> </h1>
+             </header>
+          <article>
+            <h1 id="anteperso"> ANTECEDENTES PERSONALES:</h1>
+
+             <label for="ginecologicos">Ginecológicos:</label>
+              <textarea cols="40" rows="8" name="ginecologicos" id="ginecologicos"></textarea>
+               <label for="obstetricos">Obstétricos:</label>
+                  <textarea cols="40" rows="8" name="obstetricos" id="obstetricos"></textarea>
+                   <label for="patologios">Patológicos:</label>
+                  <textarea cols="40" rows="8" name="patologios" id="patologios"></textarea>
+                   <label for="antefamiliares">ANTECEDENTES FAMILIARES:</label>
+                  <textarea cols="40" rows="8" name="antefamiliares" id="antefamiliares"></textarea>
+                   <label for="quejaprincipal">QUEJA PRINCIPAL:</label>
+                  <textarea cols="40" rows="8" name="quejaprincipal" id="quejaprincipal"></textarea>
+                   <label for="ampliqueja">Amplificación Queja Principal:</label>
+                  <textarea cols="40" rows="8" name="ampliqueja" id="ampliqueja"></textarea>
+                   <label for="evamomentoactual">Evaluación Hasta el Momento Actual:</label>
+                  <textarea cols="40" rows="8" name="evamomentoactual" id="evamomentoactual"></textarea>
+                  <h5>(incluir examenes de laboratorio)</h5>
+
+
+            <div name="nextPrevious"id="siguientepa3">
+                <center>
+                 <a href="#infobasica3" data-role="button" id="volver3" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                <a href="#infobasica5" data-role="button" id="siguiente3" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+
+          </article>
+
+        </section>
+
+     <!--termina la 4 pagina atras adelante-->
+
+    <!--5 pagina-->
+    
+     <section data-role="page" id="infobasica5">
+           <header data-role="header">
+                <h1 id="domisalud">DOMINIOS DE SALUD</h1> 
+             </header>
+
+          <article> 
+             
+             <h3 id="prosalu1">1. PROMOCIÓN DE LA SALUD</h3>
+              <h5 id="entre1.1">1.1 entrevista:</h5>
+
+           
+          <label for="text-saludgeneral">¿Cómo ha sido su salud en general?</label>
+          <input name="text-saludgeneral" id="text-saludgeneral" value="" type="text"> 
+          <label for="text-ultimoaño">¿En el ultimo año:</label>
+          <input name="text-ultimoaño" id="text-ultimoaño" value="" type="text">
+
+
+           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" id="cuandoe">
+            <legend id="cuandoemfe">Cuando se emferma,¿a quién consulta:</legend> 
+
+           <input name="cuandoemferma" id="enfermamedico" value="enfermamedico"  type="radio" onclick="quitarOtro2();">
+           <label for="enfermamedico">Medico</label>
+
+           <input name="cuandoemferma" id="enfermaenfermera" value="enfermaenfermera"  type="radio" onclick="quitarOtro2();">
+           <label for="enfermaenfermera">Emfermera</label>
+
+           <input name="cuandoemferma" id="enfermaotro" value="enfermaotro"  type="radio" onclick="habilitarConsulOtro();">
+           <label for="enfermaotro">Otro</label>
+
+           <div id="divcuandoemferma2"></div> 
+           <!--habilita el txt de otro para poner el otro nivel educadivo-->
+             
+           </fieldset>
+       
+                  
+                       <label for="text-quehacesano">¿Qué hace para estar sano?</label>
+                       <input name="text-quehacesano" id="text-quehacesano" value="" type="text"> 
+
+                  <fieldset data-role="controlgroup" data-type="vertical" id="consume">
+
+                       <input name="checkbox-fuma" id="checkbox-fuma" type="checkbox">
+                       <label for="checkbox-fuma">Fuma:</label>
+                       <input name="checkbox-alcohol" id="checkbox-alcohol" type="checkbox">
+                       <label for="checkbox-alcohol">Alcohol:</label> 
+                       <input name="checkbox-drogas" id="checkbox-drogas" type="checkbox">
+                       <label for="checkbox-drogas">Drogas:</label>
+
+
+                  </fieldset>
+ 
+                   <label for="text-estadoactual">¿Conoce su estado actual?</label>
+                   <input name="text-estadoactual" id="text-estadoactual" value="" type="text"> 
+                   <label for="text-emfermedadactual">¿Conoce los signos de alarma de su situación o emfermedad actual?</label>
+                   <input name="text-ultimoaño" id="text-emfermedadactual" value="" type="text">
+                   <label for="text-emfeactualson">¿Cuales son:</label>
+                   <input name="text-emfeactualson" id="text-emfeactualson" value="" type="text"> 
+                   <label for="text-hogarlimpio">¿Se siente capaz de mantener su hogar limpio y organizado?</label>
+                   <input name="text-hogarlimpio" id="text-hogarlimpio" value="" type="text"> 
+                   <label for="text-ayudamantenimiento">¿Requiere ayuda para su mantenimiento:</label>
+                   <input name="text-ayudamantenimiento" id="text-ayudamantenimiento" value="" type="text">
+
+                   <!--falta tabla-->
+   
+<table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="" data-column-popup-theme="a">
+
+    <thead>
+      <tr>
+      
+        <td></td>
+        <th id="tacontroles">CONTROLES REALIZADOS</th>
+        <th></th>
+
+      </tr>
+      <tr class="ui-bar-d">
+        <th data-priority="2">CONTROLES</th>
+        <th>FECHA.ULTIMO</th>
+        <th data-priority="3">TRATAMIENTO</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th id="tamedi">MEDICINA</th>
+        <td><input id="medicinafe" type="text"></td>
+        <td><input id="medicinatra" type="text"></td>
+        
+      </tr>
+      <tr>
+        <th id="taemfe">ENFERMERIA</th>
+        <td><input id="enfermefe" type="text"></td>
+        <td><input id="enfermetra" type="text"></td>
+        
+      </tr>
+      <tr>
+        <th id="taodon">ODONTOLOGÍA</th>
+        <td><input id="odontolofe" type="text"></td>
+        <td><input id="odontolotra" type="text"></td>
+        
+      </tr>
+      <tr>
+        <th id="tanu">NUTRICIÓN</th>
+        <td><input id="nutricionfe" type="text"></td>
+        <td><input id="nutriciontra" type="text"></td>
+        
+      </tr>
+      <tr>
+        <thid="tacito">CITOLOGÁ</th>
+        <td><input id="citologiafe" type="text"></td>
+        <td><input id="citologiatra" type="text"></td>
+        
+      </tr>
+      <tr>
+        <th id="taautom">AUTOEX.MAMAS</th>
+        <td><input id="mamasfe" type="text"></td>
+        <td><input id="mamastra" type="text"></td>
+        
+      </tr>
+      <tr>
+        <th id="taexp">EX PROSTATA</th>
+        <td><input id="prostatafe" type="text"></td>
+        <td><input id="prostatatra" type="text"></td>
+        
+      </tr>
+            
+    </tbody>
+
+  </table>
+
+          <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="estadohopi">
+           <legend id="hahospi">Ha estado hospitalizado(a) para:</legend> 
+
+           <input name="hospitalizado" id="DX" value="DX"  type="radio"onclick="inabilitarhospitalizado2()">
+           <label for="DX">DX</label>
+           <input name="hospitalizado" id="Ttomedico" value="Tto medico"  type="radio"onclick="inabilitarhospitalizado2()">
+           <label for="Tto medico">Tto medico</label>
+           <input name="hospitalizado" id="TtoQuirúrgico" value="TtoQuirúrgico"  type="radio"onclick="inabilitarhospitalizado2()">
+           <label for="TtoQuirúrgico">Tto Quirúrgico</label>          
+           <input name="hospitalizado" id="Radioterapia" value="Radioterapia"  type="radio"onclick="inabilitarhospitalizado2()">
+           <label for="Radioterapia">Radioterapia</label>
+           <input name="hospitalizado" id="Otrohospi" value="Otrohospi"  type="radio"onclick="habilitarhospitalizado2()">
+           <label for="Otrohospi">Otro</label> 
+           <div id="hospitalizado2"></div>
+           
+          </fieldset>
+
+          <div name="nextPrevious" id="siguinpa4">
+                <center>
+                 <a href="#infobasica4" data-role="button" id="volver4" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                <a href="#infobasica6" data-role="button" id="siguiente4" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+
+          </article>
+
+        </section>
+
+
+        <!--6 pagina-->
+         <section data-role="page" id="infobasica6">
+           <header data-role="header">
+            <h1 id="promo1">1. PROMICIÓN DE LA SALUD </h1>
+             </header>
+
+          <article>  
+             
+              <h5 id="examef1">1.1 Examenes Fisicos:</h5>
+
+          <label for="text-aparienciageneral">Apariencia General</label>
+          <input name="text-aparienciageneral" id="text-aparienciageneral" value="" type="text"> 
+
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="constit">
+           <legend id="consti">Constitución:</legend> 
+           <input name="costitucion" id="Delgado" value="Delgado"  type="radio">
+           <label for="Delgado">Delgado</label>
+           <input name="costitucion" id="Obeso" value="Obeso"  type="radio">
+           <label for="Obeso">Obeso</label>
+           <input name="costitucion" id="Normal" value="Normal"  type="radio"Obeso>
+           <label for="Normal">Normal</label>
+        </fieldset>
+        <label for="text-edadacordecronologica">Edad Aparente Acorde con la Edad Cronológica:</label>
+        <input name="text-edadacordecronologica" id="text-edadacordecronologica" value="" type="text"> 
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="confor">
+           <legend id="confrom">Conformacidad:</legend> 
+           <input name="comformacidad" id="simetrica" value="simetrica"  type="radio">
+           <label for="simetrica">Simétrica</label>
+           <input name="comformacidad" id="asimetrica" value="asimetrica"  type="radio">
+           <label for="asimetrica">Asimétrica</label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="estat">
+           <legend id="estaturaa">Estatura:</legend> 
+           <input name="estatura" id="alto" value="alto"  type="radio">
+           <label for="alto">Alto</label>
+           <input name="estatura" id="bajo" value="bajo"  type="radio">
+           <label for="bajo">Bajo</label>
+           <input name="estatura" id="medio" value="medio"  type="radio"Obeso>
+           <label for="medio">Medio</label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="postu">
+           <legend id="postuu">Postura:</legend> 
+           <input name="postura" id="funcional" value="funcional"  type="radio">
+           <label for="funcional">Funcional</label>
+           <input name="postura" id="disfuncional" value="disfuncional"  type="radio">
+           <label for="disfuncional">Disfuncional</label>
+        </fieldset>
+           <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="movicor">
+           <legend id="movicorpo">Movimientos Corporales Voluntarios:</legend> 
+           <input name="movimientoscorporalesvoluntarios" id="tics" value="tics"  type="radio">
+           <label for="tics">Tics</label>
+           <input name="movimientoscorporalesvoluntarios" id="temblores" value="temblores"  type="radio">
+           <label for="temblores">Temblores</label>
+           <input name="movimientoscorporalesvoluntarios" id="convulsiones" value="convulsiones"  type="radio"Obeso>
+           <label for="convulsiones">Convulsiones</label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="lenguajeade">
+           <legend id="leguadeso">Lenguaje De acuerdo a su nivel Sociocultural:</legend> 
+           <input name="lenguajesociocultural" id="adecuado" value="adecuado"  type="radio">
+           <label for="adecuado">Adecuado</label>
+           <input name="lenguajesociocultural" id="inadecuado" value="inadecuado"  type="radio">
+           <label for="inadecuado">Inadecuado</label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="pper">
+           <legend id="preseper">Presentación Personal:</legend> 
+           <input name="presentacionpersonal" id="adecuada" value="adecuada"  type="radio">
+           <label for="adecuada">Adecuada</label>
+           <input name="presentacionpersonal" id="inadecuada" value="inadecuada"  type="radio">
+           <label for="inadecuada">Inadecuada</label>
+        </fieldset>
+         <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="gradoco">
+           <legend id="gradodeco">Grado de coperación al Examen:</legend> 
+           <input name="gradodecoperacion" id="gadecuada" value="gadecuada"  type="radio">
+           <label for="gadecuada">Adecuada</label>
+           <input name="gradodecoperacion" id="ginadecuada" value="ginadecuada"  type="radio">
+           <label for="ginadecuada">Inadecuada</label>
+        </fieldset>
+
+          <table id="valovivienda2">
+                                <thead>
+                                    <tr>
+                                        <th id="taavalovi">VALORACION DE VIVIENDA:</th>
+                                        <th></th>
+                                        <th id="taasisi">SI</th>
+                                        <th id="taanono">NO</th>
+                                          </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th align="left" id="taaentoro">Entorno Ordenado:</th>
+                                        <td></td>
+                                        <td><input id="osi" type="text" placeholder="X"></td>
+                                        <td><input id="ono" type="text" placeholder="X"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="left" id="taapresen">Presecia de suciedad y/o Deshechos: </th>
+                                        <td></td>
+                                        <td><input id="psi" type="text" placeholder="X"></td>
+                                        <td><input id="pno" type="text" placeholder="X"></td>
+                                    </tr>
+                                     <tr>
+                                        <th align="left" id="taapreroe">Presencia de paracitos y Roedores:</th>
+                                        <td></td>
+                                        <td><input id="rsi" type="text" placeholder="X"></td>
+                                        <td><input id="rno" type="text" placeholder="X"></td>
+                                    </tr>
+                                          </tbody>
+                        </table>
+
+
+         
+
+          <div name="nextPrevious" id="sieguientepa5">
+                <center>
+                 <a href="#infobasica5" data-role="button"id="volver5" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                <a href="#infobasica7" data-role="button" id="siguiente5" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+
+          </article>
+
+        </section>
+      <!--pagina 7-->
+
+
+        <section data-role="page" id="infobasica7">
+           <header data-role="header">
+            <h1 id="nutrii">2.NUTRICIÓN</h1>
+             </header>
+
+          <article>  
+             
+              <h5 id="entre21">2.1 Entrevista:</h5>
+
+              <table data-role="table" id="movie-table-custom" data-mode="reflow" class="movie-list ui-responsive" id="ingestidiari3">
+  <thead>
+    <tr>
+      <th data-priority="1"></th>
+      <th data-priority="2"></th>
+      <th data-priority="3" title="Rotten Tomato Rating" id="tabingesti">INGESTA DIARIA</th>
+      <th data-priority="4"></th>
+      <th data-priority="5"></th>
+  
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <tr>
+      <th id="tabali">ALIMENTOS</th>
+      <td></td>
+      <th></th>
+      <th id="tabliqui">LIQUIDOS</th>
+      <td></td>
+   
+    </tr>
+
+
+    <tr>
+      <td id="tabdes">desayuno</td>
+      <td id="tabalmu">almuerzo</td>
+      <td id="tabcomi">comida</td>
+      <td id="tabtip">tipo</td>
+      <td id="tabcanti">cantidad</td>
+      
+    </tr>
+
+    <tr>
+      <td><input id="tab1" type="text"></td>
+      <td><input id="tab2"type="text"></td>
+      <td><input id="tab3"type="text"></td>
+      <td><input id="tab4"type="text"></td>
+      <td><input id="tab5"type="text"></td>
+    </tr>
+   <tr>
+      <td><input id="tab6"type="text"></td>
+      <td><input id="tab7"type="text"></td>
+      <td><input id="tab8"type="text"></td>
+      <td><input id="tab9"type="text"></td>
+      <td><input id="tab10"type="text"></td>
+    </tr>
+    <tr>
+      <td><input id="tab11"type="text"></td>
+      <td><input id="tab12"type="text"></td>
+      <td><input id="tab13"type="text"></td>
+      <td><input id="tab14"type="text"></td>
+      <td><input id="tab15"type="text"></td>
+    </tr>
+    <tr>
+      <td><input id="tab16"type="text"></td>
+      <td><input id="tab17"type="text"></td>
+      <td><input id="tab18"type="text"></td>
+      <td><input id="tab19"type="text"></td>
+      <td><input id="tab20"type="text"></td>
+    </tr>
+    <tr>
+      <td><input id="tab21"type="text"></td>
+      <td><input id="tab22"type="text"></td>
+      <td><input id="tab23"type="text"></td>
+      <td><input id="tab24"type="text"></td>
+      <td><input id="tab25"type="text"></td>
+    </tr>              
+  </tbody>    
+</table>
+
+<legend id="hapeso"> Ha perdido peso recientemente?</legend>
+             <label for="text-pe1">Ganado:</label>
+                <input name="text-pe1" id="text-pe1" value="" type="text">
+                <label for="text-pe2">Cuanto:</label>
+                <input name="text-pe2" id="text-pe2" value="" type="text">
+                <label for="text-pe3">Cual cree que sea la razon?</label>
+                <input name="text-pe3" id="text-pe3" value="" type="text">
+                <label for="text-pe4">Cómo es su apetito?</label>
+                <input name="text-pe4" id="text-pe4" value="" type="text">
+                <label for="text-pe5">Intolerancia a algun alimento?</label>
+                <input name="text-pe5" id="text-pe5" value="" type="text">
+                <label for="text-pe6">Se siente muy lleno despues de comer?</label>
+                <input name="text-pe6" id="text-pe6" value="" type="text">
+                <label for="text-pe7">Sed persistente?</label>
+                <input name="text-pe7" id="text-pe7" value="" type="text">
+                <label for="text-pe8">Sedentarismo?</label>
+                <input name="text-pe8" id="text-pe8" value="" type="text">
+
+
+
+
+  <table data-role="table" id="financial-table-reflow" data-mode="reflow" class="financial-table-reflow table-stroke">
+    <thead>
+        <tr class="th-groups">
+            <th></th>
+            <th colspan="1"></th>
+            <th colspan="2" id="taldieta">DIETA ACTUAL</th>
+            <th colspan="3"></th>
+
+            
+    
+        </tr>
+        <tr>
+            <th id="talti">TIPO</th>
+            <td></td>
+            <th id="talco"> CONSISTENCIA</th>
+            <td></td>
+            <td></td>
+            <th id="tavi">VÍA</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="talno">Normal</th>
+            <td><input id="tal1"  type="text"></td>
+            <th id="talno">Normal</th>
+            <td><input id="tal2" type="text"></td>
+            <th id="talo">Oral</th>
+            <td><input id="tal3" type="text"></td>
+
+     
+        </tr>
+        <tr>
+            <th id="talhi">Hiperproteica</th>
+           <td><input id="tal4"type="text"></td>
+           <th id="talbla">Blanda</th>
+           <td><inputid="tal5" type="text"></td>
+           <th id="tals">S.N.G</th>
+           <td><input id="tal6"type="text"></td>
+        </tr>
+        <tr>
+            <th id="talhipe">Hipercalórica</th>
+            <td><input  id="tal7"type="text"></td>
+            <th id="talli">Liquida</th>
+            <td><input id="tal8" type="text"></td>
+            <th id="talgas">Gastrostamía</th>
+            <td><input id="tal9" type="text"></td>
+           
+        </tr>
+
+        <tr>
+            <th id="talip">Hiporódica</th>
+            <td><input id="tal10"  type="text"></td>
+             <td><input id="tal11"  type="text"></td>
+             <td><input id="tal12" type="text"></td>
+             <th id="talcabu">Cateter subclavio</th>
+             <td><input  id="tal13" type="text"></td>
+
+           
+        </tr>
+        <tr>
+            <th  id="tahipog">Hipograsa</th>
+            <td><input  id="tal14"type="text"></td>
+             <td><input id="tal15" type="text"></td>
+             <td><input id="tal16" type="text"></td>
+             <th id="taotroo">Otro</th>
+             <td><input id="tal17" type="text"></td>
+           
+        </tr>
+    </tbody>
+</table>
+
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="deglu">
+           <legend id="degluglu">Deglución:</legend> 
+           <input name="deglucionna" id="deglucionnormal" value="deglucionnormal"  type="radio">
+           <label for="deglucionnormal">Normal</label>
+           <input name="deglucionna" id="deglucionanormal" value="deglucionanormal"  type="radio">
+           <label for="deglucionanormal">Anormal</label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="gustoo">
+           <legend id="gustooo">Gusto:</legend> 
+           <input name="gusto" id="gustonormal" value="gustonormal"  type="radio">
+           <label for="gustonormal">Normal</label>
+           <input name="gusto" id="gustoanormal" value="gustoanormal"  type="radio">
+           <label for="gustoanormal">Anormal</label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="vertical" data-mini="true" id="susla">
+           <legend id="sucionlact">succión de lactante:</legend> 
+           <input name="succióndelactante" id="succionlactanteefectiva" value="succionlactanteefectiva"  type="radio">
+           <label for="succionlactanteefectiva">Efectiva</label>
+           <input name="succióndelactante" id="succionlactanteinefectiv" value="succionlactanteinefectiv"  type="radio">
+           <label for="succionlactanteinefectiv">Inefectiva</label>
+        </fieldset>
+           <label for="anomalia">Especificar Tipo de anomalía:</label>
+           <textarea cols="40" rows="8" name="anomalia" id="anomalia"></textarea>
+  
+        <div name="nextPrevious" id="siguintepa6">
+                <center>
+                 <a href="#infobasica6" data-role="button"id="volver6" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                <a href="#infobasica8" data-role="button" id="siguiente6" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+
+          </article>
+
+        </section>
+
+        <!--pagina 8-->
+
+        <section data-role="page" id="infobasica8">
+           <header data-role="header">
+              <h1 id="2nutri">2.NUTRICIÓN</h1>
+             </header>
+
+          <article>  
+              <h5 id="extfi">2.2 Examen Físico:</h5>
+
+               <label for="text-pesoo">Peso:</label>
+               <input name="text-pesoo" id="text-pesoo" value="" type="text">
+               <label for="text-talla">Talla</label>
+               <input name="text-talla" id="text-talla" value="" type="text"> 
+
+               <h4 id="orofa">ORO FARINGE</h4> 
+
+                <label for="text-olabios">Labios:</label>
+                <input name="text-olabios" id="text-olabios" value="" type="text">
+                <label for="text-osimetría">Simetría:</label>
+                <input name="text-osimetría" id="text-osimetría" value="" type="text"> 
+                <label for="text-ocolor">Color:</label>
+                <input name="text-ocolor" id="text-ocolor" value="" type="text">
+                <label for="text-ohumedad">Humedad:</label>
+                <input name="text-ohumedad" id="text-ohumedad" value="" type="text">
+                <label for="text-ointegridad">Integridad:</label>
+                <input name="text-ointegridad" id="text-ointegridad" value="" type="text">
+
+                 <h4 id="muo">MUCOSA ORAL</h4> 
+
+                <label for="text-mcolor">Color:</label>
+                <input name="text-mcolor" id="text-mcolor" value="" type="text">
+                <label for="text-mhumedad">Humedad:</label>
+                <input name="text-mhumedad" id="text-mhumedad" value="" type="text">
+                <label for="text-mresequedad">Resequedad:</label>
+                <input name="text-mresequedad" id="text-mresequedad" value="" type="text">
+                <label for="text-mlesiones">Lesiones:</label>
+                <input name="text-mlesiones" id="text-mlesiones" value="" type="text">
+
+
+                <h4 id="die">DIENTES</h4> 
+
+                <label for="text-dintegridad">Integridad:</label>
+                <input name="text-dintegridad" id="text-dintegridad" value="" type="text">
+                <label for="text-dobturaciones">Obturaciones:</label>
+                <input name="text-dobturaciones" id="text-dobturaciones" value="" type="text">
+                <label for="text-dcaries">Caries:</label>
+                <input name="text-dcaries" id="text-dcaries" value="" type="text">
+                <label for="text-dprótesis">Prótesis:</label>
+                <input name="text-dprótesis" id="text-dprótesis" value="" type="text">
+
+
+                <h4 id="ensi">ENCÍAS</h4> 
+
+                <label for="text-ecolor">Color:</label>
+                <input name="text-ecolor" id="text-ecolor" value="" type="text">
+                <label for="text-egingivitis">Gingivitis:</label>
+                <input name="text-egingivitis" id="text-egingivitis" value="" type="text">
+                <label for="text-egingivorragia">Gingivorragia:</label>
+                <input name="text-egingivorragia" id="text-egingivorragia" value="" type="text">
+
+                 <h4 id="lengu">LENGUA</h4> 
+
+                <label for="text-lsiemetría">Siemetría:</label>
+                <input name="text-lsiemetría" id="text-lsiemetría" value="" type="text">
+                <label for="text-ltamaño">Tamaño:</label>
+                <input name="text-ltamaño" id="text-ltamaño" value="" type="text">
+                <label for="text-lhumedad">Humedad:</label>
+                <input name="text-lhumedad" id="text-lhumedad" value="" type="text">
+
+
+                 <h4 id="ami">AMIGDALAS</h4> 
+
+                <label for="text-atamaño">Tamaño:</label>
+                <input name="text-atamaño" id="text-atamaño" value="" type="text">
+                <label for="text-acolor">Color:</label>
+                <input name="text-acolor" id="text-acolor" value="" type="text">
+                <label for="text-aintegridad">Integridad:</label>
+                <input name="text-aintegridad" id="text-aintegridad" value="" type="text">
+
+                 <h4 id="abo">ABDOMEN</h4> 
+
+                <label for="text-abforma">Forma:</label>
+                <input name="text-abforma" id="text-abforma" value="" type="text">
+                <label for="text-absimetría">Simetría:</label>
+                <input name="text-absimetría" id="text-absimetría" value="" type="text">
+                <label for="text-abvolumen">Volumen:</label>
+                <input name="text-abvolumen" id="text-abvolumen" value="" type="text">
+                <label for="text-abintegridaddepiel">Integridad de Piel:</label>
+                <input name="text-abintegridaddepiel" id="text-abintegridaddepiel" value="" type="text">
+                <label for="text-abestrías">Estrías:</label>
+                <input name="text-abestrías" id="text-abestrías" value="" type="text">
+
+
+                 <h4 id="masass">MASAS</h4> 
+
+                <label for="text-mascicatrices">Cicatrices:</label>
+                <input name="text-mascicatrices" id="text-mascicatrices" value="" type="text">
+                <label for="text-masmegalias">Megalias:</label>
+                <input name="text-masmegalias" id="text-masmegalias" value="" type="text">
+                <label for="text-masdolor">Dolor:</label>
+                <input name="text-masdolor" id="text-masdolor" value="" type="text">
+                <label for="text-mashernis">Hernis:</label>
+                <input name="text-mashernis" id="text-mashernis" value="" type="text">
+
+
+
+                 <h4 id="ruiintes">RUIDOS INTESTINALES</h4> 
+
+                <label for="text-ruinormales">Normales:</label>
+                <input name="text-ruinormales" id="text-ruinormales" value="" type="text">
+                <label for="text-ruidisminuidos">Disminuidos:</label>
+                <input name="text-ruidisminuidos" id="text-ruidisminuidos" value="" type="text">
+                <label for="text-ruiaumentados">Aumentados:</label>
+                <input name="text-ruiaumentados" id="text-ruiaumentados" value="" type="text">
+                <label for="text-ruiausentes">Ausentes:</label>
+                <input name="text-ruiausentes" id="text-ruiausentes" value="" type="text">
+
+
+
+                 <h4 id="paaddo">PARED ABDOMINAL</h4> 
+
+                <label for="text-pblanda">Blanda:</label>
+                <input name="text-pblanda" id="text-pblanda" value="" type="text">
+                <label for="text-pdepresible">Depresible:</label>
+                <input name="text-pdepresible" id="text-pdepresible" value="" type="text">
+                <label for="text-prígida">Rígida:</label>
+                <input name="text-prígida" id="text-prígida" value="" type="text">
+
+
+                 <h4 id="pepei">PIEL</h4> 
+
+                <label for="text-picolor">Color:</label>
+                <input name="text-picolor" id="text-picolor" value="" type="text">
+                <label for="text-pitextura">Textura:</label>
+                <input name="text-pitextura" id="text-absimetría" value="" type="text">
+                <label for="text-piintegridad">Integridad:</label>
+                <input name="text-piintegridad" id="text-piintegridad" value="" type="text">
+                <label for="text-abintegridaddepiel">Integridad de Piel:</label>
+                <input name="text-abintegridaddepiel" id="text-abintegridaddepiel" value="" type="text">
+                <label for="text-abestrías">Estrías:</label>
+                <input name="text-abestrías" id="text-abestrías" value="" type="text">
+
+
+
+                 <h4 id="cabe">CABELLO</h4> 
+
+                <label for="text-ccolor">Color:</label>
+                <input name="text-ccolor" id="text-ccolor" value="" type="text">
+                <label for="text-cgrosor">Grosor:</label>
+                <input name="text-cgrosor" id="text-cgrosor" value="" type="text">
+                <label for="text-cimplantación">Implantación:</label>
+                <input name="text-cimplantación" id="text-cimplantación" value="" type="text">
+                <label for="text-cresequedad">Resequedad:</label>
+                <input name="text-cresequedad" id="text-cresequedad" value="" type="text">
+              
+       
+        <div name="nextPrevious" id="siguientepa7">
+                <center>
+                 <a href="#infobasica7" data-role="button"id="volver7" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                <a href="#infobasica9" data-role="button" id="volver7" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+
+          </article>
+
+        </section>
+       
+        <!--pagina 9 ultima-->
+
+        <section data-role="page" id="infobasica9">
+           <header data-role="header">
+            <h1 id="eliolo">3.ELIMINACIÓN</h1>
+             </header>
+
+          <article>  
+            
+              <h5 id="entre33">3.1 Entrevista:</h5>
+
+              <table data-role="table" id="financial-table-reflow" data-mode="reflow" class="financial-table-reflow table-stroke">
+    <thead>
+        <tr class="th-groups">
+            <th></th>
+            <th colspan="1"></th>
+            <th colspan="2"id="tallsiste">SISTEMA URINARIO</th>
+            <th colspan="3"></th>
+            <th colspan="3"></th>
+
+
+            
+    
+        </tr>
+        <tr>
+            <th id="tallco">COLOR</th>
+            <td></td>
+            <th id="tallolo">OLOR</th>
+            <td></td>
+            <td></td>
+            <th id="tallmi">MICCIÓN/DÍA</th>
+            <td></td>
+            <th id="tallali">ALTERACIONES</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="tallam">Ambar</th>
+            <td><input  id="tall1" type="text"></td>
+            <th id="tallca">Característico</th>
+            <td><input id="tall2" type="text"></td>
+            <th id="talln">N°</th>
+            <td><input id="tall3" type="text"></td>
+            <th id="tallinto">Incontinencia</th>
+            <td><input id="tall4" type="text"></td>
+     
+        </tr>
+        <tr>
+            <th id="tallhemacu">Hematúrica</th>
+           <td><input id="tall5"  type="text"></td>
+           <th id="tallfeti">Fétida</th>
+           <td><input id="tall6" type="text"></td>
+           <th id="tallfrecue">Frecuencia</th>
+           <td><inputid="tall7"  type="text"></td>
+           <th id="tallretiti">Retención</th>
+           <td><input id="tall8" type="text"></td>
+        </tr>
+        <tr>
+            <th id="tallcoculi">Colúrica</th>
+            <td><input  id="tall9"type="text"></td>
+            <th id="tallotroo">Otro</th>
+            <td><input id="tall10" type="text"></td>
+            <th id="tallvol">Vol(24h)</th>
+            <td><input id="tall11" type="text"></td>
+            <th id="talldisu">Disuria</th>
+            <td><input id="tall12" type="text"></td>
+           
+        </tr>
+
+        <tr>
+            <td><input id="tall13" type="text"></td>
+            <td><input id="tall14" type="text"></td>
+            <td><input id="tall15" type="text"></td>
+            <td><input id="tall16" type="text"></td>
+            <th id="tallbalance">Balance</th>
+            <td><input id="tall17" type="text"></td>
+            <th id="tallpoli">Poliuria</th>
+            <td><input id="tall18" type="text"></td>
+
+
+           
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th  id="tallpoquiri">Polaquiuria</th>
+            <td><input id="tall19" type="text"></td>
+            
+           
+        </tr>
+         <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th  id="tallnitu">Nicturia</th>
+            <td><input id="tall20" type="text"></td>
+            
+           
+        </tr>
+         <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th id="talloligui" >Oliguria</th>
+            <td><input id="tall21" type="text"></td>
+            
+           
+        </tr>
+         <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th  id="taurgenci" >Urgencia urinaria</th>
+            <td><input id="tall22" type="text"></td>
+            
+           
+        </tr>
+         <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th id="tallespasmo">Espasmo Vesical</th>
+            <td><input id="tall23" type="text"></td>
+            
+           
+        </tr>
+    </tbody>
+</table>
+
+
+<table id="tad4">
+                                <thead>
+                                    <tr>
+                                        <th id="tadsonda">Sonda Vesical</th>
+                                        <td></td>
+                                        <th id="tadcalibre">Calibre</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th align="left" id="tadfechai">Fecha inserción</th>
+                                        <td></td>
+                                        <td><input id="tadfechainserccion" type="text"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th align="left" id="tadcaterismo">Cateterismo intermitente</th>
+                                         <td></td>
+                                        <td><input id="tadcaterismointermitente" type="text"></td>
+                                                            
+                                    </tr>
+
+                                     <tr>
+                                        <th align="left" id="tadejervesi">Ejeccicios vesicales</th>
+                                         <td></td>
+                                        <td><input id="tadejecciciosvesicales" type="text"></td>
+                                                            
+                                    </tr>
+                                     <tr>
+                                        <th align="left" id="tadcitoma">Citostomía</th>
+                                         <td></td>
+                                        <td><input id="tadcitostomia" type="text"></td>
+                                                            
+                                    </tr>
+                                     <tr>
+                                        <th align="left" id="tadobser">Observaciones</th>
+                                         <td></td>
+                                        <td><input id="tadobservaciones" type="text"></td>
+                                                            
+                                    </tr>
+                                </tbody>
+                        </table>
+
+
+
+
+       
+        <div name="nextPrevious" id="siguientepa8">
+                <center>
+                 <a href="#infobasica8" data-role="button" id="volver8" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                 <a href="#formAutoper" data-role="button" id="siguinete8" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>
+                 </center>
+             </div>
+
+          </article>
+
+        </section>
+--------------------------------------------------------------
+        <section data-role="page" id="formAutoper">
+            <header data-role="header">
+                <h1>6. AUTOPERCEPCIÓN</h1>
+            </header>
+            <content data-role="content">
+
+                <b><p align="left">6.1 Entrevista</p></b>
+                <div id="divEntrevista">
+                    <form id="formEntrevista">
+                        <label for="txArDescribe">¿Cómo se describe a sí mismo?:</label>
+                        <textarea name="txArDescribe" id="txArDescribe"></textarea>
+
+                        <label for="txAesienAgusto">¿Se siente agusto consigo mismo?:</label>
+                        <textarea name="txAesienAgusto" id="txAesienAgusto"></textarea>
+
+                        <label for="cosNogusta">¿Hay cosas de usted mismo o de su cuerpo, que no le gustan?:</label>
+                        <textarea name="cosNogusta" id="cosNogusta"></textarea>
+
+                        <label for="limActivi">¿Considera que su situación actual o enfermedad, le limitan su actividad acostumbrada?:</label>
+                        <textarea name="limActivi" id="limActivi"></textarea>
+
+                        <label for="cosAnsiedad">¿Qué cosas le producen enfado o ansiedad?:</label>
+                        <textarea name="cosAnsiedad" id="cosAnsiedad"></textarea>
+
+                        <label for="contSituacion">¿Se siente capaz de controlar las situaciones cotidianas?:</label>
+                        <textarea name="contSituacion" id="contSituacion"></textarea>
+
+                        <label for="proMiedo">¿Qué le produce miedo?:</label>
+                        <textarea name="proMiedo" id="proMiedo"></textarea>
+                    </form>
+                </div>
+
+                <b><p align="left">6.2 Examen Físico</p></b>
+                <div id="divExamenFisico">
+                    <form id="formExafisico">
+                        <label for="contVisual">¿El individuo, mantiene el contacto visual?:</label>
+                        <textarea name="contVisual" id="contVisual"></textarea>
+
+                        <label for="disFacil">¿Se distrae con facilidad?:</label>
+                        <textarea name="disFacil" id="disFacil"></textarea>
+
+                        <label for="tonoFirme">¿Su tono de voz, es firme y seguro?:</label>
+                        <textarea name="tonoFirme" id="tonoFirme"></textarea>
+
+                        <label for="presPersonal">¿Su presentación personal, es adecuada?:</label>
+                        <textarea name="presPersonal" id="presPersonal"></textarea>
+
+                        <label for="Clasificacion">En una escala de 1-5, clasifique el grado de (nerviosismo - relajación) y de (acertividad - pasividad), que se observa en la persona valorada:</label>
+
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+                                        <th>5</th>
+                                        <th>Observaciones:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th align="left">Nerviosismo</th>
+                                        <td><input id="N1C1" type="text" placeholder="X"></td>
+                                        <td><input id="N1C2" type="text" placeholder="X"></td>
+                                        <td><input id="N1C3" type="text" placeholder="X"></td>
+                                        <td><input id="N1C4" type="text" placeholder="X"></td>
+                                        <td><input id="N1C5" type="text" placeholder="X"></td>
+                                        <td><input id="N1O6" type="text"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th align="left">Acertividad</th>
+                                        <td><input id="A1C1" type="text" placeholder="X"></td>
+                                        <td><input id="A1C2" type="text" placeholder="X"></td>
+                                        <td><input id="A1C3" type="text" placeholder="X"></td>
+                                        <td><input id="A1C4" type="text" placeholder="X"></td>
+                                        <td><input id="A1C5" type="text" placeholder="X"></td>
+                                        <td><input id="A1O6" type="text"></td>
+                                    </tr>
+                                </tbody>
+                        </table>
+
+                    </form>
+                </div>
+                
+                <div name="nextPrevious">
+                    <center>
+                        <a href="#infobasica9" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#pagina2" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-carat-r">Siguiente</a>                        
+                    </center>
+                </div>
+
+            </content>
+            <footer data-role="footer">
+                <h1>Pie de pagina1</h1>
+            </footer>
+        </section>
+----------------------------------------------------------------
+        <section data-role="page" id="pagina2">
+            <header data-role="header">
+                <h1>7. ROL / RELACIONES</h1>
+            </header>
+            <article data-role="content">
+                <b><p align="left">7.1 Entrevista</p></b>
+                <div id="infoRol">
+                    <form id="formEntrevista2">
+                        <label for="compFamiliar">Composición familiar. Diseñe el genograma, señalando sujetos, edades y ocupación, e indicando enlaces emocionales y convenciones:</label>
+
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="4">RELACIONES PERSONALES</th>
+                                        <th colspan="2">En su familia, usted es:</th>
+                                        <th colspan="1">Observaciones:</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th></th>
+                                        <td align="center">Adecuadas</td>
+                                        <td align="center">Distantes</td>
+                                        <td align="center">Problemáticas</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th align="left">Padres</th>
+                                        <td><input id="P1A1" type="text" placeholder="X"></td>
+                                        <td><input id="P2D2" type="text" placeholder="X"></td>
+                                        <td><input id="P3P3 " type="text" placeholder="X"></td>
+                                        <th align="left">Cuidador de familia</th>
+                                        <td><input id="CF1" type="text" placeholder="X"></td>
+                                        <td><input id="O1" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="left">Compañero(a)</th>
+                                        <td><input id="C1A1" type="text" placeholder="X"></td>
+                                        <td><input id="C2D2" type="text" placeholder="X"></td>
+                                        <td><input id="C3P3" type="text" placeholder="X"></td>
+                                        <th align="left">Proveedor de recursos</th>
+                                        <td><input id="PR1" type="text" placeholder="X"></td>
+                                        <td><input id="O2" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="left">Hijos</th>
+                                        <td><input id="H1A1" type="text" placeholder="X"></td>
+                                        <td><input id="H2D2" type="text" placeholder="X"></td>
+                                        <td><input id="H3P3" type="text" placeholder="X"></td>
+                                        <th align="left">Orientador de hogar</th>
+                                        <td><input id="OH1" type="text" placeholder="X"></td>
+                                        <td><input id="O3" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="left">Hermanos</th>
+                                        <td><input id="H1A1" type="text" placeholder="X"></td>
+                                        <td><input id="H2D2" type="text" placeholder="X"></td>
+                                        <td><input id="H3P3" type="text" placeholder="X"></td>
+                                        <th align="left">Depende de ella</th>
+                                        <td><input id="DE1" type="text" placeholder="X"></td>
+                                        <td><input id="O4" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th align="left">Amigos</th>
+                                        <td><input id="A1A1" type="text" placeholder="X"></td>
+                                        <td><input id="A2D2" type="text" placeholder="X"></td>
+                                        <td><input id="A3P3" type="text" placeholder="X"></td>
+                                        <td align="center">        </td>
+                                        <td align="center">        </td>
+                                        <td><input id="O5" type="text"></td>
+                                    </tr>
+
+                                    </tbody>
+                        </table>
+                        
+                        
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Cree usted que puede responder por el cuidado de su familia?:</legend>
+                            <input name="cuifami" id="cuiFamSi" value="Si" type="radio">
+                            <label for="cuiFamSi">Si</label>
+                            <input name="cuifami" id="cuiFamNo" value="No" type="radio">
+                            <label for="cuiFamNo">No</label>
+                        </fieldset>
+                        
+
+                        <label for="tipTrabajo">Tipo de trabajo:</label>
+                        <textarea name="tipTrabajo" id="tipTrabajo"></textarea>
+                        
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Ingresos suficientes:</legend>
+                                <input name="ingSufi" id="ingSufiSi" value="Si" type="radio">
+                                <label for="ingSufiSi">Si</label>
+                                <input name="ingSufi" id="ingSufiNo" value="No" type="radio">
+                                <label for="ingSufiNo">No</label>
+                                <input name="ingSufi" id="ingSufiEsca" value="Escasos" type="radio">
+                                <label for="ingSufiEsca">Escasos</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Estudia:</legend>
+                                <input name="estudia" id="estuSi" value="Si" type="radio">
+                                <label for="estuSi">Si</label>
+                                <input name="estudia" id="estuNo" value="No" type="radio">
+                                <label for="estuNo">No</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Rendimiento satisfatorio:</legend>
+                                <input name="rendSatis" id="rendSatisBueno" value="Bueno" type="radio">
+                                <label for="rendSatisBueno">Bueno</label>
+                                <input name="rendSatis" id="rendSatisRegular" value="Regular" type="radio">
+                                <label for="rendSatisRegular">Regular</label>
+                                <input name="rendSatis" id="rendSatisMalo" value="Malo" type="radio">
+                                <label for="rendSatisMalo">Malo</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Relaciones con compañeros y/o amigos:</legend>
+                                <input name="relaAmigos" id="relaAmigosBuena" value="Buenas" type="radio">
+                                <label for="relaAmigosBuena">Buenas</label>
+                                <input name="relaAmigos" id="relaAmigosAcept" value="Aceptables" type="radio">
+                                <label for="relaAmigosAcept">Aceptables</label>
+                                <input name="relaAmigos" id="relaAmigosMala" value="Malas" type="radio">
+                                <label for="relaAmigosMala">Malas</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Pertence a algún grupo u organización:</legend>
+                                <input name="grupOrga" id="grupOrgaSi" value="Si" type="radio">
+                                <label for="grupOrgaSi">Si</label>
+                                <input name="grupOrga" id="grupOrgaNo" value="No" type="radio">
+                                <label for="grupOrgaNo">No</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Se siente a gusto en el grupo?:</legend>
+                                <input name="sienBien" id="sienBienSi" value="Si" type="radio">
+                                <label for="sienBienSi">Si</label>
+                                <input name="sienBien" id="sienBienNo" value="No" type="radio">
+                                <label for="sienBienNo">No</label>
+                            </fieldset>
+
+                            <b><p align="left">Si la persona valorada es un niño:</p></b>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Accidentes o enfermedades frecuentes:</legend>
+                                <input name="enfFrecu" id="enfFrecuSi" value="Si" type="radio">
+                                <label for="enfFrecuSi">Si</label>
+                                <input name="enfFrecu" id="enfFrecuNo" value="No" type="radio">
+                                <label for="enfFrecuNo">No</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Abuso físico y/o psicológico:</legend>
+                                <input name="abusFisico" id="abusFisicoSi" value="Si" type="radio">
+                                <label for="abusFisicoSi">Si</label>
+                                <input name="abusFisico" id="abusFisicoNo" value="No" type="radio">
+                                <label for="abusFisicoNo">No</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>Castigos frecuentes:</legend>
+                                <input name="castFrecuen" id="castFrecuenSi" value="Si" type="radio">
+                                <label for="castFrecuenSi">Si</label>
+                                <input name="castFrecuen" id="castFrecuenNo" value="No" type="radio">
+                                <label for="castFrecuenNo">No</label>
+                            </fieldset>
+
+                            <b><p align="left">Si es un lactante:</p></b>
+
+                            <label for="satAmam">Satisfacción en el proceso de amamantamiento:</label>
+                            <input name="satAmam" id="satAmam" value="" type="text">
+
+                            <label for="llantoPers">Llanto persistente del niño:</label>
+                            <input name="llantoPers" id="llantoPers" value="" type="text">
+                    </form>
+
+                <b><p align="left">7.2 Examen</p></b>
+                <div id="infoRol">
+                    <form id="formExamen">
+                        <label>Observar la interacción del sujeto valorado con los demás miembros de la familia (si es posible):</label>
+                        
+                        <label for="sigViolencia">Signos de violencia familiar:</label>
+                        <input name="sigViolencia" id="sigViolencia" value="" type="text">
+
+                        <label for="entorInseg">Entorno doméstico poco seguro:</label>
+                        <input name="entorInseg" id="entorInseg" value="" type="text">
+
+                        <b><p align="left">Observación del proceso de amamantamiento:</p></b>
+                        
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Postura correcta:</legend>
+                            <input name="postCorrecta" id="postCorrectaSi" value="Si" type="radio">
+                            <label for="postCorrectaSi">Si</label>
+                            <input name="postCorrecta" id="postCorrectaNo" value="No" type="radio">
+                            <label for="postCorrectaNo">No</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Agarre adecuado del pezón:</legend>
+                            <input name="agarrPezon" id="agarrPezonSi" value="Si" type="radio">
+                            <label for="agarrPezonSi">Si</label>
+                            <input name="agarrPezon" id="agarrPezonNo" value="No" type="radio">
+                            <label for="agarrPezonNo">No</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Continuidad en la succión:</legend>
+                            <input name="contSuccion" id="contSuccionSi" value="Si" type="radio">
+                            <label for="contSuccionSi">Si</label>
+                            <input name="contSuccion" id="contSuccionNo" value="No" type="radio">
+                            <label for="contSuccionNo">No</label>
+                        </fieldset>
+
+                        <label>Valoración de mamas: Ver dominio sexualidad</label>
+                    </form>
+                </div>
+
+                    <div name="nextPrevious">
+                        <center>
+                            <a href="#formAutoper" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                            <a href="#pagina3" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>                        
+                        </center>
+                    </div>
+                </div>
+            </article>
+            <footer data-role="footer">
+                <h1>Pie de pagina 2</h1>
+            </footer>
+        </section>
+----------------------------------------------------------------------
+        <section data-role="page" id="pagina3">
+            <header data-role="header">
+                <h1>8. SEXUALIDAD</h1>
+            </header>
+            <article data-role="content">
+                <div id="infoSexua">
+                    <b><p align="left">8.1 Entrevista</p></b>
+
+                <form id="formEntrevista3">
+                        
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Relaciones con el sexo opuesto:</legend>
+                            <input name="relaSexo" id="relaSexoBuenas" value="Buenas" type="radio">
+                            <label for="relaSexoBuenas">Buenas</label>
+                            <input name="relaSexo" id="relaSexoAcep" value="Aceptables" type="radio">
+                            <label for="relaSexoAcep">Aceptables</label>
+                            <input name="relaSexo" id="relaSexoProble" value="Problemáticas" type="radio">
+                            <label for="relaSexoProble">Problemáticas</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Tiene vida sexual activa?:</legend>
+                            <input name="vidaSexu" id="vidaSexuSi" value="Si" type="radio">
+                            <label for="vidaSexuSi">Si</label>
+                            <input name="vidaSexu" id="vidaSexuNo" value="No" type="radio">
+                            <label for="vidaSexuNo">No</label>
+                        </fieldset>
+
+                        <label for="situVidaSex">Su situación y/o enfermedad actual han influido en su vida sexual? (explicar):</label>
+                        <textarea name="situVidaSex" id="situVidaSex"></textarea>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>Utiliza anticonceptivos?:</legend>
+                            <input name="utilAnti" id="utilAntiSi" value="Si" type="radio">
+                            <label for="utilAntiSi">Si</label>
+                            <input name="utilAnti" id="utilAntiNo" value="No" type="radio">
+                            <label for="utilAntiNo">No</label>
+                        </fieldset>
+
+                        <b><p align="left">Si su respuesta es afirmativa, registre la siguiente información:</p></b>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ANTICONCEPTIVO</th>
+                                    <th></th>
+                                    <th>Anov. Orales</th>
+                                    <th>DIU</th>
+                                    <th>Ligadura Trompas</th>
+                                    <th>Vasectomía</th>
+                                    <th>Condón</th>
+                                    <th>Óvulo Espuma</th>
+                                    <th>Ritmo</th>
+                                    <th>Otro (describir)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th align="left">DURACIÓN</th>
+                                    <td></td>
+                                    <td><input id="D1A1" type="text"></td>
+                                    <td><input id="D2D1" type="text"></td>
+                                    <td><input id="D3L1" type="text"></td>
+                                    <td><input id="D4V1" type="text"></td>
+                                    <td><input id="D5C1" type="text"></td>
+                                    <td><input id="D6O1" type="text"></td>
+                                    <td><input id="D7R1" type="text"></td>
+                                    <td><input id="D8O1" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th align="left" rowspan="2">CONTROL C/cuánto?</th>
+                                    <td>SI</td>
+                                    <td><input id="CS1A2" type="text"></td>
+                                    <td><input id="CS2D2" type="text"></td>
+                                    <td><input id="CS3L2" type="text"></td>
+                                    <td><input id="CS4V2" type="text"></td>
+                                    <td><input id="CS5C2" type="text"></td>
+                                    <td><input id="CS6O2" type="text"></td>
+                                    <td><input id="CS7R2" type="text"></td>
+                                    <td><input id="CS8O2" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>NO</td>
+                                    <td><input id="CN1A3" type="text"></td>
+                                    <td><input id="CN2D3" type="text"></td>
+                                    <td><input id="CN3L3" type="text"></td>
+                                    <td><input id="CN4V3" type="text"></td>
+                                    <td><input id="CN5C3" type="text"></td>
+                                    <td><input id="CN6O3" type="text"></td>
+                                    <td><input id="CN7R3" type="text"></td>
+                                    <td><input id="CN8O3" type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <label for="obser">Observaciones:</label>
+                        <textarea name="obser" id="obser"></textarea>
+
+                        <b><p align="left">Si es mujer, registre la siguiente información:</p></b>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>EDAD (años)</th>
+                                    <th>Menarquia</th>
+                                    <th>Inicio R.Sexuales</th>
+                                    <th>1° Embarazo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input id="E1" type="text"></td>
+                                    <td><input id="M1" type="text"></td>
+                                    <td><input id="I1" type="text"></td>
+                                    <td><input id="EM1" type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td align="center">F.U.M.</td>
+                                    <td><input id="F1" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">Ciclos Menstr.</td>
+                                    <td><input id="C1" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">F.P.P.</td>
+                                    <td><input id="FP1" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">F.U.P.</td>
+                                    <td><input id="FU1" type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td><input id="E1" type="text" placeholder="Ectópico" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                                <td></td>
+                                <td><input id="V1" type="text" placeholder="Viven" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input id="G1" type="text" placeholder="Grávida" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="A1" type="text" placeholder="Aborto" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                                <td></td>
+                                <td><input id="M1" type="text" placeholder="Muert.1°Semana" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input id="P1" type="text" placeholder="Parto" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="V1" type="text" placeholder="Vaginal" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1" type="text" placeholder="Nac. Vivos" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="M2" type="text" placeholder="Muert.Desp.1°Semana" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><input id="C1" type="text" placeholder="Cesárea" onkeypress="return justNumbers(event);"></td>
+                                <td><input id="N1" type="text" placeholder="Nac. Muertos" onkeypress="return justNumbers(event);"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+            
+                    <form id="examFisico">
+                    <b><p align="left">8.2 Examen Físico</p></b>
+                    
+                    <p align="left">8.2.1 Mamas</p>
+
+                    <label>Tamaño:</label> 
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>1. Proporcional:</legend>
+                            <input name="tamPro" id="tamProSi" value="Si" type="radio">
+                            <label for="tamProSi">Si</label>
+                            <input name="tamPro" id="tamProNo" value="No" type="radio">
+                            <label for="tamProNo">No</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>2. Supernumerarias:</legend>
+                            <input name="Super" id="SuperSi" value="Si" type="radio">
+                            <label for="SuperSi">Si</label>
+                            <input name="Super" id="SuperNo" value="No" type="radio">
+                            <label for="SuperNo">No</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>3. Simetría conservada:</legend>
+                            <input name="Sime" id="SimeSi" value="Si"type="radio">
+                            <label for="SimeSi">Si</label>
+                            <input name="Sime" id="SimeNo" value="No" type="radio">
+                            <label for="SimeNo">No</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>4. Consistencia:</legend>
+                            <input name="Consis" id="ConsisDura" value="Dura" type="radio">
+                            <label for="ConsisDura">Dura</label>
+                            <input name="Consis" id="ConsisBlan" value="Blanda" type="radio">
+                            <label for="ConsisBlan">Blanda</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>5. Piel:</legend>
+                            <input name="piel" id="pielVeno" value="Red Venosa" type="checkbox">
+                            <label for="pielVeno">Red Venosa</label>
+                            <input name="piel" id="pielPigm" value="Pigmentación" type="checkbox">
+                            <label for="pielPigm">Pigmentación</label>
+                            <input name="piel" id="pielEstri" value="Estrías" type="checkbox">
+                            <label for="pielEstri">Estrías</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>6. Tipo:</legend>
+                            <input name="tipo" id="tipo1" value="I" type="radio">
+                            <label for="tipo1">I</label>
+                            <input name="tipo" id="tipo2" value="II" type="radio">
+                            <label for="tipo2">II</label>
+                            <input name="tipo" id="tipo3" value="III" type="radio">
+                            <label for="tipo3">III</label>
+                            <input name="tipo" id="tipo4" value="IV" type="radio">
+                            <label for="tipo4">IV</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>7. Areola: 
+                                <label for="formaAreo">Forma:</label>
+                                <input name="formaAreo" id="formaAreo" value="" type="text">
+                            </legend>
+                            <input name="areo" id="areoPrim" value="Areola primaria" type="checkbox">
+                            <label for="areoPrim">Areola primaria</label>
+                            <input name="areo" id="areoSecun" value="Areola secundaria" type="checkbox">
+                            <label for="areoSecun">Areola secundaria</label>
+                            <input name="areo" id="tuberMont" value="Tubérculos Montgomery" type="checkbox">
+                            <label for="tuberMont">Tubérculos Montgomery</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>8. Pezón:</legend>
+                            <input name="pezon" id="pezonPla" value="Plano" type="checkbox">
+                            <label for="pezonPla">Plano</label>
+                            <input name="pezon" id="pezonEver" value="Evertido" type="checkbox">
+                            <label for="pezonEver">Evertido</label>
+                            <input name="pezon" id="pezonCent" value="Centrado" type="checkbox">
+                            <label for="pezonCent">Centrado</label>
+                            <input name="pezon" id="pezonErec" value="Eréctil" type="checkbox">
+                            <label for="pezonErec">Eréctil</label>
+                        </fieldset>
+
+                        <label for="observa">Observaciones:</label>
+                        <textarea name="observa" id="observa"></textarea>
+                        <b><p>Nota: La valoración de genitales externos masculinos y femeninos solo se realiza si se ha identificado algún tipo de alteración, o si se requiere una valoración física completa.</p></b>
+                    </form>
+
+                </form>
+                <div name="nextPrevious">
+                    <center>
+                        <a href="#pagina2" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a>
+                        <a href="#pagina4" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>                      
+                    </center>
+                </div>
+                </div>
+            </article>
+            <footer data-role="footer">
+                <h1>Pie de pagina 3</h1>
+            </footer>
+        </section>
+---------------------------------------------------------------------------------
+
+        <section data-role="page" id="pagina4">
+            <header data-role="header">
+                <h1>9. AFRONTAMIENTO</h1> 
+                <h1>Y</h1> 
+                <h1>TOLERANCIA AL ESTRÉS</h1>
+            </header>
+            <article data-role="content">
+                <div id="infoToleran">
+                    <form id="formEntrevista3">    
+                        <b><p align="left">9.1 Entrevista</p></b>
+                        <label for="cambiImporta">1. ¿Ha tenido algún cambio importante (crisis) en su vida, en los ultimos dos años?:</label>
+                        <input name="cambiImporta" id="cambiImporta" value="" type="text">
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>2. Las situaciones difíciles las enfrenta con:</legend>
+                            <input name="situDifi" id="situDifiAnsi" value="Ansiedad" type="checkbox">
+                            <label for="situDifiAnsi">Ansiedad</label>
+                            <input name="situDifi" id="situDifiMied" value="Miedo" type="checkbox">
+                            <label for="situDifiMied">Miedo</label>
+                            <input name="situDifi" id="situDifiInsegu" value="Inseguridad" type="checkbox">
+                            <label for="situDifiInsegu">Inseguridad</label>
+                            <input name="situDifi" id="situDifiLlanto" value="Llanto" type="checkbox">
+                            <label for="situDifiLlanto">Llanto</label>
+                            <input name="situDifi" id="situDifiForta" value="Fortaleza" type="checkbox">
+                            <label for="situDifiForta">Fortaleza</label>
+                            <input name="situDifi" id="situDifiDecis" value="Decisión" type="checkbox">
+                            <label for="situDifiDecis">Decisión</label>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>3. Cuando está preocupado(a) a quien acude:</legend>
+                            <input name="preoAcude" id="preoAcudeFami" value="Familiar" type="checkbox" onclick="desabilitarOtro()">
+                            <label for="preoAcudeFami">Familiar</label>
+                            <input name="preoAcude" id="preoAcudeAmigo" value="Amigo" type="checkbox" onclick="desabilitarOtro()">
+                            <label for="preoAcudeAmigo">Amigo</label>
+                            <input name="preoAcude" id="preoAcudeOtro" value="Otro" type="checkbox" onclick="habilitarPreocupadoOtro()">
+                            <label for="preoAcudeOtro">Otro</label>
+                            
+                            <div id="divECOCual"></div>
+                        </fieldset>
+
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>4. En momentos díficiles:</legend>
+                            <input name="momenDifi" id="momenDifiAlcoh" value="Toma alcohol" type="checkbox" onclick="desabilitarOtro1()">
+                            <label for="momenDifiAlcoh">Toma alcohol</label>
+                            <input name="momenDifi" id="momenDifiDrog" value="Droga" type="checkbox" onclick="desabilitarOtro1()">
+                            <label for="momenDifiDrog">Droga</label>
+                            <input name="momenDifi" id="momenDifiOtro" value="Otro" type="checkbox" onclick="habilitarMomentosDifiOtro()">
+                            <label for="momenDifiOtro">Otro</label>
+
+                            <div id="divECOCual1"></div>
+                        </fieldset>
+
+                    </form>
+
+                <div name="nextPrevious">
+                    <center>
+                        <a href="#pagina3" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                        <a href="#pagina5" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>                     
+                    </center>
+                </div>
+                </div>
+            </article>
+            <footer data-role="footer">
+                <h1>Pie de pagina 4</h1>
+            </footer>
+        </section>
+-------------------------------------------------------------------------------------
+        <section data-role="page" id="pagina5">
+            <header data-role="header">
+                <h1>10. PRINCIPIOS VITALES</h1>
+            </header>
+                <article data-role="content">
+                    <div id="infoPrincipios">
+                        <form id="formEntrevista4">    
+                            <b><p align="left">10.1 Entrevista</p></b>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>1. ¿La religión es importante en su vida?:</legend>
+                                <input name="reliImpo" id="reliImpoMuch" value="Mucho" type="radio">
+                                <label for="reliImpoMuch">Mucho</label>
+                                <input name="reliImpo" id="reliImpoNorm" value="Normal" type="radio">
+                                <label for="reliImpoNorm">Normal</label>
+                                <input name="reliImpo" id="reliImpoPoco" value="Poco" type="radio">
+                                <label for="reliImpoPoco">Poco</label>
+                                <input name="reliImpo" id="reliImpoNada" value="Para nada" type="radio">
+                                <label for="reliImpoNada">Para nada</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>1.1 ¿Le ayuda a superar problemas?:</legend>
+                                <input name="reliProbl" id="reliProblSi" value="Si" type="radio">
+                                <label for="reliProblSi">Si</label>
+                                <input name="reliProbl" id="reliProblNo" value="No" type="radio">
+                                <label for="reliProblNo">No</label>
+                            </fieldset>
+
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>2. ¿Tiene planes y esperanzas para el futuro?:</legend>
+                                <input name="planEspe" id="planEspeSi" value="Si" type="radio">
+                                <label for="planEspeSi">Si</label>
+                                <input name="planEspe" id="planEspeNo" value="No" type="radio">
+                                <label for="planEspeNo">No</label>
+                            </fieldset>
+
+                            <label for="valores">3. Para usted, ¿cuáles son los valores importantes de la vida?:</label>
+                            <input name="valores" id="valores" value="" type="text">
+                            <label for="respValores">3.1 Los respeta y actúa de acuerdo con ellos?:</label>
+                            <input name="respValores" id="respValores" value="" type="text">
+                        </form>
+                        <div name="nextPrevious">
+                        <center>
+                            <a href="#pagina4" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                            <a href="#pagina6" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>                     
+                        </center>
+                        </div>
+                    </div>
+                </article>
+        </section>
+--------------------------------------------------------------------------
+        <section data-role="page" id="pagina6">
+            <header data-role="header">
+                <h1>11. SEGURIDAD</h1>
+                <h1>Y</h1>
+                <h1>PROTECCIÓN</h1>
+            </header>
+                <article data-role="content">
+                    <div id="infoSeguridad">
+                        <form id="formEntrevista5">    
+                            <b><p align="left">11.1 Entrevista</p></b>
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>1. ¿Presenta heridas o laceraciones en piel o mucosas?:</legend>
+                                <input name="heridPiel" id="heridPielSi" value="Si" type="radio">
+                                <label for="heridPielSi">Si</label>
+                                <input name="heridPiel" id="heridPielNo" value="No" type="radio">
+                                <label for="heridPielNo">No</label>
+                            </fieldset>
+                            <fieldset data-role="controlgroup" data-type="vertical">
+                                <legend>1. ¿Cicatrizan sus heridas con facilidad?:</legend>
+                                <input name="heriCica" id="heriCicaSi" value="Si" type="radio">
+                                <label for="heriCicaSi">Si</label>
+                                <input name="heriCica" id="heriCicaNo" value="No" type="radio">
+                                <label for="heriCicaNo">No</label>
+                            </fieldset>
+                        </form>
+                        <div name="nextPrevious">
+                        <center>
+                            <a href="#pagina5" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-carat-l">Volver</a> 
+                            <a href="#pagina7" class="ui-btn ui-btn-inline  ui-btn-icon-right ui-icon-carat-r">Siguiente</a>                     
+                        </center>
+                        </div>
+                    </div>
+                </article>
+        </section>
+        
+    </body>
+</html>
