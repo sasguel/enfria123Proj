@@ -1,0 +1,31 @@
+              
+
+
+
+TR PREDEFINIDOS TABLA 2
+4-5 (actualizar)
+
+              <tr id="t2-tr-4">
+                  <th class="title" name="t2-tr-4" id="t2-tr-4-th-0">Nombre_del_Indicsador</th>
+                  <td><input type="number" name="t2-tr-4" id="t2-tr-4-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t2-tr-4" id="t2-tr-4-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t2-tr-4" id="t2-tr-4-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t2-tr-4" id="t2-tr-4-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t2-tr-4" id="t2-tr-4-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+              <tr id="t2-tr-5">
+                  <th class="title" name="t2-tr-5" id="t2-tr-5-th-0">Nombre_del_Indicsador</th>
+                  <td><input type="number" name="t2-tr-5" id="t2-tr-5-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t2-tr-5" id="t2-tr-5-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t2-tr-5" id="t2-tr-5-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t2-tr-5" id="t2-tr-5-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t2-tr-5" id="t2-tr-5-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+              <tr id="t2-tr-6">
+                  <th class="title" name="t2-tr-6" id="t2-tr-6-th-0">Nombre_del_Indicsador</th>
+                  <td><input type="number" name="t2-tr-6" id="t2-tr-6-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t2-tr-6" id="t2-tr-6-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t2-tr-6" id="t2-tr-6-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t2-tr-6" id="t2-tr-6-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t2-tr-6" id="t2-tr-6-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
