@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="co.edu.unisangil.nandoic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="co.edu.unisangil.nandoic" version="0.6.11" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>nandoic</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -17,11 +17,29 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
+
+        <icon src="www/img/ICONO.png" density="ldpi" />
+        <icon src="www/img/ICONO.png" density="mdpi" />
+        <icon src="www/img/ICONO.png" density="hdpi" />
+        <icon src="www/img/ICONO.png" density="xhdpi" />
+
+
+        <splash src="www/img/splash.png" density="land-hdpi"/>
+        <splash src="www/img/splash.png" density="land-ldpi"/>
+        <splash src="www/img/splash.png" density="land-mdpi"/>
+        <splash src="www/img/splash.png" density="land-xhdpi"/>
+
+        <splash src="www/img/splash.png" density="port-hdpi"/>
+        <splash src="www/img/splash.png" density="port-ldpi"/>
+        <splash src="www/img/splash.png" density="port-mdpi"/>
+        <splash src="www/img/splash.png" density="port-xhdpi"/>
+        
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-	<icon src="www/assets/LOGO.jpg" />
+	<!--<icon src="www/assets/LOGO.jpg" />-->
     </platform>
+    <preference name="SplashScreenDelay" value="8000" />
 </widget>

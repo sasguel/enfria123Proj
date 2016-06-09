@@ -13,12 +13,23 @@
 
         <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/SQLite/dataBase.js"></script>
+
+         <script type="text/javascript">
+
+            function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+                //onDeviceReady();
+            }
+
+        </script>
+
 
         <script type="text/javascript" src="cordova.js"></script>
 
     </head>
 
-    <body>
+    <body onload="onLoad();">
         <section id="index" data-role="page" data-title="NANOCNIC">
             <header data-role="header">
                 <h1>Nandoic</h1>
@@ -53,7 +64,7 @@
                                 <a href="NANDAIndex.html" rel="external"><h3>NANDA</h3><p>Acceso a NANDA</p></a>
                             </li>
                             <li>
-                                <a href="#"><h3>NOC</h3><p>Acceso a NOC</p></a>
+                                <a href="NOCIndex.html" rel="external"><h3>NOC</h3><p>Acceso a NOC</p></a>
                             </li>
                             <li>
                                 <a href="#"><h3>NIC</h3><p>Acceso a NIC</p></a>

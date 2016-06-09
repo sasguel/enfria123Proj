@@ -13,25 +13,33 @@
 
         <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
         <script type="text/javascript" src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/SQLite/dataBase.js"></script>
+        <script type="text/javascript" src="js/pacientes.js"></script>
 
         <script type="text/javascript" src="../cordova.js"></script>
-        </style>
+        <script type="text/javascript">
+        	document.addEventListener("deviceready", cargarPacientes, false);
+        	//cargarPacientes();
+        </script>
+        
 
     </head>
 	<body>
-<!--__________ formatos __________-->
 		<section id="index" data-role="page" data-title="NANDOIC">
 			<header data-role="header">
 				<h1>NANDOIC</h1>
 				<div data-role="navbar">
 					<ul>
 						<li><a href="javascript:history.go(-1)" rel="external">Menú</a></li>
-						<li><a href="#NANDA" class="ui-btn-active" checked="checked" data-theme="b">Formatos</a></li>
+						<li><a href="#NANDA" class="ui-btn-active" checked="checked" data-theme="b">Pacientes</a></li>
 					</ul>
 				</div>
 			</header>
 			<article data-role="content">
-				<h1>Sitio actualmente en construcción</h1>
+				<h1>Pacientes</h1>
+                <a href="nuevoPaciente.html" data-role="button" rel='external' class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="flip">Nuevo Paciente</a>
+				<div id="pacientes">
+				</div>
 			</article>
 			<footer data-role="footer" data-theme="b">
 				<h1>HYDRA-PDM/ENDERMERIA-GIS</h1>

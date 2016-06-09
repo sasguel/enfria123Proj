@@ -12,6 +12,9 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "co.edu.unisangil.nandoic"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "co.edu.unisangil.nandoic"
         }
     },
     "dependent_plugins": {}

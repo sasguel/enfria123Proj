@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.css"/>
+        <link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <link rel="stylesheet" href="../css/tablasNocStyle.css"/>
+        <link rel="stylesheet" href="../thema.css"/>
+
+        <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script type="text/javascript" src="../cordova.js"></script>
+        
+      <script type="text/javascript" src="js/noc.js"></script>
+
+    </head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANDOIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANDOIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NOC</a></li>
+						<li><a href="#etiqueta1" class="ui-btn-active">Adaptación del cuidador principal al ingreso del paciente en un centro sanitario</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<div class="informacion">
+					<center><p class="borange" id="titulo">Adaptación del cuidador principal al ingreso del paciente en un centro sanitario</p></center>
+					<p class="bgreen" id="definicion">Definición: Respuesta adaptativa del cuidador familiar cuando el destinatario de los cuidados ingresa en un centro sanitario.</p>
+					
+
+					<p class="bblue" id="puntuacion">Puntuación diana del resultado::</p>
+					<p class="bgray" id="mantenerAumentar">
+						Mantener a:
+						<input type="text" name="mantener" id="mantener" data-mini="true"><br>
+						Aumentar a:
+						<input type="text" name="aumentar" id="aumentar" data-mini="true">
+					</p>
+				</div>
+
+					
+				<input type="radio" name="facRel" id="radTabla1" value ="Tabla 1">
+				<label for="radTabla1" name="lFacRel" >Tabla 1</label>
+
+				<table data-role="table" id="tabla1" data-mode="reflow" class="tablaLibroNoc">
+  					<thead>
+    					<tr id="t1-tr-t">
+      						<th style="width:40%;" name="t1-tr-t" id="t1-tr-t-th-0">Nomb. Indicador</th>
+      						<th data-priority="2" name="t1-tr-t" id="t1-tr-t-th-1">Nunca demostrado (1)</th>
+      						<th data-priority="3" name="t1-tr-t" id="t1-tr-t-th-2">Raramente demostrado (2)</th>
+      						<th data-priority="4" name="t1-tr-t" id="t1-tr-t-th-3">A veces demostrado (3)</th>
+      						<th data-priority="4" name="t1-tr-t" id="t1-tr-t-th-4">Frecuentemente demostrado (4)</th>
+      						<th data-priority="4" name="t1-tr-t" id="t1-tr-t-th-5">Siempre demostrado (5)</th>
+    					</tr>
+  					</thead>
+  					<tbody>
+    					<tr id="t1-tr-1">
+      						<th class="title" name="t1-tr-1" id="t1-tr-1-th-0">Confianza en los cuidadores que no pertenecen a la familia</th>
+      						<td><input type="number" name="t1-tr-1" id="t1-tr-1-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+      						<td><input type="number" name="t1-tr-1" id="t1-tr-1-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+      						<td><input type="number" name="t1-tr-1" id="t1-tr-1-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+      						<td><input type="number" name="t1-tr-1" id="t1-tr-1-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+      						<td><input type="number" name="t1-tr-1" id="t1-tr-1-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+    					</tr>
+    					<tr id="t1-tr-2">
+      						<th class="title" name="t1-tr-2" id="t1-tr-2-th-0">Mantenimiento del control deseado sobre los cuidados</th>
+      						<td><input type="number" name="t1-tr-2" id="t1-tr-2-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+      						<td><input type="number" name="t1-tr-2" id="t1-tr-2-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+      						<td><input type="number" name="t1-tr-2" id="t1-tr-2-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+      						<td><input type="number" name="t1-tr-2" id="t1-tr-2-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+      						<td><input type="number" name="t1-tr-2" id="t1-tr-2-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+    					</tr>
+              <tr id="t1-tr-3">
+                  <th class="title" name="t1-tr-3" id="t1-tr-3-th-0">Participación en los cuidados cuando se desea</th>
+                  <td><input type="number" name="t1-tr-3" id="t1-tr-3-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t1-tr-3" id="t1-tr-3-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t1-tr-3" id="t1-tr-3-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t1-tr-3" id="t1-tr-3-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t1-tr-3" id="t1-tr-3-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+              <tr id="t1-tr-4">
+                  <th class="title" name="t1-tr-4" id="t1-tr-4-th-0">Mantenimiento de la relación entre 1 receptor de los cuidados y el cuidador familiar</th>
+                  <td><input type="number" name="t1-tr-4" id="t1-tr-4-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t1-tr-4" id="t1-tr-4-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t1-tr-4" id="t1-tr-4-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t1-tr-4" id="t1-tr-4-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t1-tr-4" id="t1-tr-4-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+              <tr id="t1-tr-5">
+                  <th class="title" name="t1-tr-5" id="t1-tr-5-th-0">Colabora con un profesional sanitario para determinar los cuidados</th>
+                  <td><input type="number" name="t1-tr-5" id="t1-tr-5-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t1-tr-5" id="t1-tr-5-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t1-tr-5" id="t1-tr-5-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t1-tr-5" id="t1-tr-5-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t1-tr-5" id="t1-tr-5-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+              <tr id="t1-tr-6">
+                  <th class="title" name="t1-tr-6" id="t1-tr-6-th-0">Expresión por el cuidador familiar de sentimientos sobre el cambio</th>
+                  <td><input type="number" name="t1-tr-6" id="t1-tr-6-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t1-tr-6" id="t1-tr-6-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t1-tr-6" id="t1-tr-6-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t1-tr-6" id="t1-tr-6-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t1-tr-6" id="t1-tr-6-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+  					</tbody>
+				</table>
+
+				<!-- ------------------- EN CASO DE QUE HUBIESE LA SEGUNDA OPCION ------------------- -->
+				<!-- ------------------- EN CASO DE QUE HUBIESE LA SEGUNDA OPCION ------------------- -->
+				<!-- ------------------- EN CASO DE QUE HUBIESE LA SEGUNDA OPCION ------------------- -->
+				<!-- ------------------- EN CASO DE QUE HUBIESE LA SEGUNDA OPCION ------------------- -->
+				<br><br>
+
+				<input type="radio" name="facRel" id="radTabla2" value ="Tabla 2">
+				<label for="radTabla2" name="lFacRel" >Tabla 2</label>
+
+        <table data-role="table" id="tabla2" data-mode="reflow" class="tablaLibroNoc">
+            <thead>
+              <tr id="t2-tr-t">
+                  <th style="width:40%;" name="t2-tr-t" id="t2-tr-t-th-0">no se requiere</th>
+                  <th data-priority="2" name="t2-tr-t" id="t2-tr-t-th-1">no se requiere (1)</th>
+                  <th data-priority="3" name="t2-tr-t" id="t2-tr-t-th-2">no se requiere (2)</th>
+                  <th data-priority="4" name="t2-tr-t" id="t2-tr-t-th-3">no se requiere (3)</th>
+                  <th data-priority="4" name="t2-tr-t" id="t2-tr-t-th-4">no se requiere (4)</th>
+                  <th data-priority="4" name="t2-tr-t" id="t2-tr-t-th-5">no se requiere (5)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="t2-tr-1">
+                  <th class="title" name="t2-tr-1" id="t2-tr-1-th-0">no se requiere</th>
+                  <td><input type="number" name="t2-tr-1" id="t2-tr-1-td-1" placeholder="1" data-mini="true" pattern="[1]*"></td>
+                  <td><input type="number" name="t2-tr-1" id="t2-tr-1-td-2" placeholder="2" data-mini="true" pattern="[2]*"></td>
+                  <td><input type="number" name="t2-tr-1" id="t2-tr-1-td-3" placeholder="3" data-mini="true" pattern="[3]*"></td>
+                  <td><input type="number" name="t2-tr-1" id="t2-tr-1-td-4" placeholder="4" data-mini="true" pattern="[4]*"></td>
+                  <td><input type="number" name="t2-tr-1" id="t2-tr-1-td-5" placeholder="5" data-mini="true" pattern="[5]*"></td>
+              </tr>
+            </tbody>
+        </table>
+				
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANDOIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>
